@@ -458,9 +458,9 @@ extern "C" {
 #define STRFMT_NMEA  21                 /* stream format: NMEA 0183 */
 #define STRFMT_ANDROID 22               /* stream format: Android API 24+ */
 #ifndef EXTLEX
-#define MAXRCVFMT    15                 /* max number of receiver format */
+#define MAXRCVFMT    16                 /* max number of receiver format */
 #else
-#define MAXRCVFMT    16
+#define MAXRCVFMT    17                 // Incremented
 #endif
 
 #define STR_MODE_R  0x1                 /* stream mode: read */
@@ -1719,6 +1719,11 @@ EXPORT int input_sbff  (raw_t *raw, FILE *fp);
 EXPORT int input_cmrf  (raw_t *raw, FILE *fp);
 EXPORT int input_tersusf(raw_t *raw, FILE *fp);
 EXPORT int input_lexrf (raw_t *raw, FILE *fp);
+
+/* android / custom / 1DT103 functions ------------------------------------------------------------*/
+EXPORT int input_androidf (raw_t *raw, FILE *fp);
+EXPORT int input_android (raw_t *raw,  unsigned char data);
+/* android / custom / 1DT103 functions ------------------------------------------------------------*/
 
 EXPORT int gen_ubx (const char *msg, unsigned char *buff);
 EXPORT int gen_stq (const char *msg, unsigned char *buff);
