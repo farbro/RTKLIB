@@ -28,22 +28,23 @@ typedef enum DeltaRangeStates{
 const int lliArray[17] = {0,0,0,0,0x01,0,0,0,0x40,0,0,0, 0, 0, 0, 0, 0x02};
 
 typedef struct {
-  double biasNanos;                          // TODO
+  double biasNanos;
   double biasUncertaintyNanos;                
   double driftNanosPerSecond;
   double driftUncertaintyNanosPerSecond;
-  long int fullBiasNanos;                    // TODO (double check)
+  long int fullBiasNanos;                    // TODO
   int hardwareClockDiscontinuityCount;       // TODO
   int leapSecond;
-  long int timeNanos;                        // TODO (double check)
+  long int timeNanos;                        // TODO
   double timeUncertaintyNanos;               // TODO
-  int hasBiasNanos;
-  int hasBiasUncertaintyNanos;
-  int hasDriftNanosPerSecond;
-  int hasDriftUncertaintyNanosPerSecond;
-  int hasFullBiasNanos;
-  int hasLeapSecond;
-  int hasTimeUncertaintyNanos;
+
+  int hasBiasNanos;                          // false
+  int hasBiasUncertaintyNanos;               // false
+  int hasDriftNanosPerSecond;                // false
+  int hasDriftUncertaintyNanosPerSecond;     // false
+  int hasFullBiasNanos;                      // true
+  int hasLeapSecond;                         // false
+  int hasTimeUncertaintyNanos;               // true
 } android_clockd_t;
 
 typedef struct {
@@ -55,7 +56,7 @@ typedef struct {
   float carrierFrequencyHz;
   double carrierPhase;
   double carrierPhaseUncertainty;
-  double cn0DbHz;                                         // TODO implement
+  double cn0DbHz;                                         // TODO
   int constellationType;                                  // TODO
   int multipathIndicator;
   double pseudorangeRateUncertaintyMetersPerSecond;       // TODO
@@ -65,12 +66,13 @@ typedef struct {
   int state;                                              // TODO
   int svid;                                               // TODO
   double timeOffsetNanos;                                 // TODO
-  int hasAutomaticGainControlLevelDb;                     // TODO (check)
-  int hasCarrierCycles;                                        
-  int hasCarrierFrequencyHz;                                
-  int hasCarrierPhase;                                        
-  int hasCarrierPhaseUncertainty;                        
-  int hasSnrInDb;                                        
+
+  int hasAutomaticGainControlLevelDb;
+  int hasCarrierCycles;                                   // false
+  int hasCarrierFrequencyHz;                              // false
+  int hasCarrierPhase;                                    // false
+  int hasCarrierPhaseUncertainty;                         // false
+  int hasSnrInDb;                                         // false
 
 } android_measurementsd_t;
 
