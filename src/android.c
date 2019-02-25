@@ -20,7 +20,7 @@ typedef enum ReturnCodes {
 } ReturneCodes;
 
 typdef enum DeltaRangeStates{
-  cycleSlip = 4,
+  cycleSlip         = 4,
   halfCycleResolved = 8,
   halfCycleReported = 16,
   valid             = 1,
@@ -39,14 +39,16 @@ typedef{
   int leapSecond;
   long int timeNanos;
   double timeUncertaintyNanos;
-  int biasNanos;
-  int biasUncertaintyNanos;
-  int driftNanosPerSecond;
-  int driftUncertaintyNanosPerSecond;
-  int fullBiasNanos;
-  int LeapSecond;
+  int hasBiasNanos;
+  int hasbiasUncertaintyNanos;
+  int hasdriftNanosPerSecond;
+  int hasdriftUncertaintyNanosPerSecond;
+  int hasfullBiasNanos;
+  int hasLeapSecond;
   int TimeUncertaintyNanos;
   int NUM_MEASUREMENTS
+
+  //array
   double accumulatedDeltaRangeMeters;
   int accumulatedDeltaRangeState;
   double accumulatedDeltaRangeUncertaintyMeters;
@@ -110,6 +112,10 @@ extern int input_android (raw_t *raw,  unsigned char data){
 
    7. add return 'returncode'
 
+   8. probably move this file into the rcv directory
+
+   9. Fill whatever is possible in nav and remove rest
+
   / ==== NOTES END ==== */
 
   androidStruct2 ourData;
@@ -124,20 +130,28 @@ extern int input_android (raw_t *raw,  unsigned char data){
   unsigned char lli     = UN(lliArray[ourData.accumulatedDeltaRangeState]);
   double carrierPhase    = (ourData.carrierPhase);
 
+  int leaps = ourData.leapSecond;
+
   /* TODO: Insert observation data */
   raw->obs.data[0].time     = t1;                       /* receiver sampling time (GPST) */ 
   raw->obs.data[0].sat      = satId;                    /* satellite/receiver number */
   raw->obs.data[0].rcv      = recId;                    /* satellite/receiver number */
   raw->obs.data[0].SNR[0]   = snr;                      /* signal strength (0.25 dBHz) */
   raw->obs.data[0].LLI[0]   = lli;                      /* loss of lock indicator */
-  raw->obs.data[0].code[0]  = null;                     /* code indicator (CODE_???) */
+  raw->obs.data[0].code[0]  = CODE_NONE;                /* code indicator (CODE_???) */
   raw->obs.data[0].qualL[0] = null;                     /* quality of carrier phase measurement */
   raw->obs.data[0].qualP[0] = null;                     /* quality of pseudorange measurement */
-  raw->obs.data[0].L[0]     = carrierPhase;                     /* observation data carrier-phase (cycle) */
+  raw->obs.data[0].L[0]     = carrierPhase;             /* observation data carrier-phase (cycle) */
   raw->obs.data[0].P[0]     = calcPseudoRange(t1,t2);   /* observation data pseudorange (m) */
   raw->obs.data[0].D[0]     = null;                     /* observation data doppler frequency (Hz) */
 
-}
+
+  raw->nav.leaps = leaps;                               /* leap seconds (s) */
+
+  raw->nav.eph[].sat = satId;                          /* GPS/QZS/GAL ephemeris */
+
+
+  }
 
 
 /* ========= ============ ========= */ 
