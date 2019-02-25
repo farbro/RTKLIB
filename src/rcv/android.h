@@ -28,48 +28,15 @@ typedef enum DeltaRangeStates{
 const int lliArray[17] = {0,0,0,0,0x01,0,0,0,0x40,0,0,0, 0, 0, 0, 0, 0x02};
 
 typedef struct {
-  double accumulatedDeltaRangeMeters;
-  int accumulatedDeltaRangeState;
-  double accumulatedDeltaRangeUncertaintyMeters;
-  double automaticGainControlLevelDb;
-  long int carrierCycles;
-  float carrierFrequencyHz;
-  double carrierPhase;
-  double carrierPhaseUncertainty;
-  double cn0DbHz;
-  int constellationType;
-  int multipathIndicator;
-  double pseudorangeRateUncertaintyMetersPerSecond;
-  long int receivedSvTimeNanos;
-  long int receivedSvTimeUncertaintyNanos;
-  double snrInDb;
-  int state;
-  int svid;
-  double timeOffsetNanos;
-  int hasAutomaticGainControlLevelDb;
-  int hasCarrierCycles;
-  int hasCarrierFrequencyHz;
-  int hasCarrierPhase;
-  int hasCarrierPhaseUncertainty;
-  int hasSnrInDb;
-
-} android_measurementsd_t;
-
-typedef struct {
-  int n;
-  android_measurementsd_t *measurements;
-} android_measurements_t;
-
-typedef struct {
-  double biasNanos;
-  double biasUncertaintyNanos;
+  double biasNanos;                          // TODO
+  double biasUncertaintyNanos;                
   double driftNanosPerSecond;
   double driftUncertaintyNanosPerSecond;
-  long int fullBiasNanos;
-  int hardwareClockDiscontinuityCount;
+  long int fullBiasNanos;                    // TODO (double check)
+  int hardwareClockDiscontinuityCount;       // TODO
   int leapSecond;
-  long int timeNanos;
-  double timeUncertaintyNanos;
+  long int timeNanos;                        // TODO (double check)
+  double timeUncertaintyNanos;               // TODO
   int hasBiasNanos;
   int hasBiasUncertaintyNanos;
   int hasDriftNanosPerSecond;
@@ -78,6 +45,39 @@ typedef struct {
   int hasLeapSecond;
   int hasTimeUncertaintyNanos;
 } android_clockd_t;
+
+typedef struct {
+  double accumulatedDeltaRangeMeters;                        
+  int accumulatedDeltaRangeState;
+  double accumulatedDeltaRangeUncertaintyMeters;
+  double automaticGainControlLevelDbc;
+  long int carrierCycles;
+  float carrierFrequencyHz;
+  double carrierPhase;
+  double carrierPhaseUncertainty;
+  double cn0DbHz;                                         // TODO implement
+  int constellationType;                                  // TODO
+  int multipathIndicator;
+  double pseudorangeRateUncertaintyMetersPerSecond;       // TODO
+  long int receivedSvTimeNanos;                           // TODO
+  long int receivedSvTimeUncertaintyNanos;                // TODO
+  double snrInDb;
+  int state;                                              // TODO
+  int svid;                                               // TODO
+  double timeOffsetNanos;                                 // TODO
+  int hasAutomaticGainControlLevelDb;                     // TODO (check)
+  int hasCarrierCycles;                                        
+  int hasCarrierFrequencyHz;                                
+  int hasCarrierPhase;                                        
+  int hasCarrierPhaseUncertainty;                        
+  int hasSnrInDb;                                        
+
+} android_measurementsd_t;
+
+typedef struct {
+  int n;
+  android_measurementsd_t *measurements;
+} android_measurements_t;
 
 
 long int calcRange(gtime_t t1, gtime_t t2);
