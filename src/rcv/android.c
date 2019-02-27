@@ -47,9 +47,9 @@ extern int input_android (raw_t *raw,  unsigned char data){
   raw->buff[raw->nbyte++] = data;
   bufptr = raw->buff;
 
-  cl_size = sizeof(android_clockd_t);        
-  ms_size = sizeof(android_measurements_t);
-  msd_size = sizeof(android_measurementsd_t);
+  cl_size = ANDROID_CLOCKD_RECEIVED_SIZE;
+  ms_size = 4;
+  msd_size = ANDROID_MEASUREMENTSD_RECEIVED_SIZE;
   trace(5, "cl_size = %d, ms_size = %d, msd_size = %d\n", cl_size, ms_size, msd_size);
 
    /* Check if finished receiving android_clockd_t and android_measurements_t */
@@ -206,10 +206,15 @@ void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
   int i;
   android_measurementsd_t *msd;
 
+  trace(4, "parsing measurement data\n");
+
   ms->n = readInt(ptr);
+
+  trace(4, "ms->n = %d\n", ms->n);
   
   for (i = 0; i < ms->n; i++) {
     msd = &ms->measurements[i];
+    trace(4, "parsing measurement %d\n", i);
 
     msd->accumulatedDeltaRangeMeters = readDouble(ptr);                        
     msd->accumulatedDeltaRangeState = readInt(ptr);
@@ -241,28 +246,28 @@ void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
 
 int readInt(unsigned char **ptr) {
   int val = (int) **ptr;
-  trace(5, "parsing int\n");
+  trace(5, "parsing int: %d\n", val);
   *ptr += sizeof(int);
   return val;
 }
 
 double readDouble(unsigned char **ptr) {
   double val = (double) **ptr;
-  trace(5, "parsing double\n");
+  trace(5, "parsing double: %f\n", val);
   *ptr += sizeof(double);
   return val;
 }
 
 long readLong(unsigned char **ptr) {
   long val = (long) **ptr;
-  trace(5, "parsing long\n");
+  trace(5, "parsing long: %d\n", val);
   *ptr += sizeof(long);
   return val;
 }
 
 float readFloat(unsigned char **ptr) {
   float val = (float) **ptr;
-  trace(5, "parsing float\n");
+  trace(5, "parsing float: %f\n", val);
   *ptr += sizeof(float);
   return val;
 }

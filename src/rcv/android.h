@@ -26,6 +26,7 @@ typedef enum DeltaRangeStates{
                        /* 0 1 2 3 4    5 6 7 8    9 0 11 12 13 14 15 16 */
 const int lliArray[17] = {0,0,0,0,0x01,0,0,0,0x40,0,0,0, 0, 0, 0, 0, 0x02};
 
+#define ANDROID_CLOCKD_RECEIVED_SIZE 92
 typedef struct {
   double biasNanos;
   double biasUncertaintyNanos;                
@@ -46,6 +47,7 @@ typedef struct {
   int hasTimeUncertaintyNanos;               /* true */
 } android_clockd_t;
 
+#define ANDROID_MEASUREMENTSD_RECEIVED_SIZE 144
 typedef struct {
   double accumulatedDeltaRangeMeters;                        
   int accumulatedDeltaRangeState;
@@ -75,9 +77,10 @@ typedef struct {
 
 } android_measurementsd_t;
 
+#define MAX_MEASUREMENTS 100
 typedef struct {
   int n;
-  android_measurementsd_t *measurements;
+  android_measurementsd_t measurements[MAX_MEASUREMENTS];
 } android_measurements_t;
 
 
