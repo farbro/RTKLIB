@@ -181,6 +181,7 @@ double calcPseudoRange(gtime_t rx, gtime_t tx){
 
 /* Fill android_clockd_t struct from raw byte sequence */
 void parseClockData(android_clockd_t *cl, unsigned char **ptr) {
+  trace(4, "parsing clock data\n");
   cl->biasNanos = readDouble(ptr);
   cl->biasUncertaintyNanos = readDouble(ptr); 
   cl->driftNanosPerSecond = readDouble(ptr);
@@ -240,24 +241,28 @@ void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
 
 int readInt(unsigned char **ptr) {
   int val = (int) **ptr;
+  trace(5, "parsing int\n");
   *ptr += sizeof(int);
   return val;
 }
 
 double readDouble(unsigned char **ptr) {
-  float val = (float) **ptr;
-  *ptr += sizeof(float);
+  double val = (double) **ptr;
+  trace(5, "parsing double\n");
+  *ptr += sizeof(double);
   return val;
 }
 
 long readLong(unsigned char **ptr) {
   long val = (long) **ptr;
+  trace(5, "parsing long\n");
   *ptr += sizeof(long);
   return val;
 }
 
 float readFloat(unsigned char **ptr) {
   float val = (float) **ptr;
+  trace(5, "parsing float\n");
   *ptr += sizeof(float);
   return val;
 }
