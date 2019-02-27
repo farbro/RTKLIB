@@ -44,7 +44,7 @@ extern int input_android (raw_t *raw,  unsigned char data){
   int cl_size = sizeof(*cl);
 
   // Check if finished receiving android_clockd_t and android_measurements_t
-  if (raw->nbyte == cl_size + sizeof(ms)) {
+  if (raw->nbyte == cl_size + sizeof(*ms)) {
     ms = &raw->buff[cl_size];
 
     // Calcuylate and store expected total length of message
@@ -57,39 +57,51 @@ extern int input_android (raw_t *raw,  unsigned char data){
     // Point the structs
     cl = &raw->buff;
     ms = &raw->buff[cl_size];
-    msd = &raw->buff[cl_size + sizeof(ms)];
 
     // TODO Convert raw data
-
-    return 
+    return convertObservationData(raw->obs, cl, ms);
   }
 
+  return ReturnCodes.noMsg; // Keep buffering
+}
 
-  // androidStruct2 ourData;
-  // gtime_t recTime;
-  // ourData               = (androidStruct)(raw->buff[0]);
-  // int tow               = 2042;                        
-  // long int t2           = ourData.timeNanos;
-  // long int t1           = ourData.receivedSvTimeNanos;
-  // unsigned char satId   = UN(ourData.svid);
-  // unsigned char recId   = UN(ourData.svid); /* TODO: WRONG VAR!  */
-  // unsigned char snr     = UN(ourData.snrInDb);
-  // unsigned char lli     = UN(lliArray[ourData.accumulatedDeltaRangeState]);
-  // double carrierPhase    = (ourData.carrierPhase);
+// Fill obs_t with data from android_clockd_t and andorid_measurements_t
+int convertObservationData(obs_t obs, android_clockd_t *cl, android_measurements_t *ms) {
+  int i;
+  obsd_t *obsd;
+  android_measurementsd_t *android_obs;
 
-  // /* TODO: Insert observation data */
-  // raw->obs.data[0].time     = t1;                       /* receiver sampling time (GPST) */ 
-  // raw->obs.data[0].sat      = satId;                    /* satellite/receiver number */
-  // raw->obs.data[0].rcv      = recId;                    /* satellite/receiver number */
-  // raw->obs.data[0].SNR[0]   = snr;                      /* signal strength (0.25 dBHz) */
-  // raw->obs.data[0].LLI[0]   = lli;                      /* loss of lock indicator */
-  // raw->obs.data[0].code[0]  = null;                     /* code indicator (CODE_???) */
-  // raw->obs.data[0].qualL[0] = null;                     /* quality of carrier phase measurement */
-  // raw->obs.data[0].qualP[0] = null;                     /* quality of pseudorange measurement */
-  // raw->obs.data[0].L[0]     = carrierPhase;                     /* observation data carrier-phase (cycle) */
-  // raw->obs.data[0].P[0]     = calcPseudoRange(t1,t2);   /* observation data pseudorange (m) */
-  // raw->obs.data[0].D[0]     = null;                     /* observation data doppler frequency (Hz) */
+  // Set number of observations
+  obs->n = ms->n;
 
+  // Convert GPS time in nanoseconds to gtime_t
+  gtime_t cl_time = nano2gtime(cl->timeNanos - cl->fullBiasNanos);
+
+  // Get current week and tow
+  int cl_week;
+  double cl_tow;
+
+  cl_tow = time2gpst(cl_time, &week);
+
+  // Fill obs_t->data
+  for (i = 0; i < ms->n; i++) {
+    obsd = &obs->data[i];
+    android_obs = &ms->measurements[i];
+
+    obsd->time     = gpst2time(cl_week, android_obs->receivedSvTimeNanos / (double)SEC); /* receiver sampling time (GPST) */ 
+    // obsd->sat      = android_obs->svid;                    /* satellite/receiver number */
+    // obsd->rcv      = recId;                    /* satellite/receiver number */
+    // obsd->SNR[0]   = snr;                      /* signal strength (0.25 dBHz) */
+    // obsd->LLI[0]   = lli;                      /* loss of lock indicator */
+    // obsd->code[0]  = null;                     /* code indicator (CODE_???) */
+    // obsd->qualL[0] = null;                     /* quality of carrier phase measurement */
+    // obsd->qualP[0] = null;                     /* quality of pseudorange measurement */
+    // obsd->L[0]     = carrierPhase;                     /* observation data carrier-phase (cycle) */
+    // obsd->P[0]     = calcPseudoRange(t1,t2);   /* observation data pseudorange (m) */
+    // obsd->D[0]     = null;                     /* observation data doppler frequency (Hz) */
+  }
+
+  return ReturnCodes.observationData;
 }
 
 
@@ -103,20 +115,15 @@ long int calcRange(gtime_t t1, gtime_t t2){
 }
 
 double nano2sec(long int t){
-  return ((double)(t)/(SEC));
+  return ((double)(t)/(NSEC));
 }
 
-gtime_t nano2gtime(long int nanoSec, int week){
-  gtime_t temp;
-  double sec;
-  sec = (double)(((double)(nanoSec))/SEC);
-  temp = gpst2time(week, sec);
-  return temp;
+gtime_t nano2gtime(long int nanoSec){
+  gtime_t gtime;
+  gtime.time = nanoSec / SEC;
+  time.sec = (gtime.time - nanoSec) / (double)SEC;
 }
 
 double calcPseudoRange(long int t1, long int t2){
   double pseudoRange =  C*(nano2sec(t2) - nano2sec(t1));
 }
-
-
-
