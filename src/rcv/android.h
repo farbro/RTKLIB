@@ -60,11 +60,11 @@ typedef struct {
   int constellationType;                                  /* TODO */
   int multipathIndicator;
   double pseudorangeRateUncertaintyMetersPerSecond;       /* TODO */
-  long int receivedSvTimeNanos;                           /* TODO */
+  long int receivedSvTimeNanos;
   long int receivedSvTimeUncertaintyNanos;                /* TODO */
   double snrInDb;
   int state;                                              /* TODO */
-  int svid;                                               /* TODO */
+  int svid;
   double timeOffsetNanos;                                 /* TODO */
 
   int hasAutomaticGainControlLevelDb;
