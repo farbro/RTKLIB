@@ -33,12 +33,15 @@ extern int input_android (raw_t *raw,  unsigned char data){
   android_measurements_t *ms;
   int cl_size, ms_size, msd_size;
 
+  trace(5, "input_android, data=%02x\n", data);
+
    /* Store new byte */
   raw->buff[raw->nbyte++] = data;
 
   cl_size = sizeof(android_clockd_t);        
   ms_size = sizeof(android_measurements_t);
   msd_size = sizeof(android_measurementsd_t);
+  trace(5, "cl_size = %d, ms_size = %d, msd_size = %d\n", cl_size, ms_size, msd_size);
 
    /* Check if finished receiving android_clockd_t and android_measurements_t */
   if (raw->nbyte == cl_size + ms_size) {
@@ -46,6 +49,7 @@ extern int input_android (raw_t *raw,  unsigned char data){
 
      /* Calculate and store expected total length of message */
     raw->len = cl_size + ms_size + ms->n * msd_size;
+    trace(3, "received android_clockd_t + android_measurements_t\n");
   }
 
    /* Check if complete message is received */
@@ -55,7 +59,8 @@ extern int input_android (raw_t *raw,  unsigned char data){
     cl = (android_clockd_t*) &raw->buff;
     ms = (android_measurements_t*) &raw->buff[cl_size];
 
-    /* TODO Convert raw data */
+    trace(3, "received complete struct\n");
+
     return convertObservationData(&raw->obs, cl, ms);
   }
 
@@ -71,6 +76,8 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
   long msg_time_nanos;
   int rcv_week;
 
+  trace(3, "converting observation data\n");
+
   /* Set number of observations */
   obs->n = ms->n;
 
@@ -79,12 +86,14 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
   /* Fill obs_t->data */
   for (i = 0; i < ms->n; i++) {
+    trace(4, "storing measurement %d\n", i);
     obsd = &obs->data[i];
     android_obs = &ms->measurements[i];
 
     /* === receiver sampling time (GPST) === */ 
     rcv_time = nano2gtime(msg_time_nanos + android_obs->timeOffsetNanos);
     obsd->time = rcv_time;
+    trace(4, "obsd_t.time.time = %d, obsd_t.time.sec = %f\n", obsd->time.time, obsd->time.sec);
 
     /* === satellite/receiver number === */
     obsd->sat = android_obs->svid;
@@ -118,6 +127,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     sat_time = gpst2time(rcv_week, nano2sec(android_obs->receivedSvTimeNanos));
 
     obsd->P[0] = calcPseudoRange(rcv_time, sat_time);
+    trace(4,"obsd_t.P[0] = %d\n", obsd->P[0]);
 
     /* === observation data doppler frequency (Hz) === */
     /* obsd->D[0]     = null;                     */
