@@ -93,18 +93,32 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     /* satellite/receiver number */
     obsd->sat      = android_obs->svid;
 
-    /* obsd->rcv      = recId;                    */ /* satellite/receiver number */
+    /* satellite/receiver number */
+    /* obsd->rcv      = recId;                    */
 
     /* signal strength (0.25 dBHz) */
-    obsd->SNR[0]   = android_obs->snrInDb
+    obsd->SNR[0]   = android_obs->snrInDb;
 
-    /* obsd->LLI[0]   = lli;                      */ /* loss of lock indicator */
-    /* obsd->code[0]  = null;                     */ /* code indicator (CODE_???) */
-    /* obsd->qualL[0] = null;                     */ /* quality of carrier phase measurement */
-    /* obsd->qualP[0] = null;                     */ /* quality of pseudorange measurement */
-    /* obsd->L[0]     = carrierPhase;             */ /* observation data carrier-phase (cycle) */
-    /* obsd->P[0]     = calcPseudoRange(t1,t2);   */ /* observation data pseudorange (m) */
-    /* obsd->D[0]     = null;                     */ /* observation data doppler frequency (Hz) */
+    /* loss of lock indicator */
+    /* obsd->LLI[0]   = lli;                      */
+
+    /* code indicator (CODE_???) */
+    /* obsd->code[0]  = null;                     */
+
+    /* quality of carrier phase measurement */
+    /* obsd->qualL[0] = null;                     */
+
+    /* quality of pseudorange measurement */
+    /* obsd->qualP[0] = null;                     */
+
+    /* observation data carrier-phase (cycle) */
+    /* obsd->L[0]     = carrierPhase;             */
+
+    /* observation data pseudorange (m) */
+    /* obsd->P[0]     = calcPseudoRange(t1,t2);   */
+
+    /* observation data doppler frequency (Hz) */
+    /* obsd->D[0]     = null;                     */
   }
 
   return (int) observationData;
