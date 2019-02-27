@@ -32,19 +32,19 @@ typedef struct {
   double biasUncertaintyNanos;                
   double driftNanosPerSecond;
   double driftUncertaintyNanosPerSecond;
-  long int fullBiasNanos;                    // TODO
-  int hardwareClockDiscontinuityCount;       // TODO
+  long int fullBiasNanos;                    /* TODO */
+  int hardwareClockDiscontinuityCount;       /* TODO */
   int leapSecond;
-  long int timeNanos;                        // TODO
-  double timeUncertaintyNanos;               // TODO
+  long int timeNanos;                        /* TODO */
+  double timeUncertaintyNanos;               /* TODO */
 
-  int hasBiasNanos;                          // false
-  int hasBiasUncertaintyNanos;               // false
-  int hasDriftNanosPerSecond;                // false
-  int hasDriftUncertaintyNanosPerSecond;     // false
-  int hasFullBiasNanos;                      // true
-  int hasLeapSecond;                         // false
-  int hasTimeUncertaintyNanos;               // true
+  int hasBiasNanos;                          /* false */
+  int hasBiasUncertaintyNanos;               /* false */
+  int hasDriftNanosPerSecond;                /* false */
+  int hasDriftUncertaintyNanosPerSecond;     /* false */
+  int hasFullBiasNanos;                      /* true */
+  int hasLeapSecond;                         /* false */
+  int hasTimeUncertaintyNanos;               /* true */
 } android_clockd_t;
 
 typedef struct {
@@ -56,23 +56,23 @@ typedef struct {
   float carrierFrequencyHz;
   double carrierPhase;
   double carrierPhaseUncertainty;
-  double cn0DbHz;                                         // TODO
-  int constellationType;                                  // TODO
+  double cn0DbHz;                                         /* TODO */
+  int constellationType;                                  /* TODO */
   int multipathIndicator;
-  double pseudorangeRateUncertaintyMetersPerSecond;       // TODO
-  long int receivedSvTimeNanos;                           // TODO
-  long int receivedSvTimeUncertaintyNanos;                // TODO
+  double pseudorangeRateUncertaintyMetersPerSecond;       /* TODO */
+  long int receivedSvTimeNanos;                           /* TODO */
+  long int receivedSvTimeUncertaintyNanos;                /* TODO */
   double snrInDb;
-  int state;                                              // TODO
-  int svid;                                               // TODO
-  double timeOffsetNanos;                                 // TODO
+  int state;                                              /* TODO */
+  int svid;                                               /* TODO */
+  double timeOffsetNanos;                                 /* TODO */
 
   int hasAutomaticGainControlLevelDb;
-  int hasCarrierCycles;                                   // false
-  int hasCarrierFrequencyHz;                              // false
-  int hasCarrierPhase;                                    // false
-  int hasCarrierPhaseUncertainty;                         // false
-  int hasSnrInDb;                                         // false
+  int hasCarrierCycles;                                   /* false */
+  int hasCarrierFrequencyHz;                              /* false */
+  int hasCarrierPhase;                                    /* false */
+  int hasCarrierPhaseUncertainty;                         /* false */
+  int hasSnrInDb;                                         /* false */
 
 } android_measurementsd_t;
 
@@ -81,9 +81,9 @@ typedef struct {
   android_measurementsd_t *measurements;
 } android_measurements_t;
 
+int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurements_t *ms);
 
-long int calcRange(gtime_t t1, gtime_t t2);
 double nano2sec(long int t);
-gtime_t nano2gtime(long int nanoSec, int week);
+gtime_t nano2gtime(long int nanoSec);
 double calcPseudoRange(long int t1, long int t2);
 
