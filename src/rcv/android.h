@@ -1,5 +1,4 @@
 #define SEC 1000000000
-#define C   299792458
 #define UN (unsigned char)
 
 typedef enum ReturnCodes {
@@ -85,5 +84,5 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
 double nano2sec(long int t);
 gtime_t nano2gtime(long int nanoSec);
-double calcPseudoRange(long int t1, long int t2);
+double calcPseudoRange(gtime_t rx, gtime_t tx);
 

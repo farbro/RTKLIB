@@ -67,57 +67,59 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
   int i;
   obsd_t *obsd;
   android_measurementsd_t *android_obs;
-  gtime_t cl_time;
-  int cl_week;
-  double cl_tow;
-  long received_time;
+  gtime_t rcv_time, sat_time;
+  long msg_time_nanos;
+  int rcv_week;
 
   /* Set number of observations */
   obs->n = ms->n;
 
-  /* Convert GPS time in nanoseconds to gtime_t */
-  cl_time = nano2gtime(cl->timeNanos - cl->fullBiasNanos);
-
-  /* Get current week and tow */
-  cl_tow = time2gpst(cl_time, &cl_week);
+  /* Calculate GPS time for message */
+  msg_time_nanos = cl->timeNanos - cl->fullBiasNanos;
 
   /* Fill obs_t->data */
   for (i = 0; i < ms->n; i++) {
     obsd = &obs->data[i];
     android_obs = &ms->measurements[i];
 
-    /* receiver sampling time (GPST) */ 
-    received_time = android_obs->receivedSvTimeNanos + android_obs->timeOffsetNanos;
-    obsd->time = gpst2time(cl_week, received_time / (double)SEC);
+    /* === receiver sampling time (GPST) === */ 
+    rcv_time = nano2gtime(msg_time_nanos + android_obs->timeOffsetNanos);
+    obsd->time = rcv_time;
 
-    /* satellite/receiver number */
-    obsd->sat      = android_obs->svid;
+    /* === satellite/receiver number === */
+    obsd->sat = android_obs->svid;
 
-    /* satellite/receiver number */
+    /* === satellite/receiver number === */
     /* obsd->rcv      = recId;                    */
 
-    /* signal strength (0.25 dBHz) */
-    obsd->SNR[0]   = android_obs->snrInDb;
+    /* === signal strength (0.25 dBHz) === */
+    obsd->SNR[0] = android_obs->snrInDb;
 
-    /* loss of lock indicator */
+    /* === loss of lock indicator === */
     /* obsd->LLI[0]   = lli;                      */
 
-    /* code indicator (CODE_???) */
+    /* === code indicator (CODE_???) === */
     /* obsd->code[0]  = null;                     */
 
-    /* quality of carrier phase measurement */
+    /* === quality of carrier phase measurement === */
     /* obsd->qualL[0] = null;                     */
 
-    /* quality of pseudorange measurement */
+    /* === quality of pseudorange measurement === */
     /* obsd->qualP[0] = null;                     */
 
-    /* observation data carrier-phase (cycle) */
+    /* === observation data carrier-phase (cycle) === */
     /* obsd->L[0]     = carrierPhase;             */
 
-    /* observation data pseudorange (m) */
-    /* obsd->P[0]     = calcPseudoRange(t1,t2);   */
+    /*  === observation data pseudorange (m) === */
 
-    /* observation data doppler frequency (Hz) */
+    /* Calculate GPST for satellite */
+    /* We only receive satellite TOW from Android, so we use week from rcv_time instead */
+    time2gpst(rcv_time, &rcv_week); /* Calculate week number from rcv_time */
+    sat_time = gpst2time(rcv_week, nano2sec(android_obs->receivedSvTimeNanos));
+
+    obsd->P[0] = calcPseudoRange(rcv_time, sat_time);
+
+    /* === observation data doppler frequency (Hz) === */
     /* obsd->D[0]     = null;                     */
   }
 
@@ -140,7 +142,8 @@ gtime_t nano2gtime(long int nanoSec){
   return gtime;
 }
 
-double calcPseudoRange(long int t1, long int t2){
-  double pseudoRange =  C*(nano2sec(t2) - nano2sec(t1));
-  return pseudoRange;
+double calcPseudoRange(gtime_t rx, gtime_t tx){
+  double diff = (rx.time - tx.time) + (rx.sec - tx.sec);
+
+  return diff * CLIGHT;
 }
