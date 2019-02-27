@@ -36,14 +36,16 @@ extern int input_android (raw_t *raw,  unsigned char data){
 
   / ==== NOTES END ==== */
 
-  android_clockd_t *cl;
-  android_measurements_t *ms;
+  android_clockd_t cl;
+  android_measurements_t ms;
   int cl_size, ms_size, msd_size;
+  unsigned char *bufptr;
 
   trace(5, "input_android, data=%02x\n", data);
 
    /* Store new byte */
   raw->buff[raw->nbyte++] = data;
+  bufptr = raw->buff;
 
   cl_size = sizeof(android_clockd_t);        
   ms_size = sizeof(android_measurements_t);
@@ -52,23 +54,28 @@ extern int input_android (raw_t *raw,  unsigned char data){
 
    /* Check if finished receiving android_clockd_t and android_measurements_t */
   if (raw->nbyte == cl_size + ms_size) {
-    ms = (android_measurements_t*) &raw->buff[cl_size];
+    parseClockData(&cl, &bufptr);
+    parseMeasurementData(&ms, &bufptr);
 
      /* Calculate and store expected total length of message */
-    raw->len = cl_size + ms_size + ms->n * msd_size;
-    trace(3, "received android_clockd_t + android_measurements_t\n");
+    raw->len = cl_size + ms_size + ms.n * msd_size;
+    trace(3, "raw->len = %d\n", raw->len);
   }
 
    /* Check if complete message is received */
   if (raw->len > 0 && raw->nbyte == raw->len) {
 
      /* Point the structs */
-    cl = (android_clockd_t*) &raw->buff;
-    ms = (android_measurements_t*) &raw->buff[cl_size];
+    parseClockData(&cl, &bufptr);
+    parseMeasurementData(&ms, &bufptr);
 
     trace(3, "received complete struct\n");
 
-    return convertObservationData(&raw->obs, cl, ms);
+    /* Reset buffer */
+    raw->len = 0;
+    raw->nbyte = 0;
+
+    return convertObservationData(&raw->obs, &cl, &ms);
   }
 
   return (int) noMsg; /* Keep buffering */
@@ -149,11 +156,11 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 /* ========= ============ ========= */ 
 /* ========= Calculations ========= */ 
 /* ========= ============ ========= */ 
-double nano2sec(long int t){
+double nano2sec(long t){
   return ((double)(t)/(SEC));
 }
 
-gtime_t nano2gtime(long int nanoSec){
+gtime_t nano2gtime(long nanoSec){
   gtime_t gtime;
   gtime.time = nanoSec / SEC;
   gtime.sec = (gtime.time - nanoSec) / (double)SEC;
@@ -165,4 +172,92 @@ double calcPseudoRange(gtime_t rx, gtime_t tx){
   double diff = (rx.time - tx.time) + (rx.sec - tx.sec);
 
   return diff * CLIGHT;
+}
+
+
+/* ========= ============ ========= */ 
+/* ========= Parsing      ========= */ 
+/* ========= ============ ========= */ 
+
+/* Fill android_clockd_t struct from raw byte sequence */
+void parseClockData(android_clockd_t *cl, unsigned char **ptr) {
+  cl->biasNanos = readDouble(ptr);
+  cl->biasUncertaintyNanos = readDouble(ptr); 
+  cl->driftNanosPerSecond = readDouble(ptr);
+  cl->driftUncertaintyNanosPerSecond = readDouble(ptr);
+  cl->fullBiasNanos = readLong(ptr); 
+  cl->hardwareClockDiscontinuityCount = readInt(ptr);
+  cl->leapSecond = readInt(ptr);
+  cl->timeNanos = readLong(ptr);
+  cl->timeUncertaintyNanos = readDouble(ptr);
+
+  cl->hasBiasNanos = readInt(ptr);
+  cl->hasBiasUncertaintyNanos = readInt(ptr); 
+  cl->hasDriftNanosPerSecond = readInt(ptr); 
+  cl->hasDriftUncertaintyNanosPerSecond = readInt(ptr); 
+  cl->hasFullBiasNanos = readInt(ptr); 
+  cl->hasLeapSecond = readInt(ptr); 
+  cl->hasTimeUncertaintyNanos = readInt(ptr); 
+}
+
+/* Fill android_measurements_t struct from raw byte sequence */
+void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
+  int i;
+  android_measurementsd_t *msd;
+
+  ms->n = readInt(ptr);
+  
+  for (i = 0; i < ms->n; i++) {
+    msd = &ms->measurements[i];
+
+    msd->accumulatedDeltaRangeMeters = readDouble(ptr);                        
+    msd->accumulatedDeltaRangeState = readInt(ptr);
+    msd->accumulatedDeltaRangeUncertaintyMeters = readDouble(ptr);
+    msd->automaticGainControlLevelDbc = readDouble(ptr);
+    msd->carrierCycles = readLong(ptr);
+    msd->carrierFrequencyHz = readFloat(ptr);
+    msd->carrierPhase = readDouble(ptr);
+    msd->carrierPhaseUncertainty = readDouble(ptr);
+    msd->cn0DbHz = readDouble(ptr);
+    msd->constellationType = readInt(ptr);
+    msd->multipathIndicator = readInt(ptr);
+    msd->pseudorangeRateUncertaintyMetersPerSecond = readDouble(ptr);
+    msd->receivedSvTimeNanos = readLong(ptr);
+    msd->receivedSvTimeUncertaintyNanos = readLong(ptr);
+    msd->snrInDb = readDouble(ptr);
+    msd->state = readInt(ptr);
+    msd->svid = readInt(ptr);
+    msd->timeOffsetNanos = readDouble(ptr);
+
+    msd->hasAutomaticGainControlLevelDb = readInt(ptr);
+    msd->hasCarrierCycles = readInt(ptr);
+    msd->hasCarrierFrequencyHz = readInt(ptr);
+    msd->hasCarrierPhase = readInt(ptr);
+    msd->hasCarrierPhaseUncertainty = readInt(ptr);
+    msd->hasSnrInDb = readInt(ptr);
+  }
+}
+
+int readInt(unsigned char **ptr) {
+  int val = (int) **ptr;
+  *ptr += sizeof(int);
+  return val;
+}
+
+double readDouble(unsigned char **ptr) {
+  float val = (float) **ptr;
+  *ptr += sizeof(float);
+  return val;
+}
+
+long readLong(unsigned char **ptr) {
+  long val = (long) **ptr;
+  *ptr += sizeof(long);
+  return val;
+}
+
+float readFloat(unsigned char **ptr) {
+  float val = (float) **ptr;
+  *ptr += sizeof(float);
+  return val;
 }

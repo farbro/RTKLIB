@@ -80,9 +80,17 @@ typedef struct {
   android_measurementsd_t *measurements;
 } android_measurements_t;
 
+
 int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurements_t *ms);
 
 double nano2sec(long int t);
 gtime_t nano2gtime(long int nanoSec);
 double calcPseudoRange(gtime_t rx, gtime_t tx);
 
+void parseClockData(android_clockd_t *cl, unsigned char **ptr);
+void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr);
+
+int readInt(unsigned char **ptr);
+double readDouble(unsigned char **ptr);
+long readLong(unsigned char **ptr);
+float readFloat(unsigned char **ptr);
