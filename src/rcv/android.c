@@ -1,8 +1,15 @@
 #include "rtklib.h"
 #include "android.h"
 
-/* TODO: Same for file? */
-extern int input_androidf (raw_t *raw, FILE *fp){ return 0; }  
+extern int input_androidf (raw_t *raw, FILE *fp){
+  unsigned char data;
+
+  data = fgetc(fp);
+
+  if (data == EOF) return (int) endOfFile;
+
+  return input_android(raw, data);
+}  
 
 extern int input_android (raw_t *raw,  unsigned char data){
 
@@ -80,9 +87,11 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
   /* Set number of observations */
   obs->n = ms->n;
+  trace(4, "obsd_t.n = %d\n", obs->n);
 
   /* Calculate GPS time for message */
   msg_time_nanos = cl->timeNanos - cl->fullBiasNanos;
+  trace(4, "msg_time_nanos = %d\n", msg_time_nanos);
 
   /* Fill obs_t->data */
   for (i = 0; i < ms->n; i++) {
