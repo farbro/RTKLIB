@@ -1,5 +1,3 @@
-// Recieved time is in Nano seconds (from sattelite)
-//
 #include "rtklib.h"
 #include "android.h"
 
@@ -9,8 +7,6 @@ extern int input_androidf (raw_t *raw, FILE *fp){}
 extern int input_android (raw_t *raw,  unsigned char data){
 
   /* === TODO: NOTES === /
-
-   0. Should be an array of data. Add loop for length of raw->buff.
 
    1. Some data is represented as unsigned chars in obsd_t but as doubles in androidStruct.
       How shall a double be represented in an unsigned char? The decimals are lost and a
@@ -25,12 +21,11 @@ extern int input_android (raw_t *raw,  unsigned char data){
 
    4. CODE_??? <--- what, que, vafan? rtklib_h, row number 283-339
 
-   5. add: android.data ? android.data : 0; 
-      Or is it fine if some values is null?
+   5. add return 'returncode'
 
-   6. Fill in all "null" values
+   --------------- New additions-02/25 ------------------------------------ 
 
-   7. add return 'returncode'
+   6. Fix sizeof() error. 
 
   / ==== NOTES END ==== */
 
@@ -38,27 +33,28 @@ extern int input_android (raw_t *raw,  unsigned char data){
   struct android_measurements_t *ms;
   struct android_measurementsd_t *msd;
 
-  // Store new byte
+   /* Store new byte */
   raw->buff[raw->nbyte++] = data;
 
-  int cl_size = sizeof(*cl);
+  int cl_size = sizeof(android_clockd_t);        
+  int ms_size = sizeof(android_measurements_t) + sizeof(android_measurementsd_t);
 
-  // Check if finished receiving android_clockd_t and android_measurements_t
-  if (raw->nbyte == cl_size + sizeof(*ms)) {
+   /* Check if finished receiving android_clockd_t and android_measurements_t */
+  if (raw->nbyte == cl_size + ms_size) {
     ms = &raw->buff[cl_size];
 
-    // Calcuylate and store expected total length of message
+     /* Calculate and store expected total length of message */
     raw->len = cl_size + sizeof(*ms) + ms->n * sizeof(*msd);
   }
 
-  // Check if complete message is received
+   /* Check if complete message is received */
   if (raw->len > 0 && raw->nbyte == raw->len)
 
-    // Point the structs
+     /* Point the structs */
     cl = &raw->buff;
     ms = &raw->buff[cl_size];
 
-    // TODO Convert raw data
+    /* TODO Convert raw data */
     return convertObservationData(raw->obs, cl, ms);
   }
 
