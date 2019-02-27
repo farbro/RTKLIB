@@ -24,7 +24,7 @@ typedef enum DeltaRangeStates{
   reset             = 2
 } DeltaRangeStates;
 
-                        //0 1 2 3 4    5 6 7 8    9 0 11 12 13 14 15 16
+                       /* 0 1 2 3 4    5 6 7 8    9 0 11 12 13 14 15 16 */
 const int lliArray[17] = {0,0,0,0,0x01,0,0,0,0x40,0,0,0, 0, 0, 0, 0, 0x02};
 
 typedef struct {
