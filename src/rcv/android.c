@@ -182,22 +182,38 @@ double calcPseudoRange(gtime_t rx, gtime_t tx){
 /* Fill android_clockd_t struct from raw byte sequence */
 void parseClockData(android_clockd_t *cl, unsigned char **ptr) {
   trace(4, "parsing clock data\n");
+  trace(5, "cl->biasNanos\n");
   cl->biasNanos = readDouble(ptr);
+  trace(5, "cl->biasUncertaintyNanos\n");
   cl->biasUncertaintyNanos = readDouble(ptr); 
+  trace(5, "cl->driftNanosPerSecond\n");
   cl->driftNanosPerSecond = readDouble(ptr);
+  trace(5, "cl->driftUncertaintyNanosPerSecond\n");
   cl->driftUncertaintyNanosPerSecond = readDouble(ptr);
+  trace(5, "cl->fullBiasNanos\n");
   cl->fullBiasNanos = readLong(ptr); 
+  trace(5, "cl->hardwareClockDiscontinuityCount\n");
   cl->hardwareClockDiscontinuityCount = readInt(ptr);
+  trace(5, "cl->leapSecond\n");
   cl->leapSecond = readInt(ptr);
+  trace(5, "cl->timeNanos\n");
   cl->timeNanos = readLong(ptr);
+  trace(5, "cl->timeUncertaintyNanos\n");
   cl->timeUncertaintyNanos = readDouble(ptr);
 
+  trace(5, "cl->hasBiasNanos\n");
   cl->hasBiasNanos = readInt(ptr);
+  trace(5, "cl->hasBiasUncertaintyNanos\n");
   cl->hasBiasUncertaintyNanos = readInt(ptr); 
+  trace(5, "cl->hasDriftNanosPerSecond\n");
   cl->hasDriftNanosPerSecond = readInt(ptr); 
+  trace(5, "cl->hasDriftUncertaintyNanosPerSecond\n");
   cl->hasDriftUncertaintyNanosPerSecond = readInt(ptr); 
+  trace(5, "cl->hasFullBiasNanos\n");
   cl->hasFullBiasNanos = readInt(ptr); 
+  trace(5, "cl->hasLeapSecond\n");
   cl->hasLeapSecond = readInt(ptr); 
+  trace(5, "cl->hasTimeUncertaintyNanos\n");
   cl->hasTimeUncertaintyNanos = readInt(ptr); 
 }
 
@@ -216,30 +232,54 @@ void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
     msd = &ms->measurements[i];
     trace(4, "parsing measurement %d\n", i);
 
+    trace(5, "msd->accumulatedDeltaRangeMeters\n");
     msd->accumulatedDeltaRangeMeters = readDouble(ptr);                        
+    trace(5, "msd->accumulatedDeltaRangeState\n");
     msd->accumulatedDeltaRangeState = readInt(ptr);
+    trace(5, "msd->accumulatedDeltaRangeUncertaintyMeters\n");
     msd->accumulatedDeltaRangeUncertaintyMeters = readDouble(ptr);
+    trace(5, "msd->automaticGainControlLevelDbc\n");
     msd->automaticGainControlLevelDbc = readDouble(ptr);
+    trace(5, "msd->carrierCycles\n");
     msd->carrierCycles = readLong(ptr);
+    trace(5, "msd->carrierFrequencyHz\n");
     msd->carrierFrequencyHz = readFloat(ptr);
+    trace(5, "msd->carrierPhase\n");
     msd->carrierPhase = readDouble(ptr);
+    trace(5, "msd->carrierPhaseUncertainty\n");
     msd->carrierPhaseUncertainty = readDouble(ptr);
+    trace(5, "msd->cn0DbHz\n");
     msd->cn0DbHz = readDouble(ptr);
+    trace(5, "msd->constellationType\n");
     msd->constellationType = readInt(ptr);
+    trace(5, "msd->multipathIndicator\n");
     msd->multipathIndicator = readInt(ptr);
+    trace(5, "msd->pseudorangeRateUncertaintyMetersPerSecond\n");
     msd->pseudorangeRateUncertaintyMetersPerSecond = readDouble(ptr);
+    trace(5, "msd->receivedSvTimeNanos\n");
     msd->receivedSvTimeNanos = readLong(ptr);
+    trace(5, "msd->receivedSvTimeUncertaintyNanos\n");
     msd->receivedSvTimeUncertaintyNanos = readLong(ptr);
+    trace(5, "msd->snrInDb\n");
     msd->snrInDb = readDouble(ptr);
+    trace(5, "msd->state\n");
     msd->state = readInt(ptr);
+    trace(5, "msd->svid\n");
     msd->svid = readInt(ptr);
+    trace(5, "msd->timeOffsetNanos\n");
     msd->timeOffsetNanos = readDouble(ptr);
 
+    trace(5, "msd->hasAutomaticGainControlLevelDb\n");
     msd->hasAutomaticGainControlLevelDb = readInt(ptr);
+    trace(5, "msd->hasCarrierCycles\n");
     msd->hasCarrierCycles = readInt(ptr);
+    trace(5, "msd->hasCarrierFrequencyHz\n");
     msd->hasCarrierFrequencyHz = readInt(ptr);
+    trace(5, "msd->hasCarrierPhase\n");
     msd->hasCarrierPhase = readInt(ptr);
+    trace(5, "msd->hasCarrierPhaseUncertainty\n");
     msd->hasCarrierPhaseUncertainty = readInt(ptr);
+    trace(5, "msd->hasSnrInDb\n");
     msd->hasSnrInDb = readInt(ptr);
   }
 }
@@ -260,7 +300,7 @@ double readDouble(unsigned char **ptr) {
 
 long readLong(unsigned char **ptr) {
   long val = (long) **ptr;
-  trace(5, "parsing long: %d\n", val);
+  trace(5, "parsing long: %lu\n", val);
   *ptr += sizeof(long);
   return val;
 }
