@@ -70,6 +70,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
   gtime_t cl_time;
   int cl_week;
   double cl_tow;
+  long received_time;
 
   /* Set number of observations */
   obs->n = ms->n;
@@ -85,10 +86,18 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     obsd = &obs->data[i];
     android_obs = &ms->measurements[i];
 
-    obsd->time     = gpst2time(cl_week, android_obs->receivedSvTimeNanos / (double)SEC); /* receiver sampling time (GPST) */ 
-    obsd->sat      = android_obs->svid;              /* satellite/receiver number */
+    /* receiver sampling time (GPST) */ 
+    received_time = android_obs->receivedSvTimeNanos + android_obs->timeOffsetNanos;
+    obsd->time = gpst2time(cl_week, received_time / (double)SEC);
+
+    /* satellite/receiver number */
+    obsd->sat      = android_obs->svid;
+
     /* obsd->rcv      = recId;                    */ /* satellite/receiver number */
-    obsd->SNR[0]   = android_obs->snrInDb            /* signal strength (0.25 dBHz) */
+
+    /* signal strength (0.25 dBHz) */
+    obsd->SNR[0]   = android_obs->snrInDb
+
     /* obsd->LLI[0]   = lli;                      */ /* loss of lock indicator */
     /* obsd->code[0]  = null;                     */ /* code indicator (CODE_???) */
     /* obsd->qualL[0] = null;                     */ /* quality of carrier phase measurement */
