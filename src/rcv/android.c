@@ -285,28 +285,50 @@ void parseMeasurementData(android_measurements_t *ms, unsigned char **ptr) {
 }
 
 int readInt(unsigned char **ptr) {
-  int val = (int) **ptr;
-  trace(5, "parsing int: %d\n", val);
+  int val;
+  memcpy(&val, *ptr, sizeof(int));
+
+  trace(5, "parsing int: %02X%02X%02X%02X -> %d\n",
+      ((unsigned char*) *ptr)[0],
+      ((unsigned char*) *ptr)[1],
+      ((unsigned char*) *ptr)[2],
+      ((unsigned char*) *ptr)[3],
+      val);
   *ptr += sizeof(int);
   return val;
 }
 
 double readDouble(unsigned char **ptr) {
-  double val = (double) **ptr;
+  double val;
+  memcpy(&val, *ptr, sizeof(double));
+
   trace(5, "parsing double: %f\n", val);
   *ptr += sizeof(double);
   return val;
 }
 
 long readLong(unsigned char **ptr) {
-  long val = (long) **ptr;
-  trace(5, "parsing long: %lu\n", val);
+  long val;
+  memcpy(&val, *ptr, sizeof(long));
+
+  trace(5, "parsing long: %02X%02X%02X%02X %02X%02X%02X%02X -> %ld\n", 
+      ((unsigned char*) *ptr)[0],
+      ((unsigned char*) *ptr)[1],
+      ((unsigned char*) *ptr)[2],
+      ((unsigned char*) *ptr)[3],
+      ((unsigned char*) *ptr)[4],
+      ((unsigned char*) *ptr)[5],
+      ((unsigned char*) *ptr)[6],
+      ((unsigned char*) *ptr)[7],
+      val
+      );
   *ptr += sizeof(long);
   return val;
 }
 
 float readFloat(unsigned char **ptr) {
-  float val = (float) **ptr;
+  float val;
+  memcpy(&val, *ptr, sizeof(float));
   trace(5, "parsing float: %f\n", val);
   *ptr += sizeof(float);
   return val;
