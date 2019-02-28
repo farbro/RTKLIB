@@ -1,4 +1,5 @@
-#define SEC 1000000000
+#define SEC2NSEC 1E9
+#define WEEK2SEC (86400*7)
 #define UN (unsigned char)
 
 typedef enum ReturnCodes {

@@ -140,14 +140,13 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
     /* Calculate GPST for satellite */
     /* We only receive satellite TOW from Android, so we use week from rcv_time instead */
-    time2gpst(rcv_time, &rcv_week); /* Calculate week number from rcv_time */
-    rcv_week = (long)rcv_time.time / (86400*7); /* TODO why doesn't above function work? */
+    rcv_week = (long)rcv_time.time / WEEK2SEC; /* Calculate week number */
     trace(4, "week = %d\n", rcv_week);
-    sat_tow = nano2sec(android_obs->receivedSvTimeNanos);
-    trace(4, "android_obs->receivedSvTimeNanos = %ld\n", android_obs->receivedSvTimeNanos);
+
+    sat_tow = nano2sec(android_obs->receivedSvTimeNanos); /* Calculate time-of-week */
     trace(4, "sat_tow = %f\n", sat_tow);
-    sat_time = gpst2time(rcv_week, sat_tow);
-    sat_time = nano2gtime((long)rcv_week*86400*7*1000000000l + android_obs->receivedSvTimeNanos); /* TODO Why doesn't above function work? */
+
+    sat_time = nano2gtime(rcv_week*WEEK2SEC*SEC2NSEC + android_obs->receivedSvTimeNanos);
 
     trace(4, "sat_time.time = %lu, sat_time.sec = %f\n", sat_time.time, sat_time.sec);
     trace(4, "rcv_time.time = %lu, rcv_time.sec = %f\n", rcv_time.time, rcv_time.sec);
@@ -167,13 +166,13 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 /* ========= Calculations ========= */ 
 /* ========= ============ ========= */ 
 double nano2sec(long t){
-  return t/((double)SEC);
+  return t/((double)SEC2NSEC);
 }
 
 gtime_t nano2gtime(long nanoSec){
   gtime_t gtime;
-  gtime.time = nanoSec / SEC;
-  gtime.sec = (nanoSec - gtime.time*SEC) / (double)SEC; /* TODO generic types */
+  gtime.time = nanoSec / SEC2NSEC;
+  gtime.sec = (nanoSec - gtime.time*SEC2NSEC) / (double)SEC2NSEC; /* TODO generic types */
 
   return gtime;
 }
