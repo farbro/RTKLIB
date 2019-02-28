@@ -89,6 +89,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
   gtime_t rcv_time, sat_time;
   long msg_time_nanos;
   int rcv_week;
+  double sat_tow;
 
   trace(3, "converting observation data\n");
 
@@ -98,7 +99,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
   /* Calculate GPS time for message */
   msg_time_nanos = cl->timeNanos - cl->fullBiasNanos;
-  trace(4, "msg_time_nanos = %d\n", msg_time_nanos);
+  trace(4, "msg_time_nanos = %ld\n", msg_time_nanos);
 
   /* Fill obs_t->data */
   for (i = 0; i < ms->n; i++) {
@@ -109,7 +110,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     /* === receiver sampling time (GPST) === */ 
     rcv_time = nano2gtime(msg_time_nanos + android_obs->timeOffsetNanos);
     obsd->time = rcv_time;
-    trace(4, "obsd_t.time.time = %d, obsd_t.time.sec = %f\n", obsd->time.time, obsd->time.sec);
+    trace(4, "obsd_t.time.time = %lu, obsd_t.time.sec = %f\n", obsd->time.time, obsd->time.sec);
 
     /* === satellite/receiver number === */
     obsd->sat = android_obs->svid;
@@ -140,10 +141,19 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     /* Calculate GPST for satellite */
     /* We only receive satellite TOW from Android, so we use week from rcv_time instead */
     time2gpst(rcv_time, &rcv_week); /* Calculate week number from rcv_time */
-    sat_time = gpst2time(rcv_week, nano2sec(android_obs->receivedSvTimeNanos));
+    rcv_week = (long)rcv_time.time / (86400*7); /* TODO why doesn't above function work? */
+    trace(4, "week = %d\n", rcv_week);
+    sat_tow = nano2sec(android_obs->receivedSvTimeNanos);
+    trace(4, "android_obs->receivedSvTimeNanos = %ld\n", android_obs->receivedSvTimeNanos);
+    trace(4, "sat_tow = %f\n", sat_tow);
+    sat_time = gpst2time(rcv_week, sat_tow);
+    sat_time = nano2gtime((long)rcv_week*86400*7*1000000000l + android_obs->receivedSvTimeNanos); /* TODO Why doesn't above function work? */
+
+    trace(4, "sat_time.time = %lu, sat_time.sec = %f\n", sat_time.time, sat_time.sec);
+    trace(4, "rcv_time.time = %lu, rcv_time.sec = %f\n", rcv_time.time, rcv_time.sec);
 
     obsd->P[0] = calcPseudoRange(rcv_time, sat_time);
-    trace(4,"obsd_t.P[0] = %d\n", obsd->P[0]);
+    trace(4,"obsd_t.P[0] = %f\n", obsd->P[0]);
 
     /* === observation data doppler frequency (Hz) === */
     /* obsd->D[0]     = null;                     */
@@ -157,20 +167,20 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 /* ========= Calculations ========= */ 
 /* ========= ============ ========= */ 
 double nano2sec(long t){
-  return ((double)(t)/(SEC));
+  return t/((double)SEC);
 }
 
 gtime_t nano2gtime(long nanoSec){
   gtime_t gtime;
   gtime.time = nanoSec / SEC;
-  gtime.sec = (gtime.time - nanoSec) / (double)SEC;
+  gtime.sec = (nanoSec - gtime.time*SEC) / (double)SEC; /* TODO generic types */
 
   return gtime;
 }
 
 double calcPseudoRange(gtime_t rx, gtime_t tx){
-  double diff = (rx.time - tx.time) + (rx.sec - tx.sec);
-
+  double diff = timediff(rx, tx);
+  trace(5, "timediff = %f\n", diff);
   return diff * CLIGHT;
 }
 
