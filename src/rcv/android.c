@@ -39,33 +39,39 @@ extern int input_android (raw_t *raw,  unsigned char data){
   android_clockd_t cl;
   android_measurements_t ms;
   int cl_size, ms_size, msd_size;
+  int num_ms;
   unsigned char *bufptr;
 
   trace(5, "input_android, data=%02x\n", data);
 
    /* Store new byte */
   raw->buff[raw->nbyte++] = data;
-  bufptr = raw->buff;
 
   cl_size = ANDROID_CLOCKD_RECEIVED_SIZE;
   ms_size = 4;
   msd_size = ANDROID_MEASUREMENTSD_RECEIVED_SIZE;
-  trace(5, "cl_size = %d, ms_size = %d, msd_size = %d\n", cl_size, ms_size, msd_size);
 
    /* Check if finished receiving android_clockd_t and android_measurements_t */
   if (raw->nbyte == cl_size + ms_size) {
-    parseClockData(&cl, &bufptr);
-    parseMeasurementData(&ms, &bufptr);
+    bufptr = raw->buff + cl_size;
+    num_ms = readInt(&bufptr);
+
+    if (num_ms == 0) {
+      raw->len = 0;
+      raw->nbyte = 0;
+      return noMsg;
+    }
 
      /* Calculate and store expected total length of message */
-    raw->len = cl_size + ms_size + ms.n * msd_size;
-    trace(3, "raw->len = %d\n", raw->len);
+    raw->len = cl_size + ms_size + num_ms * msd_size;
+    trace(5, "raw->len = %d\n", raw->len);
   }
 
    /* Check if complete message is received */
   if (raw->len > 0 && raw->nbyte == raw->len) {
 
      /* Point the structs */
+    bufptr = raw->buff;
     parseClockData(&cl, &bufptr);
     parseMeasurementData(&ms, &bufptr);
 
