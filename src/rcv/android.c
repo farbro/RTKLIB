@@ -125,7 +125,8 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     /* obsd->rcv      = recId;                    */
 
     /* === signal strength (0.25 dBHz) === */
-    obsd->SNR[0] = android_obs->snrInDb;
+    obsd->SNR[0] = (unsigned char)(android_obs->cn0DbHz*4);
+    trace(4, "obsd_t.SNR[0] = %d\n", obsd->SNR[0]);
 
     /* === loss of lock indicator === */
     /* obsd->LLI[0]   = lli;                      */
