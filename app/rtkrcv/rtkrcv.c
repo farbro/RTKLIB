@@ -812,6 +812,7 @@ static void prsatellite(vt_t *vt, int nf)
 /* print observation data ----------------------------------------------------*/
 static void probserv(vt_t *vt, int nf)
 {
+    double epo[] = {0000.0, 00.0, 00.0, 00.0, 00.0, 00.0};
     obsd_t obs[MAXOBS*2];
     char tstr[64],id[32];
     int i,j,n=0,frq[]={1,2,5,7,8,6,9};
@@ -828,6 +829,11 @@ static void probserv(vt_t *vt, int nf)
     rtksvrunlock(&svr);
     
     if (nf<=0||nf>NFREQ) nf=NFREQ;
+    
+    time2epoch(obs->time, epo);
+    vt_printf(vt, "obs->time.sec: %d\n", obs[0].time.sec);
+    vt_printf(vt,"obs->time:  %lu\n",obs[0].time.time);
+    vt_printf(vt, "epoc sat, year:%f, month:%f, day:%f, hour:%f, sec:%fn",epo[0],epo[1], epo[2],epo[3],epo[4]);
     vt_printf(vt,"\n%s%-22s %3s %s",ESC_BOLD,"      TIME(GPST)","SAT","R");
     for (i=0;i<nf;i++) vt_printf(vt,"        P%d(m)" ,frq[i]);
     for (i=0;i<nf;i++) vt_printf(vt,"       L%d(cyc)",frq[i]);

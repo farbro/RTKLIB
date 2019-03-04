@@ -114,7 +114,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     android_obs = &ms->measurements[i];
 
     /* === receiver sampling time (GPST) === */ 
-    rcv_time = nano2gtime(msg_time_nanos + android_obs->timeOffsetNanos);
+    /* rcv_time = nano2gtime(msg_time_nanos + android_obs->timeOffsetNanos); */
     obsd->time = rcv_time;
     trace(4, "obsd_t.time.time = %lu, obsd_t.time.sec = %f\n", obsd->time.time, obsd->time.sec);
 
@@ -125,7 +125,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     /* obsd->rcv      = recId;                    */
 
     /* === signal strength (0.25 dBHz) === */
-    obsd->SNR[0] = android_obs->snrInDb;
+    obsd->SNR[0] = (unsigned char)(android_obs->cn0DbHz*4);
 
     /* === loss of lock indicator === */
     /* obsd->LLI[0]   = lli;                      */
@@ -146,14 +146,26 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
     /* Calculate GPST for satellite */
     /* We only receive satellite TOW from Android, so we use week from rcv_time instead */
-    rcv_week = (long)rcv_time.time / WEEK2SEC; /* Calculate week number */
+
+    /* rcv_week = (long)rcv_time.time / WEEK2SEC; /1* Calculate week number *1/ */
+    rcv_week = 2041;
+
+    rcv_time = gpst2time(rcv_week, (msg_time_nanos + android_obs->timeOffsetNanos)/SEC2NSEC);
+
     trace(4, "week = %d\n", rcv_week);
 
     sat_tow = nano2sec(android_obs->receivedSvTimeNanos); /* Calculate time-of-week */
     trace(4, "sat_tow = %f\n", sat_tow);
 
-    sat_time = nano2gtime(rcv_week*WEEK2SEC*SEC2NSEC + android_obs->receivedSvTimeNanos);
-
+                    /* Year,  month, Day, hour, sec,  nsec */
+    double epoch[] = {0000.0, 00.0, 00.0, 00.0, 00.0, 00.0};
+    double epoch2[] = {0000.0, 00.0, 00.0, 00.0, 00.0, 00.0};
+    /* sat_time = nano2gtime(rcv_week*WEEK2SEC*SEC2NSEC + android_obs->receivedSvTimeNanos); */
+    sat_time = gpst2time(rcv_week, android_obs->receivedSvTimeNanos/SEC2NSEC);
+    time2epoch(sat_time, epoch);
+    time2epoch(rcv_time, epoch2);
+    trace(4, "epoc sat, year:%f, month:%f, day:%f, hour:%f, sec:%fn\n",epoch[0],epoch[1], epoch[2],epoch[3],epoch[4]);
+    trace(4, "epoc rcv, year:%f, month:%f, day:%f, hour:%f, sec:%fn\n",epoch2[0],epoch2[1], epoch2[2],epoch2[3],epoch2[4]);
     trace(4, "sat_time.time = %lu, sat_time.sec = %f\n", sat_time.time, sat_time.sec);
     trace(4, "rcv_time.time = %lu, rcv_time.sec = %f\n", rcv_time.time, rcv_time.sec);
 
@@ -178,6 +190,8 @@ double nano2sec(long t){
 gtime_t nano2gtime(long nanoSec){
   gtime_t gtime;
   gtime.time = nanoSec / SEC2NSEC;
+
+
   gtime.sec = (nanoSec - gtime.time*SEC2NSEC) / (double)SEC2NSEC; /* TODO generic types */
 
   return gtime;
@@ -313,8 +327,7 @@ int readInt(unsigned char **ptr) {
   return val;
 }
 
-double readDouble(unsigned char **ptr) {
-  double val;
+double readDouble(unsigned char **ptr) { double val;
   memcpy(&val, *ptr, sizeof(double));
 
   trace(5, "parsing double: %f\n", val);
@@ -347,4 +360,6 @@ float readFloat(unsigned char **ptr) {
   trace(5, "parsing float: %f\n", val);
   *ptr += sizeof(float);
   return val;
+
+
 }

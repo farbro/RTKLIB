@@ -1,0 +1,4665 @@
+3     0.000: rtksvrinit:
+3 rtkinit :
+3     0.003: strinit:
+3     0.003: strinit:
+3     0.003: strinit:
+3     0.003: strinit:
+3     0.003: strinit:
+3     0.004: strinit:
+3     0.004: strinit:
+3     0.004: strinit:
+3     0.004: strinit:
+3 resetsysopts:
+3 loadopts: file=test/config/rtkrcv_android.conf
+3 searchopt: name=console-passwd
+3 searchopt: name=console-timetype
+3 searchopt: name=console-soltype
+3 searchopt: name=console-solflag
+3 searchopt: name=inpstr1-type
+3 searchopt: name=inpstr2-type
+3 searchopt: name=inpstr3-type
+3 searchopt: name=inpstr1-path
+3 searchopt: name=inpstr2-path
+3 searchopt: name=inpstr3-path
+3 searchopt: name=inpstr1-format
+3 searchopt: name=inpstr2-format
+3 searchopt: name=inpstr3-format
+3 searchopt: name=inpstr2-nmeareq
+3 searchopt: name=inpstr2-nmealat
+3 searchopt: name=inpstr2-nmealon
+3 searchopt: name=outstr1-type
+3 searchopt: name=outstr2-type
+3 searchopt: name=outstr1-path
+3 searchopt: name=outstr2-path
+3 searchopt: name=outstr1-format
+3 searchopt: name=outstr2-format
+3 searchopt: name=logstr1-type
+3 searchopt: name=logstr2-type
+3 searchopt: name=logstr3-type
+3 searchopt: name=logstr1-path
+3 searchopt: name=logstr2-path
+3 searchopt: name=logstr3-path
+3 searchopt: name=misc-svrcycle
+3 searchopt: name=misc-timeout
+3 searchopt: name=misc-reconnect
+3 searchopt: name=misc-nmeacycle
+3 searchopt: name=misc-buffsize
+3 searchopt: name=misc-navmsgsel
+3 searchopt: name=misc-startcmd
+3 searchopt: name=misc-stopcmd
+3 searchopt: name=file-cmdfile1
+3 searchopt: name=file-cmdfile2
+3 searchopt: name=file-cmdfile3
+3 searchopt: name=pos1-posmode
+3 searchopt: name=pos1-frequency
+3 searchopt: name=pos1-soltype
+3 searchopt: name=pos1-elmask
+3 searchopt: name=pos1-snrmask
+3 searchopt: name=pos1-dynamics
+3 searchopt: name=pos1-tidecorr
+3 searchopt: name=pos1-ionoopt
+3 searchopt: name=pos1-tropopt
+3 searchopt: name=pos1-sateph
+3 searchopt: name=pos1-exclsats
+3 searchopt: name=pos1-navsys
+3 searchopt: name=pos2-armode
+3 searchopt: name=pos2-gloarmode
+3 searchopt: name=pos2-arthres
+3 searchopt: name=pos2-arlockcnt
+3 searchopt: name=pos2-arelmask
+3 searchopt: name=pos2-aroutcnt
+3 searchopt: name=pos2-arminfix
+3 searchopt: name=pos2-slipthres
+3 searchopt: name=pos2-maxage
+3 searchopt: name=pos2-rejionno
+3 searchopt: name=pos2-niter
+3 searchopt: name=pos2-baselen
+3 searchopt: name=pos2-basesig
+3 searchopt: name=out-solformat
+3 searchopt: name=out-outhead
+3 searchopt: name=out-outopt
+3 searchopt: name=out-timesys
+3 searchopt: name=out-timeform
+3 searchopt: name=out-timendec
+3 searchopt: name=out-degform
+3 searchopt: name=out-fieldsep
+3 searchopt: name=out-height
+3 searchopt: name=out-geoid
+3 searchopt: name=out-solstatic
+3 searchopt: name=out-nmeaintv1
+3 searchopt: name=out-nmeaintv2
+3 searchopt: name=out-outstat
+3 searchopt: name=out-outvel
+3 searchopt: name=stats-errratio
+3 searchopt: name=stats-errphase
+3 searchopt: name=stats-errphaseel
+3 searchopt: name=stats-errphasebl
+3 searchopt: name=stats-errdoppler
+3 searchopt: name=stats-stdbias
+3 searchopt: name=stats-stdiono
+3 searchopt: name=stats-stdtrop
+3 searchopt: name=stats-prnaccelh
+3 searchopt: name=stats-prnaccelv
+3 searchopt: name=stats-prnbias
+3 searchopt: name=stats-prniono
+3 searchopt: name=stats-prntrop
+3 searchopt: name=stats-clkstab
+3 searchopt: name=ant1-postype
+3 searchopt: name=ant1-pos1
+3 searchopt: name=ant1-pos2
+3 searchopt: name=ant1-pos3
+3 searchopt: name=ant1-anttype
+3 searchopt: name=ant1-antdele
+3 searchopt: name=ant1-antdeln
+3 searchopt: name=ant1-antdelu
+3 searchopt: name=ant2-postype
+3 searchopt: name=ant2-pos1
+3 searchopt: name=ant2-pos2
+3 searchopt: name=ant2-pos3
+3 searchopt: name=ant2-anttype
+3 searchopt: name=ant2-antdele
+3 searchopt: name=ant2-antdeln
+3 searchopt: name=ant2-antdelu
+3 searchopt: name=misc-timeinterp
+3 searchopt: name=misc-sbasatsel
+3 searchopt: name=file-satantfile
+3 searchopt: name=file-rcvantfile
+3 searchopt: name=file-staposfile
+3 searchopt: name=file-geoidfile
+3 searchopt: name=file-dcbfile
+3 searchopt: name=file-tempdir
+3 searchopt: name=file-geexefile
+3 searchopt: name=file-solstatfile
+3 searchopt: name=file-tracefile
+3 loadopts: file=test/config/rtkrcv_android.conf
+3 searchopt: name=console-passwd
+3 searchopt: name=console-timetype
+3 searchopt: name=console-soltype
+3 searchopt: name=console-solflag
+3 searchopt: name=inpstr1-type
+3 searchopt: name=inpstr2-type
+3 searchopt: name=inpstr3-type
+3 searchopt: name=inpstr1-path
+3 searchopt: name=inpstr2-path
+3 searchopt: name=inpstr3-path
+3 searchopt: name=inpstr1-format
+3 searchopt: name=inpstr2-format
+3 searchopt: name=inpstr3-format
+3 searchopt: name=inpstr2-nmeareq
+3 searchopt: name=inpstr2-nmealat
+3 searchopt: name=inpstr2-nmealon
+3 searchopt: name=outstr1-type
+3 searchopt: name=outstr2-type
+3 searchopt: name=outstr1-path
+3 searchopt: name=outstr2-path
+3 searchopt: name=outstr1-format
+3 searchopt: name=outstr2-format
+3 searchopt: name=logstr1-type
+3 searchopt: name=logstr2-type
+3 searchopt: name=logstr3-type
+3 searchopt: name=logstr1-path
+3 searchopt: name=logstr2-path
+3 searchopt: name=logstr3-path
+3 searchopt: name=misc-svrcycle
+3 searchopt: name=misc-timeout
+3 searchopt: name=misc-reconnect
+3 searchopt: name=misc-nmeacycle
+3 searchopt: name=misc-buffsize
+3 searchopt: name=misc-navmsgsel
+3 searchopt: name=misc-startcmd
+3 searchopt: name=misc-stopcmd
+3 searchopt: name=file-cmdfile1
+3 searchopt: name=file-cmdfile2
+3 searchopt: name=file-cmdfile3
+3 searchopt: name=pos1-posmode
+3 searchopt: name=pos1-frequency
+3 searchopt: name=pos1-soltype
+3 searchopt: name=pos1-elmask
+3 searchopt: name=pos1-snrmask
+3 searchopt: name=pos1-dynamics
+3 searchopt: name=pos1-tidecorr
+3 searchopt: name=pos1-ionoopt
+3 searchopt: name=pos1-tropopt
+3 searchopt: name=pos1-sateph
+3 searchopt: name=pos1-exclsats
+3 searchopt: name=pos1-navsys
+3 searchopt: name=pos2-armode
+3 searchopt: name=pos2-gloarmode
+3 searchopt: name=pos2-arthres
+3 searchopt: name=pos2-arlockcnt
+3 searchopt: name=pos2-arelmask
+3 searchopt: name=pos2-aroutcnt
+3 searchopt: name=pos2-arminfix
+3 searchopt: name=pos2-slipthres
+3 searchopt: name=pos2-maxage
+3 searchopt: name=pos2-rejionno
+3 searchopt: name=pos2-niter
+3 searchopt: name=pos2-baselen
+3 searchopt: name=pos2-basesig
+3 searchopt: name=out-solformat
+3 searchopt: name=out-outhead
+3 searchopt: name=out-outopt
+3 searchopt: name=out-timesys
+3 searchopt: name=out-timeform
+3 searchopt: name=out-timendec
+3 searchopt: name=out-degform
+3 searchopt: name=out-fieldsep
+3 searchopt: name=out-height
+3 searchopt: name=out-geoid
+3 searchopt: name=out-solstatic
+3 searchopt: name=out-nmeaintv1
+3 searchopt: name=out-nmeaintv2
+3 searchopt: name=out-outstat
+3 searchopt: name=out-outvel
+3 searchopt: name=stats-errratio
+3 searchopt: name=stats-errphase
+3 searchopt: name=stats-errphaseel
+3 searchopt: name=stats-errphasebl
+3 searchopt: name=stats-errdoppler
+3 searchopt: name=stats-stdbias
+3 searchopt: name=stats-stdiono
+3 searchopt: name=stats-stdtrop
+3 searchopt: name=stats-prnaccelh
+3 searchopt: name=stats-prnaccelv
+3 searchopt: name=stats-prnbias
+3 searchopt: name=stats-prniono
+3 searchopt: name=stats-prntrop
+3 searchopt: name=stats-clkstab
+3 searchopt: name=ant1-postype
+3 searchopt: name=ant1-pos1
+3 searchopt: name=ant1-pos2
+3 searchopt: name=ant1-pos3
+3 searchopt: name=ant1-anttype
+3 searchopt: name=ant1-antdele
+3 searchopt: name=ant1-antdeln
+3 searchopt: name=ant1-antdelu
+3 searchopt: name=ant2-postype
+3 searchopt: name=ant2-pos1
+3 searchopt: name=ant2-pos2
+3 searchopt: name=ant2-pos3
+3 searchopt: name=ant2-anttype
+3 searchopt: name=ant2-antdele
+3 searchopt: name=ant2-antdeln
+3 searchopt: name=ant2-antdelu
+3 searchopt: name=misc-timeinterp
+3 searchopt: name=misc-sbasatsel
+3 searchopt: name=file-satantfile
+3 searchopt: name=file-rcvantfile
+3 searchopt: name=file-staposfile
+3 searchopt: name=file-geoidfile
+3 searchopt: name=file-dcbfile
+3 searchopt: name=file-tempdir
+3 searchopt: name=file-geexefile
+3 searchopt: name=file-solstatfile
+3 searchopt: name=file-tracefile
+3 getsysopts:
+3 loadnav: file=rtkrcv.nav
+3 con_open: sock=0 dev=
+3 vt_open: sock=0 dev=
+3 console_thread:
+3 login: passwd=admin type=0
+3 cmd_start:
+3 startsvr:
+3 readant:
+3 readdcb : file=
+3 expath  : path= nmax=1024
+3     1.530: strsetopt: opt=30000 30000 1000 32768 30 0 0 0
+3     1.530: strsetdir: dir=
+3     1.530: strsetproxy: addr=
+3     1.530: rtksvrstart: cycle=10 buffsize=32768 navsel=1 nmeacycle=5000 nmeareq=0
+3     1.530: strinitcom:
+3 rtkfree :
+3 rtkinit :
+3 init_raw: format=22
+3 init_rtcm:
+3 init_raw: format=2
+3 init_rtcm:
+3 init_raw: format=18
+3 init_rtcm:
+3     1.532: stropen: type=2 mode=1 path=test/data/android/rover_20190222120025.log
+3     1.532: openfile: path=test/data/android/rover_20190222120025.log mode=1
+3     1.532: openfile_: path=test/data/android/rover_20190222120025.log time=2019/03/01 16:39:31
+4     1.532: openfile_: open file test/data/android/rover_20190222120025.log (rb)
+3     1.532: stropen: type=0 mode=3 path=ttyS1:115200:8:n:1:off
+3     1.532: stropen: type=0 mode=3 path=anonymous:passwd@cddis.gsfc.nasa.gov/gps/products/%W/igu%W%D_%hb.sp3.Z::T=-14400,21600,7200,600
+3     1.532: stropen: type=2 mode=2 path=/tmp/gnss/sol1_%Y%m%d%h%M.pos
+3     1.532: openfile: path=/tmp/gnss/sol1_%Y%m%d%h%M.pos mode=2
+3     1.532: openfile_: path=/tmp/gnss/sol1_%Y%m%d%h%M.pos time=2019/03/01 16:39:31
+3     1.532: createdir: path=/tmp/gnss/sol1_201903011639.pos
+4     1.532: openfile_: open file /tmp/gnss/sol1_201903011639.pos (wb)
+3     1.532: stropen: type=0 mode=2 path=sol2_%Y%m%d%h%M.pos
+3     1.532: stropen: type=2 mode=2 path=/tmp/gnss/rov_%Y%m%d%h%M.log
+3     1.533: openfile: path=/tmp/gnss/rov_%Y%m%d%h%M.log mode=2
+3     1.533: openfile_: path=/tmp/gnss/rov_%Y%m%d%h%M.log time=2019/03/01 16:39:31
+3     1.533: createdir: path=/tmp/gnss/rov_201903011639.log
+4     1.533: openfile_: open file /tmp/gnss/rov_201903011639.log (wb)
+3     1.533: stropen: type=0 mode=2 path=ref_%Y%m%d%h%M.log
+3     1.533: stropen: type=0 mode=2 path=cor_%Y%m%d%h%M.log
+3 outsolheads:
+4     1.533: strwrite: n=322
+3     1.533: writefile: fp=940250160 n=322
+3 outsolheads:
+4     1.533: strwrite: n=0
+3     1.533: rtksvrthread:
+4     1.533: strread: n=32768
+4     1.533: readfile: fp=939526976 nmax=32768
+4     1.533: strwrite: n=15600
+3     1.534: writefile: fp=940250720 n=15600
+4     1.534: strread: n=32768
+4     1.534: strread: n=32768
+4     1.534: decoderaw: index=0
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 3
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+3 raw->len = 528
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 3
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 3
+4 msg_time_nanos = 1234872027409026304
+4 storing measurement 0
+4 obsd_t.time.time = 1234872027, obsd_t.time.sec = 0.409026
+4 week = 2041
+4 sat_tow = 475227.328221
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836827, sat_time.sec = 0.328221
+4 rcv_time.time = 1234872027, rcv_time.sec = 0.409026
+4 obsd_t.P[0] = -94723864009253616.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872027, obsd_t.time.sec = 0.409026
+4 week = 2041
+4 sat_tow = 475227.331219
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836827, sat_time.sec = 0.331219
+4 rcv_time.time = 1234872027, rcv_time.sec = 0.409026
+4 obsd_t.P[0] = -94723864010152352.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872027, obsd_t.time.sec = 0.409026
+4 week = 2041
+4 sat_tow = 475227.334074
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836827, sat_time.sec = 0.334074
+4 rcv_time.time = 1234872027, rcv_time.sec = 0.409026
+4 obsd_t.P[0] = -94723864011008384.000000
+4     1.534: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=3
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 5
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+3 raw->len = 816
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 5
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 5
+4 msg_time_nanos = 1234872028409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872028, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475228.328223
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836828, sat_time.sec = 0.328223
+4 rcv_time.time = 1234872028, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009254512.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872028, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475228.339197
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836828, sat_time.sec = 0.339197
+4 rcv_time.time = 1234872028, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012544624.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872028, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475228.331221
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836828, sat_time.sec = 0.331221
+4 rcv_time.time = 1234872028, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010153328.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872028, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475228.334076
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836828, sat_time.sec = 0.334076
+4 rcv_time.time = 1234872028, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011009408.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872028, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475228.337811
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836828, sat_time.sec = 0.337811
+4 rcv_time.time = 1234872028, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012128944.000000
+4     1.535: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=5
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 5
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+3 raw->len = 816
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 5
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 5
+4 msg_time_nanos = 1234872029409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872029, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475229.328224
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836829, sat_time.sec = 0.328224
+4 rcv_time.time = 1234872029, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009254928.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872029, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475229.339196
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836829, sat_time.sec = 0.339196
+4 rcv_time.time = 1234872029, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012544240.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872029, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475229.331222
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836829, sat_time.sec = 0.331222
+4 rcv_time.time = 1234872029, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010153856.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872029, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475229.334078
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836829, sat_time.sec = 0.334078
+4 rcv_time.time = 1234872029, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011010016.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872029, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475229.337810
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836829, sat_time.sec = 0.337810
+4 rcv_time.time = 1234872029, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012128672.000000
+4     1.536: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=5
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872030409024512
+4 storing measurement 0
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.328225
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.328225
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009255440.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.339195
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.339195
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012543936.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.339541
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.339541
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647760.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.331224
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.331224
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010154464.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.334080
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.334080
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011010656.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872030, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475230.337809
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836830, sat_time.sec = 0.337809
+4 rcv_time.time = 1234872030, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012128448.000000
+4     1.537: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872031409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.328227
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.328227
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009255792.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.339193
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.339193
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012543456.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.339541
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.339541
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647648.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.331226
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.331226
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010154912.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.334082
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.334082
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011011200.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872031, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475231.337808
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836831, sat_time.sec = 0.337808
+4 rcv_time.time = 1234872031, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012128080.000000
+4     1.538: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872032409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.328228
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.328228
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009256224.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.339192
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.339192
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012543072.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.339541
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.339541
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647600.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.331228
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.331228
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010155472.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.334084
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.334084
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011011792.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872032, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475232.337807
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836832, sat_time.sec = 0.337807
+4 rcv_time.time = 1234872032, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012127792.000000
+4     1.539: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872033409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.328230
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.328230
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009256624.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.339191
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.339191
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012542720.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.339541
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.339541
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647568.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.331230
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.331230
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010156000.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.334086
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.334086
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011012352.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872033, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475233.337806
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836833, sat_time.sec = 0.337806
+4 rcv_time.time = 1234872033, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012127520.000000
+4     1.539: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872034409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.328231
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.328231
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009257040.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.339190
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.339190
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012542336.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647536.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.331231
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.331231
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010156544.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.334088
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.334088
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011012944.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872034, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475234.337805
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836834, sat_time.sec = 0.337805
+4 rcv_time.time = 1234872034, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012127248.000000
+4     1.539: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872035409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.328233
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.328233
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009257488.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.339188
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.339188
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012541968.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647504.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.331233
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.331233
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010157072.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.334090
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.334090
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011013520.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872035, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475235.337804
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836835, sat_time.sec = 0.337804
+4 rcv_time.time = 1234872035, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012126960.000000
+4     1.540: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872036409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.328234
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.328234
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009257888.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.339187
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.339187
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012541536.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647472.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.331235
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.331235
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010157616.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.334092
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.334092
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011014112.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872036, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475236.337803
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836836, sat_time.sec = 0.337803
+4 rcv_time.time = 1234872036, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012126672.000000
+4     1.540: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872037409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.328235
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.328235
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009258336.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.339186
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.339186
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012541184.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647472.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.331237
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.331237
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010158144.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.334094
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.334094
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011014736.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872037, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475237.337802
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836837, sat_time.sec = 0.337802
+4 rcv_time.time = 1234872037, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012126384.000000
+4     1.540: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872038409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.328237
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.328237
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009258720.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.339184
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.339184
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012540784.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647408.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.331239
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.331239
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010158688.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.334096
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.334096
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011015328.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872038, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475238.337801
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836838, sat_time.sec = 0.337801
+4 rcv_time.time = 1234872038, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012126080.000000
+4     1.540: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872039409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.328238
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.328238
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009259136.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.339183
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.339183
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012540384.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647360.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.331240
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.331240
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010159216.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.334098
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.334098
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011015872.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872039, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475239.337800
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836839, sat_time.sec = 0.337800
+4 rcv_time.time = 1234872039, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012125792.000000
+4     1.540: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872040409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.328239
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.328239
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009259568.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.339182
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.339182
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012540000.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647312.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.331242
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.331242
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010159744.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.334100
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.334100
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011016480.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872040, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475240.337799
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836840, sat_time.sec = 0.337799
+4 rcv_time.time = 1234872040, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012125488.000000
+4     1.541: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872041409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.328241
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.328241
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009260000.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.339181
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.339181
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012539616.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647280.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.331244
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.331244
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010160256.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.334102
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.334102
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011017056.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872041, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475241.337798
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836841, sat_time.sec = 0.337798
+4 rcv_time.time = 1234872041, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012125200.000000
+4     1.541: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872042409024768
+4 storing measurement 0
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.328242
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.328242
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009260400.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.339179
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.339179
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012539232.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.339540
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.339540
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647248.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.331246
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.331246
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010160784.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.334104
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.334104
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011017648.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872042, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475242.337797
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836842, sat_time.sec = 0.337797
+4 rcv_time.time = 1234872042, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012124896.000000
+4     1.541: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 raw->len = 960
+4 parsing clock data
+4 parsing measurement data
+4 ms->n = 6
+4 parsing measurement 0
+4 parsing measurement 1
+4 parsing measurement 2
+4 parsing measurement 3
+4 parsing measurement 4
+4 parsing measurement 5
+3 received complete struct
+3 converting observation data
+4 obsd_t.n = 6
+4 msg_time_nanos = 1234872043409024512
+4 storing measurement 0
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.328244
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.328244
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864009260896.000000
+4 storing measurement 1
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.339178
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.339178
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012538928.000000
+4 storing measurement 2
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.339539
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.339539
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012647280.000000
+4 storing measurement 3
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.331247
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.331247
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864010161392.000000
+4 storing measurement 4
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.334106
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.334106
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864011018304.000000
+4 storing measurement 5
+4 obsd_t.time.time = 1234872043, obsd_t.time.sec = 0.409025
+4 week = 2041
+4 sat_tow = 475243.337796
+4 epoc sat, year:2019.000000, month:2.000000, day:22.000000, hour:12.000000, sec:0.000000n
+4 epoc rcv, year:2009.000000, month:2.000000, day:17.000000, hour:12.000000, sec:0.000000n
+4 sat_time.time = 1550836843, sat_time.sec = 0.337796
+4 rcv_time.time = 1234872043, rcv_time.sec = 0.409025
+4 obsd_t.P[0] = -94723864012124688.000000
+4     1.541: updatesvr: ret=1 sat= 0 index=0
+3 sortobs: nobs=6
+4     1.541: decoderaw: index=1
+4     1.541: decodefile: index=2
+3 rtkpos  : time=2009/02/17 12:00:27.409 n=3
+4 obs=
+ ( 1) 2009/02/17 12:00:27.409 G10 rcv1         0.000         0.000 -94723864009253616.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:27.409 G17 rcv1         0.000         0.000 -94723864010152352.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:27.409 G24 rcv1         0.000         0.000 -94723864011008384.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:27.409 n=3
+3 satposs : teph=2009/02/17 12:00:27.409 n=3 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:27.328 sat=10
+4 seleph  : time=2009/02/17 12:00:27.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:27 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:27.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:27.331 sat=17
+4 seleph  : time=2009/02/17 12:00:27.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:27 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:27.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:27.334 sat=24
+4 seleph  : time=2009/02/17 12:00:27.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:27 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:27.334 sat=24
+4 2019/02/22 12:00:27.328221 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:27.331219 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:27.334074 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=3
+3 resprng : n=3
+2 12:00:27.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:28.409 n=5
+4 obs=
+ ( 1) 2009/02/17 12:00:28.409 G10 rcv1         0.000         0.000 -94723864009254512.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:28.409 G13 rcv1         0.000         0.000 -94723864012544624.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:28.409 G17 rcv1         0.000         0.000 -94723864010153328.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:28.409 G24 rcv1         0.000         0.000 -94723864011009408.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:28.409 G28 rcv1         0.000         0.000 -94723864012128944.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:28.409 n=5
+3 satposs : teph=2009/02/17 12:00:28.409 n=5 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:28.328 sat=10
+4 seleph  : time=2009/02/17 12:00:28.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:28 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:28.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:28.339 sat=13
+4 seleph  : time=2009/02/17 12:00:28.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:28 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:28.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:28.331 sat=17
+4 seleph  : time=2009/02/17 12:00:28.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:28 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:28.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:28.334 sat=24
+4 seleph  : time=2009/02/17 12:00:28.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:28 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:28.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:28.338 sat=28
+4 seleph  : time=2009/02/17 12:00:28.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:28 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:28.338 sat=28
+4 2019/02/22 12:00:28.328223 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:28.339197 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:28.331221 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:28.334076 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:28.337811 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=5
+3 resprng : n=5
+2 12:00:28.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:29.409 n=5
+4 obs=
+ ( 1) 2009/02/17 12:00:29.409 G10 rcv1         0.000         0.000 -94723864009254928.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:29.409 G13 rcv1         0.000         0.000 -94723864012544240.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:29.409 G17 rcv1         0.000         0.000 -94723864010153856.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:29.409 G24 rcv1         0.000         0.000 -94723864011010016.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:29.409 G28 rcv1         0.000         0.000 -94723864012128672.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:29.409 n=5
+3 satposs : teph=2009/02/17 12:00:29.409 n=5 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:29.328 sat=10
+4 seleph  : time=2009/02/17 12:00:29.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:29 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:29.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:29.339 sat=13
+4 seleph  : time=2009/02/17 12:00:29.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:29 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:29.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:29.331 sat=17
+4 seleph  : time=2009/02/17 12:00:29.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:29 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:29.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:29.334 sat=24
+4 seleph  : time=2009/02/17 12:00:29.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:29 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:29.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:29.338 sat=28
+4 seleph  : time=2009/02/17 12:00:29.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:29 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:29.338 sat=28
+4 2019/02/22 12:00:29.328224 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:29.339196 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:29.331222 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:29.334078 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:29.337810 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=5
+3 resprng : n=5
+2 12:00:29.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:30.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:30.409 G10 rcv1         0.000         0.000 -94723864009255440.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:30.409 G13 rcv1         0.000         0.000 -94723864012543936.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:30.409 G15 rcv1         0.000         0.000 -94723864012647760.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:30.409 G17 rcv1         0.000         0.000 -94723864010154464.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:30.409 G24 rcv1         0.000         0.000 -94723864011010656.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:30.409 G28 rcv1         0.000         0.000 -94723864012128448.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:30.409 n=6
+3 satposs : teph=2009/02/17 12:00:30.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:30.328 sat=10
+4 seleph  : time=2009/02/17 12:00:30.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:30.339 sat=13
+4 seleph  : time=2009/02/17 12:00:30.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:30.340 sat=15
+4 seleph  : time=2009/02/17 12:00:30.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:30.331 sat=17
+4 seleph  : time=2009/02/17 12:00:30.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:30.334 sat=24
+4 seleph  : time=2009/02/17 12:00:30.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:30.338 sat=28
+4 seleph  : time=2009/02/17 12:00:30.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:30 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:30.338 sat=28
+4 2019/02/22 12:00:30.328225 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:30.339195 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:30.339541 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:30.331224 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:30.334080 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:30.337809 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:30.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:31.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:31.409 G10 rcv1         0.000         0.000 -94723864009255792.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:31.409 G13 rcv1         0.000         0.000 -94723864012543456.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:31.409 G15 rcv1         0.000         0.000 -94723864012647648.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:31.409 G17 rcv1         0.000         0.000 -94723864010154912.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:31.409 G24 rcv1         0.000         0.000 -94723864011011200.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:31.409 G28 rcv1         0.000         0.000 -94723864012128080.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:31.409 n=6
+3 satposs : teph=2009/02/17 12:00:31.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:31.328 sat=10
+4 seleph  : time=2009/02/17 12:00:31.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:31.339 sat=13
+4 seleph  : time=2009/02/17 12:00:31.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:31.340 sat=15
+4 seleph  : time=2009/02/17 12:00:31.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:31.331 sat=17
+4 seleph  : time=2009/02/17 12:00:31.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:31.334 sat=24
+4 seleph  : time=2009/02/17 12:00:31.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:31.338 sat=28
+4 seleph  : time=2009/02/17 12:00:31.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:31 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:31.338 sat=28
+4 2019/02/22 12:00:31.328227 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:31.339193 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:31.339541 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:31.331226 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:31.334082 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:31.337808 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:31.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:32.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:32.409 G10 rcv1         0.000         0.000 -94723864009256224.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:32.409 G13 rcv1         0.000         0.000 -94723864012543072.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:32.409 G15 rcv1         0.000         0.000 -94723864012647600.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:32.409 G17 rcv1         0.000         0.000 -94723864010155472.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:32.409 G24 rcv1         0.000         0.000 -94723864011011792.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:32.409 G28 rcv1         0.000         0.000 -94723864012127792.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:32.409 n=6
+3 satposs : teph=2009/02/17 12:00:32.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:32.328 sat=10
+4 seleph  : time=2009/02/17 12:00:32.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:32.339 sat=13
+4 seleph  : time=2009/02/17 12:00:32.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:32.340 sat=15
+4 seleph  : time=2009/02/17 12:00:32.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:32.331 sat=17
+4 seleph  : time=2009/02/17 12:00:32.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:32.334 sat=24
+4 seleph  : time=2009/02/17 12:00:32.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:32.338 sat=28
+4 seleph  : time=2009/02/17 12:00:32.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:32 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:32.338 sat=28
+4 2019/02/22 12:00:32.328228 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:32.339192 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:32.339541 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:32.331228 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:32.334084 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:32.337807 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:32.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:33.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:33.409 G10 rcv1         0.000         0.000 -94723864009256624.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:33.409 G13 rcv1         0.000         0.000 -94723864012542720.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:33.409 G15 rcv1         0.000         0.000 -94723864012647568.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:33.409 G17 rcv1         0.000         0.000 -94723864010156000.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:33.409 G24 rcv1         0.000         0.000 -94723864011012352.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:33.409 G28 rcv1         0.000         0.000 -94723864012127520.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:33.409 n=6
+3 satposs : teph=2009/02/17 12:00:33.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:33.328 sat=10
+4 seleph  : time=2009/02/17 12:00:33.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:33.339 sat=13
+4 seleph  : time=2009/02/17 12:00:33.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:33.340 sat=15
+4 seleph  : time=2009/02/17 12:00:33.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:33.331 sat=17
+4 seleph  : time=2009/02/17 12:00:33.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:33.334 sat=24
+4 seleph  : time=2009/02/17 12:00:33.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:33.338 sat=28
+4 seleph  : time=2009/02/17 12:00:33.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:33 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:33.338 sat=28
+4 2019/02/22 12:00:33.328230 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:33.339191 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:33.339541 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:33.331230 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:33.334086 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:33.337806 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:33.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:34.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:34.409 G10 rcv1         0.000         0.000 -94723864009257040.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:34.409 G13 rcv1         0.000         0.000 -94723864012542336.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:34.409 G15 rcv1         0.000         0.000 -94723864012647536.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:34.409 G17 rcv1         0.000         0.000 -94723864010156544.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:34.409 G24 rcv1         0.000         0.000 -94723864011012944.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:34.409 G28 rcv1         0.000         0.000 -94723864012127248.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:34.409 n=6
+3 satposs : teph=2009/02/17 12:00:34.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:34.328 sat=10
+4 seleph  : time=2009/02/17 12:00:34.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:34.339 sat=13
+4 seleph  : time=2009/02/17 12:00:34.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:34.340 sat=15
+4 seleph  : time=2009/02/17 12:00:34.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:34.331 sat=17
+4 seleph  : time=2009/02/17 12:00:34.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:34.334 sat=24
+4 seleph  : time=2009/02/17 12:00:34.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:34.338 sat=28
+4 seleph  : time=2009/02/17 12:00:34.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:34 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:34.338 sat=28
+4 2019/02/22 12:00:34.328231 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:34.339190 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:34.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:34.331231 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:34.334088 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:34.337805 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:34.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:35.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:35.409 G10 rcv1         0.000         0.000 -94723864009257488.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:35.409 G13 rcv1         0.000         0.000 -94723864012541968.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:35.409 G15 rcv1         0.000         0.000 -94723864012647504.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:35.409 G17 rcv1         0.000         0.000 -94723864010157072.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:35.409 G24 rcv1         0.000         0.000 -94723864011013520.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:35.409 G28 rcv1         0.000         0.000 -94723864012126960.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:35.409 n=6
+3 satposs : teph=2009/02/17 12:00:35.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:35.328 sat=10
+4 seleph  : time=2009/02/17 12:00:35.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:35.339 sat=13
+4 seleph  : time=2009/02/17 12:00:35.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:35.340 sat=15
+4 seleph  : time=2009/02/17 12:00:35.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:35.331 sat=17
+4 seleph  : time=2009/02/17 12:00:35.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:35.334 sat=24
+4 seleph  : time=2009/02/17 12:00:35.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:35.338 sat=28
+4 seleph  : time=2009/02/17 12:00:35.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:35 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:35.338 sat=28
+4 2019/02/22 12:00:35.328233 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:35.339188 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:35.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:35.331233 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:35.334090 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:35.337804 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:35.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:36.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:36.409 G10 rcv1         0.000         0.000 -94723864009257888.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:36.409 G13 rcv1         0.000         0.000 -94723864012541536.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:36.409 G15 rcv1         0.000         0.000 -94723864012647472.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:36.409 G17 rcv1         0.000         0.000 -94723864010157616.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:36.409 G24 rcv1         0.000         0.000 -94723864011014112.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:36.409 G28 rcv1         0.000         0.000 -94723864012126672.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:36.409 n=6
+3 satposs : teph=2009/02/17 12:00:36.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:36.328 sat=10
+4 seleph  : time=2009/02/17 12:00:36.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:36.339 sat=13
+4 seleph  : time=2009/02/17 12:00:36.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:36.340 sat=15
+4 seleph  : time=2009/02/17 12:00:36.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:36.331 sat=17
+4 seleph  : time=2009/02/17 12:00:36.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:36.334 sat=24
+4 seleph  : time=2009/02/17 12:00:36.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:36.338 sat=28
+4 seleph  : time=2009/02/17 12:00:36.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:36 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:36.338 sat=28
+4 2019/02/22 12:00:36.328234 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:36.339187 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:36.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:36.331235 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:36.334092 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:36.337803 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:36.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:37.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:37.409 G10 rcv1         0.000         0.000 -94723864009258336.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:37.409 G13 rcv1         0.000         0.000 -94723864012541184.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:37.409 G15 rcv1         0.000         0.000 -94723864012647472.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:37.409 G17 rcv1         0.000         0.000 -94723864010158144.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:37.409 G24 rcv1         0.000         0.000 -94723864011014736.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:37.409 G28 rcv1         0.000         0.000 -94723864012126384.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:37.409 n=6
+3 satposs : teph=2009/02/17 12:00:37.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:37.328 sat=10
+4 seleph  : time=2009/02/17 12:00:37.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:37.339 sat=13
+4 seleph  : time=2009/02/17 12:00:37.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:37.340 sat=15
+4 seleph  : time=2009/02/17 12:00:37.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:37.331 sat=17
+4 seleph  : time=2009/02/17 12:00:37.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:37.334 sat=24
+4 seleph  : time=2009/02/17 12:00:37.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:37.338 sat=28
+4 seleph  : time=2009/02/17 12:00:37.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:37 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:37.338 sat=28
+4 2019/02/22 12:00:37.328235 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:37.339186 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:37.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:37.331237 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:37.334094 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:37.337802 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:37.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:38.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:38.409 G10 rcv1         0.000         0.000 -94723864009258720.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:38.409 G13 rcv1         0.000         0.000 -94723864012540784.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:38.409 G15 rcv1         0.000         0.000 -94723864012647408.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:38.409 G17 rcv1         0.000         0.000 -94723864010158688.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:38.409 G24 rcv1         0.000         0.000 -94723864011015328.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:38.409 G28 rcv1         0.000         0.000 -94723864012126080.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:38.409 n=6
+3 satposs : teph=2009/02/17 12:00:38.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:38.328 sat=10
+4 seleph  : time=2009/02/17 12:00:38.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:38.339 sat=13
+4 seleph  : time=2009/02/17 12:00:38.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:38.340 sat=15
+4 seleph  : time=2009/02/17 12:00:38.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:38.331 sat=17
+4 seleph  : time=2009/02/17 12:00:38.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:38.334 sat=24
+4 seleph  : time=2009/02/17 12:00:38.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:38.338 sat=28
+4 seleph  : time=2009/02/17 12:00:38.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:38 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:38.338 sat=28
+4 2019/02/22 12:00:38.328237 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:38.339184 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:38.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:38.331239 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:38.334096 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:38.337801 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:38.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:39.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:39.409 G10 rcv1         0.000         0.000 -94723864009259136.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:39.409 G13 rcv1         0.000         0.000 -94723864012540384.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:39.409 G15 rcv1         0.000         0.000 -94723864012647360.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:39.409 G17 rcv1         0.000         0.000 -94723864010159216.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:39.409 G24 rcv1         0.000         0.000 -94723864011015872.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:39.409 G28 rcv1         0.000         0.000 -94723864012125792.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:39.409 n=6
+3 satposs : teph=2009/02/17 12:00:39.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:39.328 sat=10
+4 seleph  : time=2009/02/17 12:00:39.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:39.339 sat=13
+4 seleph  : time=2009/02/17 12:00:39.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:39.340 sat=15
+4 seleph  : time=2009/02/17 12:00:39.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:39.331 sat=17
+4 seleph  : time=2009/02/17 12:00:39.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:39.334 sat=24
+4 seleph  : time=2009/02/17 12:00:39.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:39.338 sat=28
+4 seleph  : time=2009/02/17 12:00:39.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:39 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:39.338 sat=28
+4 2019/02/22 12:00:39.328238 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:39.339183 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:39.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:39.331240 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:39.334098 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:39.337800 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:39.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:40.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:40.409 G10 rcv1         0.000         0.000 -94723864009259568.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:40.409 G13 rcv1         0.000         0.000 -94723864012540000.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:40.409 G15 rcv1         0.000         0.000 -94723864012647312.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:40.409 G17 rcv1         0.000         0.000 -94723864010159744.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:40.409 G24 rcv1         0.000         0.000 -94723864011016480.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:40.409 G28 rcv1         0.000         0.000 -94723864012125488.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:40.409 n=6
+3 satposs : teph=2009/02/17 12:00:40.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:40.328 sat=10
+4 seleph  : time=2009/02/17 12:00:40.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:40.339 sat=13
+4 seleph  : time=2009/02/17 12:00:40.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:40.340 sat=15
+4 seleph  : time=2009/02/17 12:00:40.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:40.331 sat=17
+4 seleph  : time=2009/02/17 12:00:40.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:40.334 sat=24
+4 seleph  : time=2009/02/17 12:00:40.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:40.338 sat=28
+4 seleph  : time=2009/02/17 12:00:40.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:40 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:40.338 sat=28
+4 2019/02/22 12:00:40.328239 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:40.339182 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:40.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:40.331242 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:40.334100 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:40.337799 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:40.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:41.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:41.409 G10 rcv1         0.000         0.000 -94723864009260000.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:41.409 G13 rcv1         0.000         0.000 -94723864012539616.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:41.409 G15 rcv1         0.000         0.000 -94723864012647280.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:41.409 G17 rcv1         0.000         0.000 -94723864010160256.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:41.409 G24 rcv1         0.000         0.000 -94723864011017056.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:41.409 G28 rcv1         0.000         0.000 -94723864012125200.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:41.409 n=6
+3 satposs : teph=2009/02/17 12:00:41.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:41.328 sat=10
+4 seleph  : time=2009/02/17 12:00:41.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:41.339 sat=13
+4 seleph  : time=2009/02/17 12:00:41.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:41.340 sat=15
+4 seleph  : time=2009/02/17 12:00:41.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:41.331 sat=17
+4 seleph  : time=2009/02/17 12:00:41.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:41.334 sat=24
+4 seleph  : time=2009/02/17 12:00:41.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:41.338 sat=28
+4 seleph  : time=2009/02/17 12:00:41.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:41 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:41.338 sat=28
+4 2019/02/22 12:00:41.328241 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:41.339181 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:41.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:41.331244 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:41.334102 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:41.337798 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:41.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:42.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:42.409 G10 rcv1         0.000         0.000 -94723864009260400.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:42.409 G13 rcv1         0.000         0.000 -94723864012539232.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:42.409 G15 rcv1         0.000         0.000 -94723864012647248.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:42.409 G17 rcv1         0.000         0.000 -94723864010160784.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:42.409 G24 rcv1         0.000         0.000 -94723864011017648.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:42.409 G28 rcv1         0.000         0.000 -94723864012124896.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:42.409 n=6
+3 satposs : teph=2009/02/17 12:00:42.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:42.328 sat=10
+4 seleph  : time=2009/02/17 12:00:42.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:42.339 sat=13
+4 seleph  : time=2009/02/17 12:00:42.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:42.340 sat=15
+4 seleph  : time=2009/02/17 12:00:42.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:42.331 sat=17
+4 seleph  : time=2009/02/17 12:00:42.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:42.334 sat=24
+4 seleph  : time=2009/02/17 12:00:42.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:42.338 sat=28
+4 seleph  : time=2009/02/17 12:00:42.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:42 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:42.338 sat=28
+4 2019/02/22 12:00:42.328242 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:42.339179 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:42.339540 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:42.331246 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:42.334104 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:42.337797 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:42.41: point pos error (lack of valid sats ns=4)
+3 rtkpos  : time=2009/02/17 12:00:43.409 n=6
+4 obs=
+ ( 1) 2009/02/17 12:00:43.409 G10 rcv1         0.000         0.000 -94723864009260896.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 2) 2009/02/17 12:00:43.409 G13 rcv1         0.000         0.000 -94723864012538928.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 3) 2009/02/17 12:00:43.409 G15 rcv1         0.000         0.000 -94723864012647280.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 4) 2009/02/17 12:00:43.409 G17 rcv1         0.000         0.000 -94723864010161392.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 5) 2009/02/17 12:00:43.409 G24 rcv1         0.000         0.000 -94723864011018304.000         0.000 0 0 0 0 0 0 0.0 0.0
+ ( 6) 2009/02/17 12:00:43.409 G28 rcv1         0.000         0.000 -94723864012124688.000         0.000 0 0 0 0 0 0 0.0 0.0
+3 pntpos  : tobs=2009/02/17 12:00:43.409 n=6
+3 satposs : teph=2009/02/17 12:00:43.409 n=6 ephopt=0
+4 ephclk  : time=2019/02/22 12:00:43.328 sat=10
+4 seleph  : time=2009/02/17 12:00:43.409 sat=10 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=10 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.328 sat=10
+4 ephclk  : time=2019/02/22 12:00:43.339 sat=13
+4 seleph  : time=2009/02/17 12:00:43.409 sat=13 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=13 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.339 sat=13
+4 ephclk  : time=2019/02/22 12:00:43.340 sat=15
+4 seleph  : time=2009/02/17 12:00:43.409 sat=15 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=15 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.340 sat=15
+4 ephclk  : time=2019/02/22 12:00:43.331 sat=17
+4 seleph  : time=2009/02/17 12:00:43.409 sat=17 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=17 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.331 sat=17
+4 ephclk  : time=2019/02/22 12:00:43.334 sat=24
+4 seleph  : time=2009/02/17 12:00:43.409 sat=24 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=24 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.334 sat=24
+4 ephclk  : time=2019/02/22 12:00:43.338 sat=28
+4 seleph  : time=2009/02/17 12:00:43.409 sat=28 iode=-1
+3 no broadcast ephemeris: 2009/02/17 12:00:43 sat=28 iode= -1
+3 no broadcast clock 2019/02/22 12:00:43.338 sat=28
+4 2019/02/22 12:00:43.328244 sat=10 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:43.339178 sat=13 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:43.339539 sat=15 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:43.331247 sat=17 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:43.334106 sat=24 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+4 2019/02/22 12:00:43.337796 sat=28 rs=        0.000         0.000         0.000 dts=       0.000 var=  0.000 svh=00
+3 estpos  : n=6
+3 resprng : n=6
+2 12:00:43.41: point pos error (lack of valid sats ns=4)
+4     1.544: writesol: index=0
+3 outsols :
+4     1.544: strwrite: n=0
+3     1.544: writefile: fp=940250160 n=0
+3 outsolexs:
+4     1.544: strwrite: n=0
+3     1.544: writefile: fp=940250160 n=0
+3 outsols :
+4     1.544: strwrite: n=0
+3 outsolexs:
+3 outnmea_gsa:
+3 outnmea_gsv:
+4     1.544: strwrite: n=63
+3 outsols :
+4     1.544: strwrite: n=0
+4     1.544: strread: n=32768
+4     1.544: readfile: fp=939526976 nmax=32768
+4     1.544: strread: n=32768
+4     1.544: strread: n=32768
+4     1.544: decoderaw: index=0
+4     1.544: decoderaw: index=1
+4     1.544: decodefile: index=2
+4     1.555: strread: n=32768
+4     1.555: readfile: fp=939526976 nmax=32768
+4     1.555: strread: n=32768
+4     1.555: strread: n=32768
+4     1.555: decoderaw: index=0
+4     1.555: decoderaw: index=1
+4     1.555: decodefile: index=2
+4     1.565: strread: n=32768
+4     1.565: readfile: fp=939526976 nmax=32768
+4     1.565: strread: n=32768
+4     1.565: strread: n=32768
+4     1.565: decoderaw: index=0
+4     1.565: decoderaw: index=1
+4     1.565: decodefile: index=2
+4     1.576: strread: n=32768
+4     1.576: readfile: fp=939526976 nmax=32768
+4     1.576: strread: n=32768
+4     1.576: strread: n=32768
+4     1.576: decoderaw: index=0
+4     1.576: decoderaw: index=1
+4     1.576: decodefile: index=2
+4     1.586: strread: n=32768
+4     1.586: readfile: fp=939526976 nmax=32768
+4     1.586: strread: n=32768
+4     1.586: strread: n=32768
+4     1.586: decoderaw: index=0
+4     1.586: decoderaw: index=1
+4     1.586: decodefile: index=2
+4     1.596: strread: n=32768
+4     1.597: readfile: fp=939526976 nmax=32768
+4     1.597: strread: n=32768
+4     1.597: strread: n=32768
+4     1.597: decoderaw: index=0
+4     1.597: decoderaw: index=1
+4     1.597: decodefile: index=2
+4     1.606: strread: n=32768
+4     1.606: readfile: fp=939526976 nmax=32768
+4     1.606: strread: n=32768
+4     1.606: strread: n=32768
+4     1.606: decoderaw: index=0
+4     1.606: decoderaw: index=1
+4     1.606: decodefile: index=2
+4     1.617: strread: n=32768
+4     1.617: readfile: fp=939526976 nmax=32768
+4     1.617: strread: n=32768
+4     1.617: strread: n=32768
+4     1.617: decoderaw: index=0
+4     1.617: decoderaw: index=1
+4     1.617: decodefile: index=2
+4     1.627: strread: n=32768
+4     1.627: readfile: fp=939526976 nmax=32768
+4     1.627: strread: n=32768
+4     1.627: strread: n=32768
+4     1.627: decoderaw: index=0
+4     1.627: decoderaw: index=1
+4     1.627: decodefile: index=2
+4     1.638: strread: n=32768
+4     1.638: readfile: fp=939526976 nmax=32768
+4     1.638: strread: n=32768
+4     1.638: strread: n=32768
+4     1.638: decoderaw: index=0
+4     1.638: decoderaw: index=1
+4     1.638: decodefile: index=2
+4     1.648: strread: n=32768
+4     1.648: readfile: fp=939526976 nmax=32768
+4     1.648: strread: n=32768
+4     1.648: strread: n=32768
+4     1.648: decoderaw: index=0
+4     1.648: decoderaw: index=1
+4     1.649: decodefile: index=2
+4     1.658: strread: n=32768
+4     1.658: readfile: fp=939526976 nmax=32768
+4     1.658: strread: n=32768
+4     1.658: strread: n=32768
+4     1.658: decoderaw: index=0
+4     1.658: decoderaw: index=1
+4     1.658: decodefile: index=2
+4     1.668: strread: n=32768
+4     1.668: readfile: fp=939526976 nmax=32768
+4     1.669: strread: n=32768
+4     1.669: strread: n=32768
+4     1.669: decoderaw: index=0
+4     1.669: decoderaw: index=1
+4     1.669: decodefile: index=2
+4     1.678: strread: n=32768
+4     1.678: readfile: fp=939526976 nmax=32768
+4     1.678: strread: n=32768
+4     1.678: strread: n=32768
+4     1.678: decoderaw: index=0
+4     1.678: decoderaw: index=1
+4     1.678: decodefile: index=2
+4     1.689: strread: n=32768
+4     1.689: readfile: fp=939526976 nmax=32768
+4     1.689: strread: n=32768
+4     1.689: strread: n=32768
+4     1.689: decoderaw: index=0
+4     1.689: decoderaw: index=1
+4     1.689: decodefile: index=2
+4     1.699: strread: n=32768
+4     1.699: readfile: fp=939526976 nmax=32768
+4     1.699: strread: n=32768
+4     1.699: strread: n=32768
+4     1.699: decoderaw: index=0
+4     1.699: decoderaw: index=1
+4     1.699: decodefile: index=2
+4     1.709: strread: n=32768
+4     1.709: readfile: fp=939526976 nmax=32768
+4     1.709: strread: n=32768
+4     1.709: strread: n=32768
+4     1.709: decoderaw: index=0
+4     1.709: decoderaw: index=1
+4     1.709: decodefile: index=2
+4     1.720: strread: n=32768
+4     1.720: readfile: fp=939526976 nmax=32768
+4     1.720: strread: n=32768
+4     1.720: strread: n=32768
+4     1.720: decoderaw: index=0
+4     1.720: decoderaw: index=1
+4     1.720: decodefile: index=2
+4     1.730: strread: n=32768
+4     1.730: readfile: fp=939526976 nmax=32768
+4     1.730: strread: n=32768
+4     1.730: strread: n=32768
+4     1.730: decoderaw: index=0
+4     1.730: decoderaw: index=1
+4     1.730: decodefile: index=2
+4     1.741: strread: n=32768
+4     1.741: readfile: fp=939526976 nmax=32768
+4     1.741: strread: n=32768
+4     1.741: strread: n=32768
+4     1.741: decoderaw: index=0
+4     1.741: decoderaw: index=1
+4     1.741: decodefile: index=2
+4     1.751: strread: n=32768
+4     1.751: readfile: fp=939526976 nmax=32768
+4     1.751: strread: n=32768
+4     1.751: strread: n=32768
+4     1.751: decoderaw: index=0
+4     1.751: decoderaw: index=1
+4     1.751: decodefile: index=2
+4     1.762: strread: n=32768
+4     1.762: readfile: fp=939526976 nmax=32768
+4     1.762: strread: n=32768
+4     1.762: strread: n=32768
+4     1.762: decoderaw: index=0
+4     1.762: decoderaw: index=1
+4     1.762: decodefile: index=2
+4     1.772: strread: n=32768
+4     1.772: readfile: fp=939526976 nmax=32768
+4     1.772: strread: n=32768
+4     1.772: strread: n=32768
+4     1.773: decoderaw: index=0
+4     1.773: decoderaw: index=1
+4     1.773: decodefile: index=2
+4     1.782: strread: n=32768
+4     1.782: readfile: fp=939526976 nmax=32768
+4     1.782: strread: n=32768
+4     1.782: strread: n=32768
+4     1.782: decoderaw: index=0
+4     1.782: decoderaw: index=1
+4     1.782: decodefile: index=2
+4     1.793: strread: n=32768
+4     1.793: readfile: fp=939526976 nmax=32768
+4     1.793: strread: n=32768
+4     1.793: strread: n=32768
+4     1.793: decoderaw: index=0
+4     1.793: decoderaw: index=1
+4     1.793: decodefile: index=2
+4     1.803: strread: n=32768
+4     1.804: readfile: fp=939526976 nmax=32768
+4     1.804: strread: n=32768
+4     1.804: strread: n=32768
+4     1.804: decoderaw: index=0
+4     1.804: decoderaw: index=1
+4     1.804: decodefile: index=2
+4     1.813: strread: n=32768
+4     1.813: readfile: fp=939526976 nmax=32768
+4     1.813: strread: n=32768
+4     1.813: strread: n=32768
+4     1.813: decoderaw: index=0
+4     1.813: decoderaw: index=1
+4     1.813: decodefile: index=2
+4     1.823: strread: n=32768
+4     1.824: readfile: fp=939526976 nmax=32768
+4     1.824: strread: n=32768
+4     1.824: strread: n=32768
+4     1.824: decoderaw: index=0
+4     1.824: decoderaw: index=1
+4     1.824: decodefile: index=2
+4     1.833: strread: n=32768
+4     1.833: readfile: fp=939526976 nmax=32768
+4     1.833: strread: n=32768
+4     1.833: strread: n=32768
+4     1.833: decoderaw: index=0
+4     1.833: decoderaw: index=1
+4     1.833: decodefile: index=2
+4     1.843: strread: n=32768
+4     1.843: readfile: fp=939526976 nmax=32768
+4     1.844: strread: n=32768
+4     1.844: strread: n=32768
+4     1.844: decoderaw: index=0
+4     1.844: decoderaw: index=1
+4     1.844: decodefile: index=2
+4     1.853: strread: n=32768
+4     1.853: readfile: fp=939526976 nmax=32768
+4     1.853: strread: n=32768
+4     1.853: strread: n=32768
+4     1.853: decoderaw: index=0
+4     1.853: decoderaw: index=1
+4     1.853: decodefile: index=2
+4     1.863: strread: n=32768
+4     1.863: readfile: fp=939526976 nmax=32768
+4     1.863: strread: n=32768
+4     1.863: strread: n=32768
+4     1.864: decoderaw: index=0
+4     1.864: decoderaw: index=1
+4     1.864: decodefile: index=2
+4     1.873: strread: n=32768
+4     1.873: readfile: fp=939526976 nmax=32768
+4     1.873: strread: n=32768
+4     1.873: strread: n=32768
+4     1.873: decoderaw: index=0
+4     1.873: decoderaw: index=1
+4     1.873: decodefile: index=2
+4     1.884: strread: n=32768
+4     1.884: readfile: fp=939526976 nmax=32768
+4     1.884: strread: n=32768
+4     1.884: strread: n=32768
+4     1.884: decoderaw: index=0
+4     1.884: decoderaw: index=1
+4     1.884: decodefile: index=2
+4     1.894: strread: n=32768
+4     1.894: readfile: fp=939526976 nmax=32768
+4     1.894: strread: n=32768
+4     1.894: strread: n=32768
+4     1.894: decoderaw: index=0
+4     1.894: decoderaw: index=1
+4     1.894: decodefile: index=2
+4     1.904: strread: n=32768
+4     1.904: readfile: fp=939526976 nmax=32768
+4     1.904: strread: n=32768
+4     1.904: strread: n=32768
+4     1.904: decoderaw: index=0
+4     1.904: decoderaw: index=1
+4     1.904: decodefile: index=2
+4     1.914: strread: n=32768
+4     1.914: readfile: fp=939526976 nmax=32768
+4     1.915: strread: n=32768
+4     1.915: strread: n=32768
+4     1.915: decoderaw: index=0
+4     1.915: decoderaw: index=1
+4     1.915: decodefile: index=2
+4     1.924: strread: n=32768
+4     1.924: readfile: fp=939526976 nmax=32768
+4     1.924: strread: n=32768
+4     1.924: strread: n=32768
+4     1.924: decoderaw: index=0
+4     1.924: decoderaw: index=1
+4     1.924: decodefile: index=2
+4     1.934: strread: n=32768
+4     1.935: readfile: fp=939526976 nmax=32768
+4     1.935: strread: n=32768
+4     1.935: strread: n=32768
+4     1.935: decoderaw: index=0
+4     1.935: decoderaw: index=1
+4     1.935: decodefile: index=2
+4     1.944: strread: n=32768
+4     1.944: readfile: fp=939526976 nmax=32768
+4     1.944: strread: n=32768
+4     1.944: strread: n=32768
+4     1.944: decoderaw: index=0
+4     1.944: decoderaw: index=1
+4     1.944: decodefile: index=2
+4     1.955: strread: n=32768
+4     1.955: readfile: fp=939526976 nmax=32768
+4     1.955: strread: n=32768
+4     1.955: strread: n=32768
+4     1.955: decoderaw: index=0
+4     1.955: decoderaw: index=1
+4     1.955: decodefile: index=2
+4     1.965: strread: n=32768
+4     1.966: readfile: fp=939526976 nmax=32768
+4     1.966: strread: n=32768
+4     1.966: strread: n=32768
+4     1.966: decoderaw: index=0
+4     1.966: decoderaw: index=1
+4     1.966: decodefile: index=2
+4     1.975: strread: n=32768
+4     1.975: readfile: fp=939526976 nmax=32768
+4     1.975: strread: n=32768
+4     1.975: strread: n=32768
+4     1.975: decoderaw: index=0
+4     1.975: decoderaw: index=1
+4     1.975: decodefile: index=2
+4     1.986: strread: n=32768
+4     1.986: readfile: fp=939526976 nmax=32768
+4     1.986: strread: n=32768
+4     1.986: strread: n=32768
+4     1.986: decoderaw: index=0
+4     1.986: decoderaw: index=1
+4     1.986: decodefile: index=2
+4     1.996: strread: n=32768
+4     1.996: readfile: fp=939526976 nmax=32768
+4     1.996: strread: n=32768
+4     1.996: strread: n=32768
+4     1.996: decoderaw: index=0
+4     1.996: decoderaw: index=1
+4     1.997: decodefile: index=2
+4     2.006: strread: n=32768
+4     2.006: readfile: fp=939526976 nmax=32768
+4     2.006: strread: n=32768
+4     2.006: strread: n=32768
+4     2.006: decoderaw: index=0
+4     2.006: decoderaw: index=1
+4     2.006: decodefile: index=2
+4     2.016: strread: n=32768
+4     2.017: readfile: fp=939526976 nmax=32768
+4     2.017: strread: n=32768
+4     2.017: strread: n=32768
+4     2.017: decoderaw: index=0
+4     2.017: decoderaw: index=1
+4     2.017: decodefile: index=2
+4     2.026: strread: n=32768
+4     2.026: readfile: fp=939526976 nmax=32768
+4     2.026: strread: n=32768
+4     2.026: strread: n=32768
+4     2.026: decoderaw: index=0
+4     2.026: decoderaw: index=1
+4     2.026: decodefile: index=2
+4     2.037: strread: n=32768
+4     2.037: readfile: fp=939526976 nmax=32768
+4     2.037: strread: n=32768
+4     2.037: strread: n=32768
+4     2.037: decoderaw: index=0
+4     2.037: decoderaw: index=1
+4     2.037: decodefile: index=2
+4     2.048: strread: n=32768
+4     2.048: readfile: fp=939526976 nmax=32768
+4     2.048: strread: n=32768
+4     2.048: strread: n=32768
+4     2.048: decoderaw: index=0
+4     2.048: decoderaw: index=1
+4     2.048: decodefile: index=2
+4     2.058: strread: n=32768
+4     2.058: readfile: fp=939526976 nmax=32768
+4     2.058: strread: n=32768
+4     2.058: strread: n=32768
+4     2.058: decoderaw: index=0
+4     2.059: decoderaw: index=1
+4     2.059: decodefile: index=2
+4     2.068: strread: n=32768
+4     2.068: readfile: fp=939526976 nmax=32768
+4     2.068: strread: n=32768
+4     2.068: strread: n=32768
+4     2.068: decoderaw: index=0
+4     2.068: decoderaw: index=1
+4     2.068: decodefile: index=2
+4     2.078: strread: n=32768
+4     2.078: readfile: fp=939526976 nmax=32768
+4     2.078: strread: n=32768
+4     2.078: strread: n=32768
+4     2.078: decoderaw: index=0
+4     2.078: decoderaw: index=1
+4     2.079: decodefile: index=2
+4     2.088: strread: n=32768
+4     2.088: readfile: fp=939526976 nmax=32768
+4     2.088: strread: n=32768
+4     2.088: strread: n=32768
+4     2.088: decoderaw: index=0
+4     2.088: decoderaw: index=1
+4     2.088: decodefile: index=2
+4     2.098: strread: n=32768
+4     2.098: readfile: fp=939526976 nmax=32768
+4     2.098: strread: n=32768
+4     2.098: strread: n=32768
+4     2.098: decoderaw: index=0
+4     2.098: decoderaw: index=1
+4     2.099: decodefile: index=2
+4     2.108: strread: n=32768
+4     2.108: readfile: fp=939526976 nmax=32768
+3 4     2.108: cmd_observ:
+strread: n=32768
+4     2.108: strread: n=32768
+4     2.108: decoderaw: index=0
+4     2.108: decoderaw: index=1
+4     2.108: decodefile: index=2
+4 probserv:
+4     2.118: strread: n=32768
+4     2.118: readfile: fp=939526976 nmax=32768
+4     2.118: strread: n=32768
+4     2.118: strread: n=32768
+4     2.118: decoderaw: index=0
+4     2.118: decoderaw: index=1
+4     2.119: decodefile: index=2
+4     2.128: strread: n=32768
+4     2.128: readfile: fp=939526976 nmax=32768
+4     2.128: strread: n=32768
+4     2.128: strread: n=32768
+4     2.128: decoderaw: index=0
+4     2.128: decoderaw: index=1
+4     2.128: decodefile: index=2
+4     2.138: strread: n=32768
+4     2.138: readfile: fp=939526976 nmax=32768
+4     2.138: strread: n=32768
+4     2.138: strread: n=32768
+4     2.138: decoderaw: index=0
+4     2.138: decoderaw: index=1
+4     2.138: decodefile: index=2
+4     2.148: strread: n=32768
+4     2.149: readfile: fp=939526976 nmax=32768
+4     2.149: strread: n=32768
+4     2.149: strread: n=32768
+4     2.149: decoderaw: index=0
+4     2.149: decoderaw: index=1
+4     2.149: decodefile: index=2
+4     2.158: strread: n=32768
+4     2.158: readfile: fp=939526976 nmax=32768
+4     2.158: strread: n=32768
+4     2.158: strread: n=32768
+4     2.158: decoderaw: index=0
+4     2.158: decoderaw: index=1
+4     2.158: decodefile: index=2
+4     2.168: strread: n=32768
+4     2.168: readfile: fp=939526976 nmax=32768
+4     2.168: strread: n=32768
+4     2.168: strread: n=32768
+4     2.168: decoderaw: index=0
+4     2.168: decoderaw: index=1
+4     2.169: decodefile: index=2
+4     2.178: strread: n=32768
+4     2.178: readfile: fp=939526976 nmax=32768
+4     2.178: strread: n=32768
+4     2.178: strread: n=32768
+4     2.178: decoderaw: index=0
+4     2.178: decoderaw: index=1
+4     2.178: decodefile: index=2
+4     2.188: strread: n=32768
+4     2.188: readfile: fp=939526976 nmax=32768
+4     2.188: strread: n=32768
+4     2.188: strread: n=32768
+4     2.188: decoderaw: index=0
+4     2.188: decoderaw: index=1
+4     2.189: decodefile: index=2
+4     2.198: strread: n=32768
+4     2.198: readfile: fp=939526976 nmax=32768
+4     2.198: strread: n=32768
+4     2.198: strread: n=32768
+4     2.198: decoderaw: index=0
+4     2.198: decoderaw: index=1
+4     2.198: decodefile: index=2
+4     2.208: strread: n=32768
+4     2.208: readfile: fp=939526976 nmax=32768
+4     2.208: strread: n=32768
+4     2.208: strread: n=32768
+4     2.208: decoderaw: index=0
+4     2.208: decoderaw: index=1
+4     2.208: decodefile: index=2
+4     2.219: strread: n=32768
+4     2.219: readfile: fp=939526976 nmax=32768
+4     2.219: strread: n=32768
+4     2.219: strread: n=32768
+4     2.219: decoderaw: index=0
+4     2.219: decoderaw: index=1
+4     2.219: decodefile: index=2
+4     2.229: strread: n=32768
+4     2.229: readfile: fp=939526976 nmax=32768
+4     2.229: strread: n=32768
+4     2.229: strread: n=32768
+4     2.229: decoderaw: index=0
+4     2.229: decoderaw: index=1
+4     2.229: decodefile: index=2
+4     2.240: strread: n=32768
+4     2.240: readfile: fp=939526976 nmax=32768
+4     2.240: strread: n=32768
+4     2.240: strread: n=32768
+4     2.240: decoderaw: index=0
+4     2.240: decoderaw: index=1
+4     2.240: decodefile: index=2
+4     2.250: strread: n=32768
+4     2.250: readfile: fp=939526976 nmax=32768
+4     2.250: strread: n=32768
+4     2.250: strread: n=32768
+4     2.250: decoderaw: index=0
+4     2.250: decoderaw: index=1
+4     2.250: decodefile: index=2
+4     2.261: strread: n=32768
+4     2.261: readfile: fp=939526976 nmax=32768
+4     2.261: strread: n=32768
+4     2.261: strread: n=32768
+4     2.261: decoderaw: index=0
+4     2.261: decoderaw: index=1
+4     2.261: decodefile: index=2
+4     2.271: strread: n=32768
+4     2.271: readfile: fp=939526976 nmax=32768
+4     2.271: strread: n=32768
+4     2.271: strread: n=32768
+4     2.271: decoderaw: index=0
+4     2.271: decoderaw: index=1
+4     2.271: decodefile: index=2
+4     2.282: strread: n=32768
+4     2.282: readfile: fp=939526976 nmax=32768
+4     2.282: strread: n=32768
+4     2.282: strread: n=32768
+4     2.282: decoderaw: index=0
+4     2.282: decoderaw: index=1
+4     2.282: decodefile: index=2
+4     2.292: strread: n=32768
+4     2.293: readfile: fp=939526976 nmax=32768
+4     2.293: strread: n=32768
+4     2.293: strread: n=32768
+4     2.293: decoderaw: index=0
+4     2.293: decoderaw: index=1
+4     2.293: decodefile: index=2
+4     2.302: strread: n=32768
+4     2.302: readfile: fp=939526976 nmax=32768
+4     2.302: strread: n=32768
+4     2.302: strread: n=32768
+4     2.302: decoderaw: index=0
+4     2.302: decoderaw: index=1
+4     2.302: decodefile: index=2
+4     2.312: strread: n=32768
+4     2.312: readfile: fp=939526976 nmax=32768
+4     2.312: strread: n=32768
+4     2.312: strread: n=32768
+4     2.312: decoderaw: index=0
+4     2.312: decoderaw: index=1
+4     2.312: decodefile: index=2
+4     2.322: strread: n=32768
+4     2.322: readfile: fp=939526976 nmax=32768
+4     2.322: strread: n=32768
+4     2.322: strread: n=32768
+4     2.322: decoderaw: index=0
+4     2.322: decoderaw: index=1
+4     2.322: decodefile: index=2
+4     2.333: strread: n=32768
+4     2.333: readfile: fp=939526976 nmax=32768
+4     2.333: strread: n=32768
+4     2.333: strread: n=32768
+4     2.333: decoderaw: index=0
+4     2.333: decoderaw: index=1
+4     2.333: decodefile: index=2
+4     2.343: strread: n=32768
+4     2.343: readfile: fp=939526976 nmax=32768
+4     2.343: strread: n=32768
+4     2.343: strread: n=32768
+4     2.343: decoderaw: index=0
+4     2.343: decoderaw: index=1
+4     2.344: decodefile: index=2
+4     2.353: strread: n=32768
+4     2.353: readfile: fp=939526976 nmax=32768
+4     2.353: strread: n=32768
+4     2.353: strread: n=32768
+4     2.353: decoderaw: index=0
+4     2.353: decoderaw: index=1
+4     2.353: decodefile: index=2
+4     2.363: strread: n=32768
+4     2.363: readfile: fp=939526976 nmax=32768
+4     2.363: strread: n=32768
+4     2.363: strread: n=32768
+4     2.363: decoderaw: index=0
+4     2.363: decoderaw: index=1
+4     2.364: decodefile: index=2
+4     2.373: strread: n=32768
+4     2.373: readfile: fp=939526976 nmax=32768
+4     2.373: strread: n=32768
+4     2.373: strread: n=32768
+4     2.373: decoderaw: index=0
+4     2.373: decoderaw: index=1
+4     2.373: decodefile: index=2
+4     2.383: strread: n=32768
+4     2.383: readfile: fp=939526976 nmax=32768
+4     2.383: strread: n=32768
+4     2.383: strread: n=32768
+4     2.383: decoderaw: index=0
+4     2.383: decoderaw: index=1
+4     2.383: decodefile: index=2
+4     2.393: strread: n=32768
+4     2.393: readfile: fp=939526976 nmax=32768
+4     2.393: strread: n=32768
+4     2.393: strread: n=32768
+4     2.393: decoderaw: index=0
+4     2.393: decoderaw: index=1
+4     2.393: decodefile: index=2
+4     2.403: strread: n=32768
+4     2.403: readfile: fp=939526976 nmax=32768
+4     2.403: strread: n=32768
+4     2.403: strread: n=32768
+4     2.403: decoderaw: index=0
+4     2.403: decoderaw: index=1
+4     2.403: decodefile: index=2
+4     2.413: strread: n=32768
+4     2.413: readfile: fp=939526976 nmax=32768
+4     2.413: strread: n=32768
+4     2.413: strread: n=32768
+4     2.413: decoderaw: index=0
+4     2.413: decoderaw: index=1
+4     2.413: decodefile: index=2
+4     2.424: strread: n=32768
+4     2.424: readfile: fp=939526976 nmax=32768
+4     2.424: strread: n=32768
+4     2.424: strread: n=32768
+4     2.424: decoderaw: index=0
+4     2.424: decoderaw: index=1
+4     2.424: decodefile: index=2
+4     2.434: strread: n=32768
+4     2.434: readfile: fp=939526976 nmax=32768
+4     2.434: strread: n=32768
+4     2.434: strread: n=32768
+4     2.434: decoderaw: index=0
+4     2.434: decoderaw: index=1
+4     2.434: decodefile: index=2
+4     2.444: strread: n=32768
+4     2.445: readfile: fp=939526976 nmax=32768
+4     2.445: strread: n=32768
+4     2.445: strread: n=32768
+4     2.445: decoderaw: index=0
+4     2.445: decoderaw: index=1
+4     2.445: decodefile: index=2
+4     2.454: strread: n=32768
+4     2.454: readfile: fp=939526976 nmax=32768
+4     2.454: strread: n=32768
+4     2.454: strread: n=32768
+4     2.454: decoderaw: index=0
+4     2.454: decoderaw: index=1
+4     2.454: decodefile: index=2
+4     2.464: strread: n=32768
+4     2.464: readfile: fp=939526976 nmax=32768
+4     2.464: strread: n=32768
+4     2.464: strread: n=32768
+4     2.464: decoderaw: index=0
+4     2.464: decoderaw: index=1
+4     2.464: decodefile: index=2
+4     2.475: strread: n=32768
+4     2.475: readfile: fp=939526976 nmax=32768
+4     2.475: strread: n=32768
+4     2.475: strread: n=32768
+4     2.475: decoderaw: index=0
+4     2.475: decoderaw: index=1
+4     2.475: decodefile: index=2
+4     2.485: strread: n=32768
+4     2.485: readfile: fp=939526976 nmax=32768
+4     2.485: strread: n=32768
+4     2.485: strread: n=32768
+4     2.485: decoderaw: index=0
+4     2.485: decoderaw: index=1
+4     2.485: decodefile: index=2
+4     2.495: strread: n=32768
+4     2.495: readfile: fp=939526976 nmax=32768
+4     2.495: strread: n=32768
+4     2.495: strread: n=32768
+4     2.495: decoderaw: index=0
+4     2.495: decoderaw: index=1
+4     2.496: decodefile: index=2
+4     2.505: strread: n=32768
+4     2.505: readfile: fp=939526976 nmax=32768
+4     2.505: strread: n=32768
+4     2.505: strread: n=32768
+4     2.505: decoderaw: index=0
+4     2.505: decoderaw: index=1
+4     2.505: decodefile: index=2
+4     2.516: strread: n=32768
+4     2.516: readfile: fp=939526976 nmax=32768
+4     2.516: strread: n=32768
+4     2.516: strread: n=32768
+4     2.516: decoderaw: index=0
+4     2.516: decoderaw: index=1
+4     2.516: decodefile: index=2
+4     2.526: strread: n=32768
+4     2.526: readfile: fp=939526976 nmax=32768
+4     2.527: strread: n=32768
+4     2.527: strread: n=32768
+4     2.527: decoderaw: index=0
+4     2.527: decoderaw: index=1
+4     2.527: decodefile: index=2
+4     2.536: strread: n=32768
+4     2.536: readfile: fp=939526976 nmax=32768
+4     2.536: strread: n=32768
+4     2.536: strread: n=32768
+4     2.536: decoderaw: index=0
+4     2.536: decoderaw: index=1
+4     2.537: decodefile: index=2
+4     2.537: writesol: index=0
+3 outsols :
+4     2.537: strwrite: n=0
+3     2.537: writefile: fp=940250160 n=0
+3 outsolexs:
+4     2.537: strwrite: n=0
+3     2.537: writefile: fp=940250160 n=0
+3 outsols :
+4     2.537: strwrite: n=0
+3 outsolexs:
+3 outnmea_gsa:
+3 outnmea_gsv:
+4     2.537: strwrite: n=63
+3 outsols :
+4     2.537: strwrite: n=0
+4     2.546: strread: n=32768
+4     2.546: readfile: fp=939526976 nmax=32768
+4     2.546: strread: n=32768
+4     2.546: strread: n=32768
+4     2.546: decoderaw: index=0
+4     2.546: decoderaw: index=1
+4     2.546: decodefile: index=2
+4     2.557: strread: n=32768
+4     2.557: readfile: fp=939526976 nmax=32768
+4     2.557: strread: n=32768
+4     2.557: strread: n=32768
+4     2.557: decoderaw: index=0
+4     2.557: decoderaw: index=1
+4     2.557: decodefile: index=2
+4     2.567: strread: n=32768
+4     2.567: readfile: fp=939526976 nmax=32768
+4     2.567: strread: n=32768
+4     2.567: strread: n=32768
+4     2.567: decoderaw: index=0
+4     2.567: decoderaw: index=1
+4     2.568: decodefile: index=2
+4     2.577: strread: n=32768
+4     2.577: readfile: fp=939526976 nmax=32768
+4     2.577: strread: n=32768
+4     2.577: strread: n=32768
+4     2.577: decoderaw: index=0
+4     2.577: decoderaw: index=1
+4     2.577: decodefile: index=2
+4     2.587: strread: n=32768
+4     2.587: readfile: fp=939526976 nmax=32768
+4     2.587: strread: n=32768
+4     2.587: strread: n=32768
+4     2.587: decoderaw: index=0
+4     2.587: decoderaw: index=1
+4     2.588: decodefile: index=2
+4     2.597: strread: n=32768
+4     2.597: readfile: fp=939526976 nmax=32768
+4     2.597: strread: n=32768
+4     2.597: strread: n=32768
+4     2.597: decoderaw: index=0
+4     2.597: decoderaw: index=1
+4     2.597: decodefile: index=2
+4     2.607: strread: n=32768
+4     2.607: readfile: fp=939526976 nmax=32768
+4     2.607: strread: n=32768
+4     2.607: strread: n=32768
+4     2.607: decoderaw: index=0
+4     2.607: decoderaw: index=1
+4     2.608: decodefile: index=2
+4     2.617: strread: n=32768
+4     2.617: readfile: fp=939526976 nmax=32768
+4     2.617: strread: n=32768
+4     2.617: strread: n=32768
+4     2.617: decoderaw: index=0
+4     2.617: decoderaw: index=1
+4     2.617: decodefile: index=2
+4     2.627: strread: n=32768
+4     2.627: readfile: fp=939526976 nmax=32768
+4     2.627: strread: n=32768
+4     2.627: strread: n=32768
+4     2.627: decoderaw: index=0
+4     2.627: decoderaw: index=1
+4     2.628: decodefile: index=2
+4     2.637: strread: n=32768
+4     2.637: readfile: fp=939526976 nmax=32768
+4     2.637: strread: n=32768
+4     2.637: strread: n=32768
+4     2.637: decoderaw: index=0
+4     2.637: decoderaw: index=1
+4     2.637: decodefile: index=2
+4     2.647: strread: n=32768
+4     2.647: readfile: fp=939526976 nmax=32768
+4     2.647: strread: n=32768
+4     2.647: strread: n=32768
+4     2.647: decoderaw: index=0
+4     2.647: decoderaw: index=1
+4     2.648: decodefile: index=2
+4     2.657: strread: n=32768
+4     2.657: readfile: fp=939526976 nmax=32768
+4     2.657: strread: n=32768
+4     2.657: strread: n=32768
+4     2.657: decoderaw: index=0
+4     2.657: decoderaw: index=1
+4     2.657: decodefile: index=2
+4     2.667: strread: n=32768
+4     2.667: readfile: fp=939526976 nmax=32768
+4     2.667: strread: n=32768
+4     2.667: strread: n=32768
+4     2.667: decoderaw: index=0
+4     2.667: decoderaw: index=1
+4     2.667: decodefile: index=2
+4     2.677: strread: n=32768
+4     2.677: readfile: fp=939526976 nmax=32768
+4     2.677: strread: n=32768
+4     2.677: strread: n=32768
+4     2.677: decoderaw: index=0
+4     2.677: decoderaw: index=1
+4     2.677: decodefile: index=2
+4     2.687: strread: n=32768
+4     2.687: readfile: fp=939526976 nmax=32768
+4     2.687: strread: n=32768
+4     2.687: strread: n=32768
+4     2.687: decoderaw: index=0
+4     2.687: decoderaw: index=1
+4     2.687: decodefile: index=2
+4     2.697: strread: n=32768
+4     2.697: readfile: fp=939526976 nmax=32768
+4     2.697: strread: n=32768
+4     2.697: strread: n=32768
+4     2.697: decoderaw: index=0
+4     2.697: decoderaw: index=1
+4     2.697: decodefile: index=2
+4     2.707: strread: n=32768
+4     2.707: readfile: fp=939526976 nmax=32768
+4     2.707: strread: n=32768
+4     2.707: strread: n=32768
+4     2.707: decoderaw: index=0
+4     2.707: decoderaw: index=1
+4     2.708: decodefile: index=2
+4     2.717: strread: n=32768
+4     2.717: readfile: fp=939526976 nmax=32768
+4     2.717: strread: n=32768
+4     2.717: strread: n=32768
+4     2.717: decoderaw: index=0
+4     2.717: decoderaw: index=1
+4     2.717: decodefile: index=2
+4     2.727: strread: n=32768
+4     2.727: readfile: fp=939526976 nmax=32768
+4     2.727: strread: n=32768
+4     2.727: strread: n=32768
+4     2.727: decoderaw: index=0
+4     2.727: decoderaw: index=1
+4     2.728: decodefile: index=2
+4     2.737: strread: n=32768
+4     2.737: readfile: fp=939526976 nmax=32768
+4     2.737: strread: n=32768
+4     2.737: strread: n=32768
+4     2.737: decoderaw: index=0
+4     2.737: decoderaw: index=1
+4     2.737: decodefile: index=2
+4     2.747: strread: n=32768
+4     2.747: readfile: fp=939526976 nmax=32768
+4     2.747: strread: n=32768
+4     2.747: strread: n=32768
+4     2.747: decoderaw: index=0
+4     2.747: decoderaw: index=1
+4     2.748: decodefile: index=2
+4     2.757: strread: n=32768
+4     2.757: readfile: fp=939526976 nmax=32768
+4     2.757: strread: n=32768
+4     2.757: strread: n=32768
+4     2.757: decoderaw: index=0
+4     2.757: decoderaw: index=1
+4     2.757: decodefile: index=2
+4     2.767: strread: n=32768
+4     2.767: readfile: fp=939526976 nmax=32768
+4     2.767: strread: n=32768
+4     2.767: strread: n=32768
+4     2.767: decoderaw: index=0
+4     2.767: decoderaw: index=1
+4     2.767: decodefile: index=2
+4     2.778: strread: n=32768
+4     2.778: readfile: fp=939526976 nmax=32768
+4     2.778: strread: n=32768
+4     2.778: strread: n=32768
+4     2.778: decoderaw: index=0
+4     2.778: decoderaw: index=1
+4     2.778: decodefile: index=2
+4     2.788: strread: n=32768
+4     2.788: readfile: fp=939526976 nmax=32768
+4     2.788: strread: n=32768
+4     2.788: strread: n=32768
+4     2.788: decoderaw: index=0
+4     2.788: decoderaw: index=1
+4     2.789: decodefile: index=2
+4     2.798: strread: n=32768
+4     2.798: readfile: fp=939526976 nmax=32768
+4     2.798: strread: n=32768
+4     2.798: strread: n=32768
+4     2.798: decoderaw: index=0
+4     2.798: decoderaw: index=1
+4     2.798: decodefile: index=2
+4     2.809: strread: n=32768
+4     2.809: readfile: fp=939526976 nmax=32768
+4     2.809: strread: n=32768
+4     2.809: strread: n=32768
+4     2.809: decoderaw: index=0
+4     2.809: decoderaw: index=1
+4     2.809: decodefile: index=2
+4     2.820: strread: n=32768
+4     2.820: readfile: fp=939526976 nmax=32768
+4     2.820: strread: n=32768
+4     2.820: strread: n=32768
+4     2.820: decoderaw: index=0
+4     2.820: decoderaw: index=1
+4     2.820: decodefile: index=2
+4     2.830: strread: n=32768
+4     2.830: readfile: fp=939526976 nmax=32768
+4     2.830: strread: n=32768
+4     2.830: strread: n=32768
+4     2.830: decoderaw: index=0
+4     2.830: decoderaw: index=1
+4     2.830: decodefile: index=2
+4     2.841: strread: n=32768
+4     2.841: readfile: fp=939526976 nmax=32768
+4     2.841: strread: n=32768
+4     2.841: strread: n=32768
+4     2.841: decoderaw: index=0
+4     2.841: decoderaw: index=1
+4     2.841: decodefile: index=2
+4     2.851: strread: n=32768
+4     2.851: readfile: fp=939526976 nmax=32768
+4     2.851: strread: n=32768
+4     2.851: strread: n=32768
+4     2.851: decoderaw: index=0
+4     2.851: decoderaw: index=1
+4     2.851: decodefile: index=2
+4     2.862: strread: n=32768
+4     2.862: readfile: fp=939526976 nmax=32768
+4     2.862: strread: n=32768
+4     2.862: strread: n=32768
+4     2.862: decoderaw: index=0
+4     2.862: decoderaw: index=1
+4     2.862: decodefile: index=2
+4     2.871: strread: n=32768
+4     2.871: readfile: fp=939526976 nmax=32768
+4     2.871: strread: n=32768
+4     2.871: strread: n=32768
+4     2.871: decoderaw: index=0
+4     2.871: decoderaw: index=1
+4     2.871: decodefile: index=2
+4     2.882: strread: n=32768
+4     2.882: readfile: fp=939526976 nmax=32768
+4     2.882: strread: n=32768
+4     2.882: strread: n=32768
+4     2.882: decoderaw: index=0
+4     2.882: decoderaw: index=1
+4     2.882: decodefile: index=2
+4     2.892: strread: n=32768
+4     2.892: readfile: fp=939526976 nmax=32768
+4     2.892: strread: n=32768
+4     2.892: strread: n=32768
+4     2.892: decoderaw: index=0
+4     2.892: decoderaw: index=1
+4     2.892: decodefile: index=2
+4     2.903: strread: n=32768
+4     2.903: readfile: fp=939526976 nmax=32768
+4     2.903: strread: n=32768
+4     2.903: strread: n=32768
+4     2.903: decoderaw: index=0
+4     2.903: decoderaw: index=1
+4     2.903: decodefile: index=2
+4     2.913: strread: n=32768
+4     2.913: readfile: fp=939526976 nmax=32768
+4     2.913: strread: n=32768
+4     2.913: strread: n=32768
+4     2.913: decoderaw: index=0
+4     2.913: decoderaw: index=1
+4     2.914: decodefile: index=2
+4     2.923: strread: n=32768
+4     2.923: readfile: fp=939526976 nmax=32768
+4     2.923: strread: n=32768
+4     2.923: strread: n=32768
+4     2.923: decoderaw: index=0
+4     2.923: decoderaw: index=1
+4     2.923: decodefile: index=2
+4     2.933: strread: n=32768
+4     2.933: readfile: fp=939526976 nmax=32768
+4     2.933: strread: n=32768
+4     2.933: strread: n=32768
+4     2.933: decoderaw: index=0
+4     2.933: decoderaw: index=1
+4     2.934: decodefile: index=2
+4     2.943: strread: n=32768
+4     2.943: readfile: fp=939526976 nmax=32768
+4     2.943: strread: n=32768
+4     2.943: strread: n=32768
+4     2.943: decoderaw: index=0
+4     2.943: decoderaw: index=1
+4     2.943: decodefile: index=2
+4     2.953: strread: n=32768
+4     2.953: readfile: fp=939526976 nmax=32768
+4     2.953: strread: n=32768
+4     2.953: strread: n=32768
+4     2.953: decoderaw: index=0
+4     2.953: decoderaw: index=1
+4     2.954: decodefile: index=2
+4     2.963: strread: n=32768
+4     2.963: readfile: fp=939526976 nmax=32768
+4     2.963: strread: n=32768
+4     2.963: strread: n=32768
+4     2.963: decoderaw: index=0
+4     2.963: decoderaw: index=1
+4     2.963: decodefile: index=2
+4     2.973: strread: n=32768
+4     2.974: readfile: fp=939526976 nmax=32768
+4     2.974: strread: n=32768
+4     2.974: strread: n=32768
+4     2.974: decoderaw: index=0
+4     2.974: decoderaw: index=1
+4     2.974: decodefile: index=2
+4     2.983: strread: n=32768
+4     2.983: readfile: fp=939526976 nmax=32768
+4     2.983: strread: n=32768
+4     2.983: strread: n=32768
+4     2.983: decoderaw: index=0
+4     2.983: decoderaw: index=1
+4     2.983: decodefile: index=2
+4     2.993: strread: n=32768
+4     2.994: readfile: fp=939526976 nmax=32768
+4     2.994: strread: n=32768
+4     2.994: strread: n=32768
+4     2.994: decoderaw: index=0
+4     2.994: decoderaw: index=1
+4     2.994: decodefile: index=2
+4     3.003: strread: n=32768
+4     3.003: readfile: fp=939526976 nmax=32768
+4     3.003: strread: n=32768
+4     3.003: strread: n=32768
+4     3.003: decoderaw: index=0
+4     3.003: decoderaw: index=1
+4     3.003: decodefile: index=2
+4     3.014: strread: n=32768
+4     3.014: readfile: fp=939526976 nmax=32768
+4     3.014: strread: n=32768
+4     3.014: strread: n=32768
+4     3.014: decoderaw: index=0
+4     3.014: decoderaw: index=1
+4     3.014: decodefile: index=2
+4     3.024: strread: n=32768
+4     3.024: readfile: fp=939526976 nmax=32768
+4     3.024: strread: n=32768
+4     3.024: strread: n=32768
+4     3.024: decoderaw: index=0
+4     3.024: decoderaw: index=1
+4     3.024: decodefile: index=2
+4     3.034: strread: n=32768
+4     3.034: readfile: fp=939526976 nmax=32768
+4     3.034: strread: n=32768
+4     3.034: strread: n=32768
+4     3.034: decoderaw: index=0
+4     3.034: decoderaw: index=1
+4     3.034: decodefile: index=2
+4     3.044: strread: n=32768
+4     3.044: readfile: fp=939526976 nmax=32768
+4     3.044: strread: n=32768
+4     3.044: strread: n=32768
+4     3.044: decoderaw: index=0
+4     3.044: decoderaw: index=1
+4     3.045: decodefile: index=2
+4     3.054: strread: n=32768
+4     3.054: readfile: fp=939526976 nmax=32768
+4     3.054: strread: n=32768
+4     3.054: strread: n=32768
+4     3.054: decoderaw: index=0
+4     3.054: decoderaw: index=1
+4     3.054: decodefile: index=2
+4     3.064: strread: n=32768
+4     3.064: readfile: fp=939526976 nmax=32768
+4     3.064: strread: n=32768
+4     3.064: strread: n=32768
+4     3.064: decoderaw: index=0
+4     3.064: decoderaw: index=1
+4     3.065: decodefile: index=2
+4     3.074: strread: n=32768
+4     3.074: readfile: fp=939526976 nmax=32768
+4     3.074: strread: n=32768
+4     3.074: strread: n=32768
+4     3.074: decoderaw: index=0
+4     3.074: decoderaw: index=1
+4     3.074: decodefile: index=2
+4     3.084: strread: n=32768
+4     3.084: readfile: fp=939526976 nmax=32768
+4     3.084: strread: n=32768
+4     3.084: strread: n=32768
+4     3.084: decoderaw: index=0
+4     3.084: decoderaw: index=1
+4     3.085: decodefile: index=2
+4     3.094: strread: n=32768
+4     3.094: readfile: fp=939526976 nmax=32768
+4     3.094: strread: n=32768
+4     3.094: strread: n=32768
+4     3.094: decoderaw: index=0
+4     3.094: decoderaw: index=1
+4     3.094: decodefile: index=2
+4     3.104: strread: n=32768
+4     3.104: readfile: fp=939526976 nmax=32768
+4     3.105: strread: n=32768
+4     3.105: strread: n=32768
+4     3.105: decoderaw: index=0
+4     3.105: decoderaw: index=1
+4     3.105: decodefile: index=2
+4     3.114: strread: n=32768
+4     3.114: readfile: fp=939526976 nmax=32768
+4     3.114: strread: n=32768
+4     3.114: strread: n=32768
+4     3.114: decoderaw: index=0
+4     3.114: decoderaw: index=1
+4     3.114: decodefile: index=2
+4     3.125: strread: n=32768
+4     3.125: readfile: fp=939526976 nmax=32768
+4     3.125: strread: n=32768
+4     3.125: strread: n=32768
+4     3.125: decoderaw: index=0
+4     3.125: decoderaw: index=1
+4     3.125: decodefile: index=2
+4     3.135: strread: n=32768
+4     3.135: readfile: fp=939526976 nmax=32768
+4     3.135: strread: n=32768
+4     3.135: strread: n=32768
+4     3.135: decoderaw: index=0
+4     3.135: decoderaw: index=1
+4     3.135: decodefile: index=2
+4     3.146: strread: n=32768
+4     3.146: readfile: fp=939526976 nmax=32768
+4     3.146: strread: n=32768
+4     3.146: strread: n=32768
+4     3.146: decoderaw: index=0
+4     3.146: decoderaw: index=1
+4     3.146: decodefile: index=2
+4     3.156: strread: n=32768
+4     3.157: readfile: fp=939526976 nmax=32768
+4     3.157: strread: n=32768
+4     3.157: strread: n=32768
+4     3.157: decoderaw: index=0
+4     3.157: decoderaw: index=1
+4     3.157: decodefile: index=2
+4     3.166: strread: n=32768
+4     3.166: readfile: fp=939526976 nmax=32768
+4     3.166: strread: n=32768
+4     3.166: strread: n=32768
+4     3.166: decoderaw: index=0
+4     3.166: decoderaw: index=1
+4     3.166: decodefile: index=2
+4     3.177: strread: n=32768
+4     3.177: readfile: fp=939526976 nmax=32768
+4     3.177: strread: n=32768
+4     3.177: strread: n=32768
+4     3.177: decoderaw: index=0
+4     3.177: decoderaw: index=1
+4     3.177: decodefile: index=2
+4     3.187: strread: n=32768
+4     3.187: readfile: fp=939526976 nmax=32768
+4     3.187: strread: n=32768
+4     3.187: strread: n=32768
+4     3.187: decoderaw: index=0
+4     3.187: decoderaw: index=1
+4     3.187: decodefile: index=2
+4     3.197: strread: n=32768
+4     3.197: readfile: fp=939526976 nmax=32768
+4     3.197: strread: n=32768
+4     3.197: strread: n=32768
+4     3.197: decoderaw: index=0
+4     3.197: decoderaw: index=1
+4     3.197: decodefile: index=2
+4     3.207: strread: n=32768
+4     3.207: readfile: fp=939526976 nmax=32768
+4     3.207: strread: n=32768
+4     3.207: strread: n=32768
+4     3.207: decoderaw: index=0
+4     3.207: decoderaw: index=1
+4     3.207: decodefile: index=2
+4     3.217: strread: n=32768
+4     3.217: readfile: fp=939526976 nmax=32768
+4     3.217: strread: n=32768
+4     3.217: strread: n=32768
+4     3.217: decoderaw: index=0
+4     3.217: decoderaw: index=1
+4     3.217: decodefile: index=2
+4     3.227: strread: n=32768
+4     3.227: readfile: fp=939526976 nmax=32768
+4     3.227: strread: n=32768
+4     3.227: strread: n=32768
+4     3.227: decoderaw: index=0
+4     3.227: decoderaw: index=1
+4     3.228: decodefile: index=2
+4     3.237: strread: n=32768
+4     3.237: readfile: fp=939526976 nmax=32768
+4     3.237: strread: n=32768
+4     3.237: strread: n=32768
+4     3.237: decoderaw: index=0
+4     3.237: decoderaw: index=1
+4     3.237: decodefile: index=2
+4     3.247: strread: n=32768
+4     3.247: readfile: fp=939526976 nmax=32768
+4     3.247: strread: n=32768
+4     3.247: strread: n=32768
+4     3.247: decoderaw: index=0
+4     3.247: decoderaw: index=1
+4     3.248: decodefile: index=2
+4     3.257: strread: n=32768
+4     3.257: readfile: fp=939526976 nmax=32768
+4     3.257: strread: n=32768
+4     3.257: strread: n=32768
+4     3.257: decoderaw: index=0
+4     3.257: decoderaw: index=1
+4     3.257: decodefile: index=2
+4     3.267: strread: n=32768
+4     3.267: readfile: fp=939526976 nmax=32768
+4     3.267: strread: n=32768
+4     3.267: strread: n=32768
+4     3.267: decoderaw: index=0
+4     3.267: decoderaw: index=1
+4     3.268: decodefile: index=2
+4     3.277: strread: n=32768
+4     3.277: readfile: fp=939526976 nmax=32768
+4     3.277: strread: n=32768
+4     3.277: strread: n=32768
+4     3.277: decoderaw: index=0
+4     3.277: decoderaw: index=1
+4     3.277: decodefile: index=2
+4     3.288: strread: n=32768
+4     3.288: readfile: fp=939526976 nmax=32768
+4     3.288: strread: n=32768
+4     3.288: strread: n=32768
+4     3.288: decoderaw: index=0
+4     3.288: decoderaw: index=1
+4     3.288: decodefile: index=2
+4     3.298: strread: n=32768
+4     3.298: readfile: fp=939526976 nmax=32768
+4     3.298: strread: n=32768
+4     3.298: strread: n=32768
+4     3.298: decoderaw: index=0
+4     3.298: decoderaw: index=1
+4     3.298: decodefile: index=2
+4     3.309: strread: n=32768
+4     3.309: readfile: fp=939526976 nmax=32768
+4     3.309: strread: n=32768
+4     3.309: strread: n=32768
+4     3.309: decoderaw: index=0
+4     3.309: decoderaw: index=1
+4     3.309: decodefile: index=2
+4     3.319: strread: n=32768
+4     3.319: readfile: fp=939526976 nmax=32768
+4     3.320: strread: n=32768
+4     3.320: strread: n=32768
+4     3.320: decoderaw: index=0
+4     3.320: decoderaw: index=1
+4     3.320: decodefile: index=2
+4     3.329: strread: n=32768
+4     3.329: readfile: fp=939526976 nmax=32768
+4     3.329: strread: n=32768
+4     3.329: strread: n=32768
+4     3.329: decoderaw: index=0
+4     3.329: decoderaw: index=1
+4     3.329: decodefile: index=2
+4     3.340: strread: n=32768
+4     3.340: readfile: fp=939526976 nmax=32768
+4     3.340: strread: n=32768
+4     3.340: strread: n=32768
+4     3.340: decoderaw: index=0
+4     3.340: decoderaw: index=1
+4     3.340: decodefile: index=2
+4     3.350: strread: n=32768
+4     3.350: readfile: fp=939526976 nmax=32768
+4     3.350: strread: n=32768
+4     3.350: strread: n=32768
+4     3.350: decoderaw: index=0
+4     3.350: decoderaw: index=1
+4     3.350: decodefile: index=2
+4     3.361: strread: n=32768
+4     3.361: readfile: fp=939526976 nmax=32768
+4     3.361: strread: n=32768
+4     3.361: strread: n=32768
+4     3.361: decoderaw: index=0
+4     3.361: decoderaw: index=1
+4     3.361: decodefile: index=2
+4     3.371: strread: n=32768
+4     3.371: readfile: fp=939526976 nmax=32768
+4     3.371: strread: n=32768
+4     3.371: strread: n=32768
+4     3.371: decoderaw: index=0
+4     3.371: decoderaw: index=1
+4     3.371: decodefile: index=2
+4     3.381: strread: n=32768
+4     3.381: readfile: fp=939526976 nmax=32768
+4     3.381: strread: n=32768
+4     3.381: strread: n=32768
+4     3.381: decoderaw: index=0
+4     3.381: decoderaw: index=1
+4     3.381: decodefile: index=2
+4     3.391: strread: n=32768
+4     3.391: readfile: fp=939526976 nmax=32768
+4     3.391: strread: n=32768
+4     3.391: strread: n=32768
+4     3.391: decoderaw: index=0
+4     3.391: decoderaw: index=1
+4     3.392: decodefile: index=2
+4     3.401: strread: n=32768
+4     3.401: readfile: fp=939526976 nmax=32768
+4     3.401: strread: n=32768
+4     3.401: strread: n=32768
+4     3.401: decoderaw: index=0
+4     3.401: decoderaw: index=1
+4     3.401: decodefile: index=2
+4     3.411: strread: n=32768
+4     3.411: readfile: fp=939526976 nmax=32768
+4     3.411: strread: n=32768
+4     3.411: strread: n=32768
+4     3.411: decoderaw: index=0
+4     3.411: decoderaw: index=1
+4     3.412: decodefile: index=2
+4     3.421: strread: n=32768
+4     3.421: readfile: fp=939526976 nmax=32768
+4     3.421: strread: n=32768
+4     3.421: strread: n=32768
+4     3.421: decoderaw: index=0
+4     3.421: decoderaw: index=1
+4     3.421: decodefile: index=2
+4     3.431: strread: n=32768
+4     3.432: readfile: fp=939526976 nmax=32768
+4     3.432: strread: n=32768
+4     3.432: strread: n=32768
+4     3.432: decoderaw: index=0
+4     3.432: decoderaw: index=1
+4     3.432: decodefile: index=2
+4     3.441: strread: n=32768
+4     3.441: readfile: fp=939526976 nmax=32768
+4     3.441: strread: n=32768
+4     3.441: strread: n=32768
+4     3.441: decoderaw: index=0
+4     3.441: decoderaw: index=1
+4     3.441: decodefile: index=2
+4     3.452: strread: n=32768
+4     3.452: readfile: fp=939526976 nmax=32768
+4     3.452: strread: n=32768
+4     3.452: strread: n=32768
+4     3.452: decoderaw: index=0
+4     3.452: decoderaw: index=1
+4     3.452: decodefile: index=2
+4     3.462: strread: n=32768
+4     3.462: readfile: fp=939526976 nmax=32768
+4     3.462: strread: n=32768
+4     3.462: strread: n=32768
+4     3.462: decoderaw: index=0
+4     3.462: decoderaw: index=1
+4     3.462: decodefile: index=2
+4     3.473: strread: n=32768
+4     3.473: readfile: fp=939526976 nmax=32768
+4     3.473: strread: n=32768
+4     3.473: strread: n=32768
+4     3.473: decoderaw: index=0
+4     3.473: decoderaw: index=1
+4     3.473: decodefile: index=2
+4     3.483: strread: n=32768
+4     3.483: readfile: fp=939526976 nmax=32768
+4     3.483: strread: n=32768
+4     3.483: strread: n=32768
+4     3.483: decoderaw: index=0
+4     3.483: decoderaw: index=1
+4     3.483: decodefile: index=2
+4     3.493: strread: n=32768
+4     3.493: readfile: fp=939526976 nmax=32768
+4     3.493: strread: n=32768
+4     3.493: strread: n=32768
+4     3.493: decoderaw: index=0
+4     3.493: decoderaw: index=1
+4     3.494: decodefile: index=2
+4     3.503: strread: n=32768
+4     3.503: readfile: fp=939526976 nmax=32768
+4     3.503: strread: n=32768
+4     3.503: strread: n=32768
+4     3.503: decoderaw: index=0
+4     3.503: decoderaw: index=1
+4     3.503: decodefile: index=2
+4     3.513: strread: n=32768
+4     3.513: readfile: fp=939526976 nmax=32768
+4     3.513: strread: n=32768
+4     3.513: strread: n=32768
+4     3.513: decoderaw: index=0
+4     3.513: decoderaw: index=1
+4     3.514: decodefile: index=2
+4     3.523: strread: n=32768
+4     3.523: readfile: fp=939526976 nmax=32768
+4     3.523: strread: n=32768
+4     3.523: strread: n=32768
+4     3.523: decoderaw: index=0
+4     3.523: decoderaw: index=1
+4     3.523: decodefile: index=2
+4     3.533: strread: n=32768
+4     3.533: readfile: fp=939526976 nmax=32768
+4     3.533: strread: n=32768
+4     3.533: strread: n=32768
+4     3.533: decoderaw: index=0
+4     3.533: decoderaw: index=1
+4     3.534: decodefile: index=2
+4     3.543: strread: n=32768
+4     3.543: readfile: fp=939526976 nmax=32768
+4     3.543: strread: n=32768
+4     3.543: strread: n=32768
+4     3.543: decoderaw: index=0
+4     3.543: decoderaw: index=1
+4     3.543: decodefile: index=2
+4     3.543: writesol: index=0
+3 outsols :
+4     3.543: strwrite: n=0
+3     3.543: writefile: fp=940250160 n=0
+3 outsolexs:
+4     3.543: strwrite: n=0
+3     3.543: writefile: fp=940250160 n=0
+3 outsols :
+4     3.543: strwrite: n=0
+3 outsolexs:
+3 outnmea_gsa:
+3 outnmea_gsv:
+4     3.544: strwrite: n=63
+3 outsols :
+4     3.544: strwrite: n=0
+4     3.553: strread: n=32768
+4     3.553: readfile: fp=939526976 nmax=32768
+4     3.553: strread: n=32768
+4     3.553: strread: n=32768
+4     3.553: decoderaw: index=0
+4     3.553: decoderaw: index=1
+4     3.553: decodefile: index=2
+4     3.564: strread: n=32768
+4     3.564: readfile: fp=939526976 nmax=32768
+4     3.564: strread: n=32768
+4     3.564: strread: n=32768
+4     3.564: decoderaw: index=0
+4     3.564: decoderaw: index=1
+4     3.564: decodefile: index=2
+4     3.574: strread: n=32768
+4     3.574: readfile: fp=939526976 nmax=32768
+4     3.574: strread: n=32768
+4     3.574: strread: n=32768
+4     3.574: decoderaw: index=0
+4     3.574: decoderaw: index=1
+4     3.574: decodefile: index=2
+4     3.585: strread: n=32768
+4     3.585: readfile: fp=939526976 nmax=32768
+4     3.585: strread: n=32768
+4     3.585: strread: n=32768
+4     3.585: decoderaw: index=0
+4     3.585: decoderaw: index=1
+4     3.585: decodefile: index=2
+4     3.595: strread: n=32768
+4     3.595: readfile: fp=939526976 nmax=32768
+4     3.595: strread: n=32768
+4     3.595: strread: n=32768
+4     3.595: decoderaw: index=0
+4     3.595: decoderaw: index=1
+4     3.595: decodefile: index=2
+4     3.605: strread: n=32768
+4     3.606: readfile: fp=939526976 nmax=32768
+4     3.606: strread: n=32768
+4     3.606: strread: n=32768
+4     3.606: decoderaw: index=0
+4     3.606: decoderaw: index=1
+4     3.606: decodefile: index=2
+4     3.615: strread: n=32768
+4     3.615: readfile: fp=939526976 nmax=32768
+4     3.615: strread: n=32768
+4     3.615: strread: n=32768
+4     3.615: decoderaw: index=0
+4     3.615: decoderaw: index=1
+4     3.615: decodefile: index=2
+4     3.625: strread: n=32768
+4     3.626: readfile: fp=939526976 nmax=32768
+4     3.626: strread: n=32768
+4     3.626: strread: n=32768
+4     3.626: decoderaw: index=0
+4     3.626: decoderaw: index=1
+4     3.626: decodefile: index=2
+4     3.635: strread: n=32768
+4     3.635: readfile: fp=939526976 nmax=32768
+4     3.635: strread: n=32768
+4     3.635: strread: n=32768
+4     3.635: decoderaw: index=0
+4     3.635: decoderaw: index=1
+4     3.635: decodefile: index=2
+4     3.646: strread: n=32768
+4     3.646: readfile: fp=939526976 nmax=32768
+4     3.646: strread: n=32768
+4     3.646: strread: n=32768
+4     3.646: decoderaw: index=0
+4     3.646: decoderaw: index=1
+4     3.646: decodefile: index=2
+4     3.656: strread: n=32768
+4     3.656: readfile: fp=939526976 nmax=32768
+4     3.656: strread: n=32768
+4     3.656: strread: n=32768
+4     3.656: decoderaw: index=0
+4     3.656: decoderaw: index=1
+4     3.657: decodefile: index=2
+4     3.666: strread: n=32768
+4     3.666: readfile: fp=939526976 nmax=32768
+4     3.666: strread: n=32768
+4     3.666: strread: n=32768
+4     3.666: decoderaw: index=0
+4     3.666: decoderaw: index=1
+4     3.666: decodefile: index=2
+4     3.677: strread: n=32768
+4     3.677: readfile: fp=939526976 nmax=32768
+4     3.677: strread: n=32768
+4     3.677: strread: n=32768
+4     3.677: decoderaw: index=0
+4     3.677: decoderaw: index=1
+4     3.677: decodefile: index=2
+4     3.687: strread: n=32768
+4     3.687: readfile: fp=939526976 nmax=32768
+4     3.687: strread: n=32768
+4     3.687: strread: n=32768
+4     3.687: decoderaw: index=0
+4     3.687: decoderaw: index=1
+4     3.687: decodefile: index=2
+4     3.698: strread: n=32768
+4     3.698: readfile: fp=939526976 nmax=32768
+4     3.698: strread: n=32768
+4     3.698: strread: n=32768
+4     3.698: decoderaw: index=0
+4     3.698: decoderaw: index=1
+4     3.698: decodefile: index=2
+4     3.708: strread: n=32768
+4     3.708: readfile: fp=939526976 nmax=32768
+4     3.708: strread: n=32768
+4     3.708: strread: n=32768
+4     3.708: decoderaw: index=0
+4     3.708: decoderaw: index=1
+4     3.708: decodefile: index=2
+4     3.719: strread: n=32768
+4     3.719: readfile: fp=939526976 nmax=32768
+4     3.719: strread: n=32768
+4     3.719: strread: n=32768
+4     3.719: decoderaw: index=0
+4     3.719: decoderaw: index=1
+4     3.719: decodefile: index=2
+4     3.729: strread: n=32768
+4     3.730: readfile: fp=939526976 nmax=32768
+4     3.730: strread: n=32768
+4     3.730: strread: n=32768
+4     3.730: decoderaw: index=0
+4     3.730: decoderaw: index=1
+4     3.730: decodefile: index=2
+4     3.739: strread: n=32768
+4     3.739: readfile: fp=939526976 nmax=32768
+4     3.739: strread: n=32768
+4     3.739: strread: n=32768
+4     3.739: decoderaw: index=0
+4     3.739: decoderaw: index=1
+4     3.739: decodefile: index=2
+4     3.750: strread: n=32768
+4     3.750: readfile: fp=939526976 nmax=32768
+4     3.750: strread: n=32768
+4     3.750: strread: n=32768
+4     3.750: decoderaw: index=0
+4     3.750: decoderaw: index=1
+4     3.750: decodefile: index=2
+4     3.760: strread: n=32768
+4     3.760: readfile: fp=939526976 nmax=32768
+4     3.760: strread: n=32768
+4     3.760: strread: n=32768
+4     3.760: decoderaw: index=0
+4     3.760: decoderaw: index=1
+4     3.761: decodefile: index=2
+4     3.770: strread: n=32768
+4     3.770: readfile: fp=939526976 nmax=32768
+4     3.770: strread: n=32768
+4     3.770: strread: n=32768
+4     3.770: decoderaw: index=0
+4     3.770: decoderaw: index=1
+4     3.770: decodefile: index=2
+4     3.780: strread: n=32768
+4     3.780: readfile: fp=939526976 nmax=32768
+4     3.780: strread: n=32768
+4     3.780: strread: n=32768
+4     3.780: decoderaw: index=0
+4     3.780: decoderaw: index=1
+4     3.781: decodefile: index=2
+4     3.790: strread: n=32768
+4     3.790: readfile: fp=939526976 nmax=32768
+4     3.790: strread: n=32768
+4     3.790: strread: n=32768
+4     3.790: decoderaw: index=0
+4     3.790: decoderaw: index=1
+4     3.790: decodefile: index=2
+4     3.801: strread: n=32768
+4     3.801: readfile: fp=939526976 nmax=32768
+4     3.801: strread: n=32768
+4     3.801: strread: n=32768
+4     3.801: decoderaw: index=0
+4     3.801: decoderaw: index=1
+4     3.801: decodefile: index=2
+4     3.811: strread: n=32768
+4     3.811: readfile: fp=939526976 nmax=32768
+4     3.811: strread: n=32768
+4     3.811: strread: n=32768
+4     3.811: decoderaw: index=0
+4     3.811: decoderaw: index=1
+4     3.812: decodefile: index=2
+4     3.821: strread: n=32768
+4     3.821: readfile: fp=939526976 nmax=32768
+4     3.821: strread: n=32768
+4     3.821: strread: n=32768
+4     3.821: decoderaw: index=0
+4     3.821: decoderaw: index=1
+4     3.821: decodefile: index=2
+4     3.831: strread: n=32768
+4     3.831: readfile: fp=939526976 nmax=32768
+4     3.831: strread: n=32768
+4     3.831: strread: n=32768
+4     3.831: decoderaw: index=0
+4     3.831: decoderaw: index=1
+4     3.832: decodefile: index=2
+4     3.841: strread: n=32768
+4     3.841: readfile: fp=939526976 nmax=32768
+4     3.841: strread: n=32768
+4     3.841: strread: n=32768
+4     3.841: decoderaw: index=0
+4     3.841: decoderaw: index=1
+4     3.841: decodefile: index=2
+4     3.851: strread: n=32768
+4     3.851: readfile: fp=939526976 nmax=32768
+4     3.851: strread: n=32768
+4     3.851: strread: n=32768
+4     3.851: decoderaw: index=0
+4     3.851: decoderaw: index=1
+4     3.852: decodefile: index=2
+4     3.861: strread: n=32768
+4     3.861: readfile: fp=939526976 nmax=32768
+4     3.861: strread: n=32768
+4     3.861: strread: n=32768
+4     3.861: decoderaw: index=0
+4     3.861: decoderaw: index=1
+4     3.861: decodefile: index=2
+4     3.872: strread: n=32768
+4     3.872: readfile: fp=939526976 nmax=32768
+4     3.872: strread: n=32768
+4     3.872: strread: n=32768
+4     3.872: decoderaw: index=0
+4     3.872: decoderaw: index=1
+4     3.872: decodefile: index=2
+4     3.882: strread: n=32768
+4     3.883: readfile: fp=939526976 nmax=32768
+4     3.883: strread: n=32768
+4     3.883: strread: n=32768
+4     3.883: decoderaw: index=0
+4     3.883: decoderaw: index=1
+4     3.883: decodefile: index=2
+4     3.892: strread: n=32768
+4     3.892: readfile: fp=939526976 nmax=32768
+4     3.892: strread: n=32768
+4     3.892: strread: n=32768
+4     3.892: decoderaw: index=0
+4     3.892: decoderaw: index=1
+4     3.892: decodefile: index=2
+4     3.903: strread: n=32768
+4     3.903: readfile: fp=939526976 nmax=32768
+4     3.903: strread: n=32768
+4     3.903: strread: n=32768
+4     3.903: decoderaw: index=0
+4     3.903: decoderaw: index=1
+4     3.903: decodefile: index=2
+4     3.913: strread: n=32768
+4     3.913: readfile: fp=939526976 nmax=32768
+4     3.913: strread: n=32768
+4     3.913: strread: n=32768
+4     3.913: decoderaw: index=0
+4     3.913: decoderaw: index=1
+4     3.914: decodefile: index=2
+4     3.923: strread: n=32768
+4     3.923: readfile: fp=939526976 nmax=32768
+4     3.923: strread: n=32768
+4     3.923: strread: n=32768
+4     3.923: decoderaw: index=0
+4     3.923: decoderaw: index=1
+4     3.923: decodefile: index=2
+4     3.933: strread: n=32768
+4     3.933: readfile: fp=939526976 nmax=32768
+4     3.933: strread: n=32768
+4     3.933: strread: n=32768
+4     3.933: decoderaw: index=0
+4     3.933: decoderaw: index=1
+4     3.934: decodefile: index=2
+4     3.943: strread: n=32768
+4     3.943: readfile: fp=939526976 nmax=32768
+4     3.943: strread: n=32768
+4     3.943: strread: n=32768
+4     3.943: decoderaw: index=0
+4     3.943: decoderaw: index=1
+4     3.943: decodefile: index=2
+4     3.954: strread: n=32768
+4     3.954: readfile: fp=939526976 nmax=32768
+4     3.954: strread: n=32768
+4     3.954: strread: n=32768
+4     3.954: decoderaw: index=0
+4     3.954: decoderaw: index=1
+4     3.954: decodefile: index=2
+4     3.964: strread: n=32768
+4     3.964: readfile: fp=939526976 nmax=32768
+4     3.964: strread: n=32768
+4     3.964: strread: n=32768
+4     3.964: decoderaw: index=0
+4     3.964: decoderaw: index=1
+4     3.964: decodefile: index=2
+4     3.975: strread: n=32768
+4     3.975: readfile: fp=939526976 nmax=32768
+4     3.975: strread: n=32768
+4     3.975: strread: n=32768
+4     3.975: decoderaw: index=0
+4     3.975: decoderaw: index=1
+4     3.975: decodefile: index=2
+4     3.985: strread: n=32768
+4     3.985: readfile: fp=939526976 nmax=32768
+4     3.985: strread: n=32768
+4     3.985: strread: n=32768
+4     3.986: decoderaw: index=0
+4     3.986: decoderaw: index=1
+4     3.986: decodefile: index=2
+4     3.995: strread: n=32768
+4     3.995: readfile: fp=939526976 nmax=32768
+4     3.995: strread: n=32768
+4     3.995: strread: n=32768
+4     3.995: decoderaw: index=0
+4     3.995: decoderaw: index=1
+4     3.995: decodefile: index=2
+4     4.006: strread: n=32768
+4     4.006: readfile: fp=939526976 nmax=32768
+4     4.006: strread: n=32768
+4     4.006: strread: n=32768
+4     4.006: decoderaw: index=0
+4     4.006: decoderaw: index=1
+4     4.006: decodefile: index=2
+4     4.016: strread: n=32768
+4     4.016: readfile: fp=939526976 nmax=32768
+4     4.016: strread: n=32768
+4     4.016: strread: n=32768
+4     4.016: decoderaw: index=0
+4     4.016: decoderaw: index=1
+4     4.017: decodefile: index=2
+4     4.026: strread: n=32768
+4     4.026: readfile: fp=939526976 nmax=32768
+4     4.026: strread: n=32768
+4     4.026: strread: n=32768
+4     4.026: decoderaw: index=0
+4     4.026: decoderaw: index=1
+4     4.026: decodefile: index=2
+4     4.036: strread: n=32768
+4     4.036: readfile: fp=939526976 nmax=32768
+4     4.036: strread: n=32768
+4     4.036: strread: n=32768
+4     4.036: decoderaw: index=0
+4     4.036: decoderaw: index=1
+4     4.036: decodefile: index=2
+4     4.046: strread: n=32768
+4     4.047: readfile: fp=939526976 nmax=32768
+4     4.047: strread: n=32768
+4     4.047: strread: n=32768
+4     4.047: decoderaw: index=0
+4     4.047: decoderaw: index=1
+4     4.047: decodefile: index=2
+4     4.056: strread: n=32768
+4     4.056: readfile: fp=939526976 nmax=32768
+4     4.056: strread: n=32768
+4     4.056: strread: n=32768
+4     4.056: decoderaw: index=0
+4     4.056: decoderaw: index=1
+4     4.056: decodefile: index=2
+4     4.067: strread: n=32768
+4     4.067: readfile: fp=939526976 nmax=32768
+4     4.067: strread: n=32768
+4     4.067: strread: n=32768
+4     4.067: decoderaw: index=0
+4     4.067: decoderaw: index=1
+4     4.067: decodefile: index=2
+4     4.076: strread: n=32768
+4     4.076: readfile: fp=939526976 nmax=32768
+4     4.077: strread: n=32768
+4     4.077: strread: n=32768
+4     4.077: decoderaw: index=0
+4     4.077: decoderaw: index=1
+4     4.077: decodefile: index=2
+4     4.086: strread: n=32768
+4     4.086: readfile: fp=939526976 nmax=32768
+4     4.086: strread: n=32768
+4     4.086: strread: n=32768
+4     4.086: decoderaw: index=0
+4     4.086: decoderaw: index=1
+4     4.086: decodefile: index=2
+4     4.097: strread: n=32768
+4     4.097: readfile: fp=939526976 nmax=32768
+4     4.097: strread: n=32768
+4     4.097: strread: n=32768
+4     4.097: decoderaw: index=0
+4     4.097: decoderaw: index=1
+4     4.097: decodefile: index=2
+4     4.107: strread: n=32768
+4     4.107: readfile: fp=939526976 nmax=32768
+4     4.107: strread: n=32768
+4     4.107: strread: n=32768
+4     4.107: decoderaw: index=0
+4     4.107: decoderaw: index=1
+4     4.107: decodefile: index=2
+4     4.117: strread: n=32768
+4     4.117: readfile: fp=939526976 nmax=32768
+4     4.118: strread: n=32768
+4     4.118: strread: n=32768
+4     4.118: decoderaw: index=0
+4     4.118: decoderaw: index=1
+4     4.118: decodefile: index=2
+4     4.127: strread: n=32768
+4     4.127: readfile: fp=939526976 nmax=32768
+4     4.127: strread: n=32768
+4     4.127: strread: n=32768
+4     4.127: decoderaw: index=0
+4     4.127: decoderaw: index=1
+4     4.127: decodefile: index=2
+4     4.137: strread: n=32768
+4     4.138: readfile: fp=939526976 nmax=32768
+4     4.138: strread: n=32768
+4     4.138: strread: n=32768
+4     4.138: decoderaw: index=0
+4     4.138: decoderaw: index=1
+4     4.138: decodefile: index=2
+4     4.147: strread: n=32768
+4     4.147: readfile: fp=939526976 nmax=32768
+4     4.147: strread: n=32768
+4     4.147: strread: n=32768
+4     4.147: decoderaw: index=0
+4     4.147: decoderaw: index=1
+4     4.147: decodefile: index=2
+4     4.158: strread: n=32768
+4     4.158: readfile: fp=939526976 nmax=32768
+4     4.158: strread: n=32768
+4     4.158: strread: n=32768
+4     4.158: decoderaw: index=0
+4     4.158: decoderaw: index=1
+4     4.158: decodefile: index=2
+4     4.168: strread: n=32768
+4     4.168: readfile: fp=939526976 nmax=32768
+4     4.168: strread: n=32768
+4     4.168: strread: n=32768
+4     4.168: decoderaw: index=0
+4     4.169: decoderaw: index=1
+4     4.169: decodefile: index=2
+4     4.178: strread: n=32768
+4     4.178: readfile: fp=939526976 nmax=32768
+4     4.178: strread: n=32768
+4     4.178: strread: n=32768
+4     4.178: decoderaw: index=0
+4     4.178: decoderaw: index=1
+4     4.178: decodefile: index=2
+4     4.189: strread: n=32768
+4     4.189: readfile: fp=939526976 nmax=32768
+4     4.189: strread: n=32768
+4     4.189: strread: n=32768
+4     4.189: decoderaw: index=0
+4     4.189: decoderaw: index=1
+4     4.189: decodefile: index=2
+4     4.199: strread: n=32768
+4     4.199: readfile: fp=939526976 nmax=32768
+4     4.199: strread: n=32768
+4     4.199: strread: n=32768
+4     4.199: decoderaw: index=0
+4     4.199: decoderaw: index=1
+4     4.199: decodefile: index=2
+4     4.209: strread: n=32768
+4     4.209: readfile: fp=939526976 nmax=32768
+4     4.209: strread: n=32768
+4     4.209: strread: n=32768
+4     4.209: decoderaw: index=0
+4     4.209: decoderaw: index=1
+4     4.209: decodefile: index=2
+4     4.219: strread: n=32768
+4     4.219: readfile: fp=939526976 nmax=32768
+4     4.219: strread: n=32768
+4     4.219: strread: n=32768
+4     4.219: decoderaw: index=0
+4     4.219: decoderaw: index=1
+4     4.219: decodefile: index=2
+4     4.230: strread: n=32768
+4     4.230: readfile: fp=939526976 nmax=32768
+4     4.230: strread: n=32768
+4     4.230: strread: n=32768
+4     4.230: decoderaw: index=0
+4     4.230: decoderaw: index=1
+4     4.230: decodefile: index=2
+4     4.241: strread: n=32768
+4     4.241: readfile: fp=939526976 nmax=32768
+4     4.241: strread: n=32768
+4     4.241: strread: n=32768
+4     4.241: decoderaw: index=0
+4     4.241: decoderaw: index=1
+4     4.241: decodefile: index=2
+4     4.251: strread: n=32768
+4     4.251: readfile: fp=939526976 nmax=32768
+4     4.252: strread: n=32768
+4     4.252: strread: n=32768
+4     4.252: decoderaw: index=0
+4     4.252: decoderaw: index=1
+4     4.252: decodefile: index=2
+4     4.261: strread: n=32768
+4     4.261: readfile: fp=939526976 nmax=32768
+4     4.261: strread: n=32768
+4     4.261: strread: n=32768
+4     4.261: decoderaw: index=0
+4     4.261: decoderaw: index=1
+4     4.261: decodefile: index=2
+4     4.272: strread: n=32768
+4     4.272: readfile: fp=939526976 nmax=32768
+4     4.272: strread: n=32768
+4     4.272: strread: n=32768
+4     4.272: decoderaw: index=0
+4     4.272: decoderaw: index=1
+4     4.272: decodefile: index=2
+4     4.282: strread: n=32768
+4     4.282: readfile: fp=939526976 nmax=32768
+4     4.282: strread: n=32768
+4     4.282: strread: n=32768
+4     4.282: decoderaw: index=0
+4     4.282: decoderaw: index=1
+4     4.283: decodefile: index=2
+4     4.292: strread: n=32768
+4     4.292: readfile: fp=939526976 nmax=32768
+4     4.292: strread: n=32768
+4     4.292: strread: n=32768
+4     4.292: decoderaw: index=0
+4     4.292: decoderaw: index=1
+4     4.292: decodefile: index=2
+4     4.303: strread: n=32768
+4     4.303: readfile: fp=939526976 nmax=32768
+4     4.303: strread: n=32768
+4     4.303: strread: n=32768
+4     4.303: decoderaw: index=0
+4     4.303: decoderaw: index=1
+4     4.303: decodefile: index=2
+4     4.313: strread: n=32768
+4     4.313: readfile: fp=939526976 nmax=32768
+4     4.313: strread: n=32768
+4     4.313: strread: n=32768
+4     4.313: decoderaw: index=0
+4     4.313: decoderaw: index=1
+4     4.314: decodefile: index=2
+4     4.323: strread: n=32768
+4     4.323: readfile: fp=939526976 nmax=32768
+4     4.323: strread: n=32768
+4     4.323: strread: n=32768
+4     4.323: decoderaw: index=0
+4     4.323: decoderaw: index=1
+4     4.323: decodefile: index=2
+4     4.333: strread: n=32768
+4     4.334: readfile: fp=939526976 nmax=32768
+4     4.334: strread: n=32768
+4     4.334: strread: n=32768
+4     4.334: decoderaw: index=0
+4     4.334: decoderaw: index=1
+4     4.334: decodefile: index=2
+4     4.343: strread: n=32768
+4     4.343: readfile: fp=939526976 nmax=32768
+4     4.343: strread: n=32768
+4     4.343: strread: n=32768
+4     4.343: decoderaw: index=0
+4     4.343: decoderaw: index=1
+4     4.343: decodefile: index=2
+4     4.354: strread: n=32768
+4     4.354: readfile: fp=939526976 nmax=32768
+4     4.354: strread: n=32768
+4     4.354: strread: n=32768
+4     4.354: decoderaw: index=0
+4     4.354: decoderaw: index=1
+4     4.354: decodefile: index=2
+4     4.364: strread: n=32768
+4     4.364: readfile: fp=939526976 nmax=32768
+4     4.364: strread: n=32768
+4     4.364: strread: n=32768
+4     4.364: decoderaw: index=0
+4     4.364: decoderaw: index=1
+4     4.365: decodefile: index=2
+4     4.374: strread: n=32768
+4     4.374: readfile: fp=939526976 nmax=32768
+4     4.374: strread: n=32768
+4     4.374: strread: n=32768
+4     4.374: decoderaw: index=0
+4     4.374: decoderaw: index=1
+4     4.374: decodefile: index=2
+4     4.384: strread: n=32768
+4     4.384: readfile: fp=939526976 nmax=32768
+4     4.384: strread: n=32768
+4     4.384: strread: n=32768
+4     4.384: decoderaw: index=0
+4     4.384: decoderaw: index=1
+4     4.385: decodefile: index=2
+4     4.394: strread: n=32768
+4     4.394: readfile: fp=939526976 nmax=32768
+4     4.394: strread: n=32768
+4     4.394: strread: n=32768
+4     4.394: decoderaw: index=0
+4     4.394: decoderaw: index=1
+4     4.394: decodefile: index=2
+4     4.404: strread: n=32768
+4     4.405: readfile: fp=939526976 nmax=32768
+4     4.405: strread: n=32768
+4     4.405: strread: n=32768
+4     4.405: decoderaw: index=0
+4     4.405: decoderaw: index=1
+4     4.405: decodefile: index=2
+3 vt_close:
+4     4.414: strread: n=32768
+4     4.414: readfile: fp=939526976 nmax=32768
+4     4.414: strread: n=32768
+4     4.414: strread: n=32768
+4     4.414: decoderaw: index=0
+4     4.414: decoderaw: index=1
+4     4.414: decodefile: index=2
+4     4.425: strread: n=32768
+4     4.425: readfile: fp=939526976 nmax=32768
+4     4.425: strread: n=32768
+4     4.425: strread: n=32768
+4     4.425: decoderaw: index=0
+4     4.425: decoderaw: index=1
+4     4.425: decodefile: index=2
+4     4.436: strread: n=32768
+4     4.436: readfile: fp=939526976 nmax=32768
+4     4.436: strread: n=32768
+4     4.436: strread: n=32768
+4     4.436: decoderaw: index=0
+4     4.436: decoderaw: index=1
+4     4.436: decodefile: index=2
+4     4.447: strread: n=32768
+4     4.447: readfile: fp=939526976 nmax=32768
+4     4.447: strread: n=32768
+4     4.447: strread: n=32768
+4     4.447: decoderaw: index=0
+4     4.447: decoderaw: index=1
+4     4.447: decodefile: index=2
+4     4.457: strread: n=32768
+4     4.458: readfile: fp=939526976 nmax=32768
+4     4.458: strread: n=32768
+4     4.458: strread: n=32768
+4     4.458: decoderaw: index=0
+4     4.458: decoderaw: index=1
+4     4.458: decodefile: index=2
+4     4.467: strread: n=32768
+4     4.467: readfile: fp=939526976 nmax=32768
+4     4.467: strread: n=32768
+4     4.467: strread: n=32768
+4     4.467: decoderaw: index=0
+4     4.467: decoderaw: index=1
+4     4.467: decodefile: index=2
+4     4.478: strread: n=32768
+4     4.478: readfile: fp=939526976 nmax=32768
+4     4.478: strread: n=32768
+4     4.478: strread: n=32768
+4     4.478: decoderaw: index=0
+4     4.478: decoderaw: index=1
+4     4.478: decodefile: index=2
+4     4.489: strread: n=32768
+4     4.489: readfile: fp=939526976 nmax=32768
+4     4.489: strread: n=32768
+4     4.489: strread: n=32768
+4     4.489: decoderaw: index=0
+4     4.489: decoderaw: index=1
+4     4.489: decodefile: index=2
+4     4.500: strread: n=32768
+4     4.500: readfile: fp=939526976 nmax=32768
+4     4.500: strread: n=32768
+4     4.500: strread: n=32768
+4     4.500: decoderaw: index=0
+4     4.500: decoderaw: index=1
+4     4.500: decodefile: index=2
+4     4.511: strread: n=32768
+4     4.511: readfile: fp=939526976 nmax=32768
+4     4.511: strread: n=32768
+4     4.511: strread: n=32768
+4     4.511: decoderaw: index=0
+4     4.511: decoderaw: index=1
+4     4.511: decodefile: index=2
+4     4.521: strread: n=32768
+4     4.521: readfile: fp=939526976 nmax=32768
+4     4.521: strread: n=32768
+4     4.521: strread: n=32768
+4     4.521: decoderaw: index=0
+4     4.521: decoderaw: index=1
+4     4.522: decodefile: index=2
+4     4.531: strread: n=32768
+4     4.531: readfile: fp=939526976 nmax=32768
+4     4.531: strread: n=32768
+4     4.531: strread: n=32768
+4     4.531: decoderaw: index=0
+4     4.531: decoderaw: index=1
+4     4.532: decodefile: index=2
+4     4.541: strread: n=32768
+4     4.541: readfile: fp=939526976 nmax=32768
+4     4.541: strread: n=32768
+4     4.541: strread: n=32768
+4     4.541: decoderaw: index=0
+4     4.541: decoderaw: index=1
+4     4.541: decodefile: index=2
+4     4.552: strread: n=32768
+4     4.552: readfile: fp=939526976 nmax=32768
+4     4.552: strread: n=32768
+4     4.552: strread: n=32768
+4     4.552: decoderaw: index=0
+4     4.552: decoderaw: index=1
+4     4.552: decodefile: index=2
+4     4.552: writesol: index=0
+3 outsols :
+4     4.552: strwrite: n=0
+3     4.552: writefile: fp=940250160 n=0
+3 outsolexs:
+4     4.552: strwrite: n=0
+3     4.552: writefile: fp=940250160 n=0
+3 outsols :
+4     4.552: strwrite: n=0
+3 outsolexs:
+3 outnmea_gsa:
+3 outnmea_gsv:
+4     4.553: strwrite: n=63
+3 outsols :
+4     4.553: strwrite: n=0
+4     4.562: strread: n=32768
+4     4.562: readfile: fp=939526976 nmax=32768
+4     4.562: strread: n=32768
+4     4.562: strread: n=32768
+4     4.562: decoderaw: index=0
+4     4.562: decoderaw: index=1
+4     4.562: decodefile: index=2
+4     4.573: strread: n=32768
+4     4.573: readfile: fp=939526976 nmax=32768
+4     4.573: strread: n=32768
+4     4.573: strread: n=32768
+4     4.573: decoderaw: index=0
+4     4.573: decoderaw: index=1
+4     4.573: decodefile: index=2
+4     4.584: strread: n=32768
+4     4.584: readfile: fp=939526976 nmax=32768
+4     4.584: strread: n=32768
+4     4.584: strread: n=32768
+4     4.584: decoderaw: index=0
+4     4.584: decoderaw: index=1
+4     4.584: decodefile: index=2
+4     4.594: strread: n=32768
+4     4.595: readfile: fp=939526976 nmax=32768
+4     4.595: strread: n=32768
+4     4.595: strread: n=32768
+4     4.595: decoderaw: index=0
+4     4.595: decoderaw: index=1
+4     4.595: decodefile: index=2
+4     4.604: strread: n=32768
+4     4.605: readfile: fp=939526976 nmax=32768
+4     4.605: strread: n=32768
+4     4.605: strread: n=32768
+4     4.605: decoderaw: index=0
+4     4.605: decoderaw: index=1
+4     4.605: decodefile: index=2
+4     4.614: strread: n=32768
+4     4.614: readfile: fp=939526976 nmax=32768
+4     4.614: strread: n=32768
+4     4.614: strread: n=32768
+4     4.614: decoderaw: index=0
+4     4.614: decoderaw: index=1
+4     4.615: decodefile: index=2
+4     4.624: strread: n=32768
+4     4.624: readfile: fp=939526976 nmax=32768
+4     4.624: strread: n=32768
+4     4.624: strread: n=32768
+4     4.624: decoderaw: index=0
+4     4.624: decoderaw: index=1
+4     4.624: decodefile: index=2
+4     4.634: strread: n=32768
+4     4.634: readfile: fp=939526976 nmax=32768
+4     4.634: strread: n=32768
+4     4.634: strread: n=32768
+4     4.634: decoderaw: index=0
+4     4.634: decoderaw: index=1
+4     4.634: decodefile: index=2
+4     4.645: strread: n=32768
+4     4.645: readfile: fp=939526976 nmax=32768
+4     4.645: strread: n=32768
+4     4.645: strread: n=32768
+4     4.645: decoderaw: index=0
+4     4.645: decoderaw: index=1
+4     4.645: decodefile: index=2
+4     4.656: strread: n=32768
+4     4.656: readfile: fp=939526976 nmax=32768
+4     4.656: strread: n=32768
+4     4.656: strread: n=32768
+4     4.656: decoderaw: index=0
+4     4.656: decoderaw: index=1
+4     4.656: decodefile: index=2
+4     4.666: strread: n=32768
+4     4.666: readfile: fp=939526976 nmax=32768
+4     4.666: strread: n=32768
+4     4.666: strread: n=32768
+4     4.666: decoderaw: index=0
+4     4.666: decoderaw: index=1
+4     4.667: decodefile: index=2
+4     4.676: strread: n=32768
+4     4.676: readfile: fp=939526976 nmax=32768
+4     4.676: strread: n=32768
+4     4.676: strread: n=32768
+4     4.676: decoderaw: index=0
+4     4.676: decoderaw: index=1
+4     4.676: decodefile: index=2
+4     4.687: strread: n=32768
+4     4.687: readfile: fp=939526976 nmax=32768
+4     4.687: strread: n=32768
+4     4.687: strread: n=32768
+4     4.687: decoderaw: index=0
+4     4.687: decoderaw: index=1
+4     4.687: decodefile: index=2
+4     4.698: strread: n=32768
+4     4.698: readfile: fp=939526976 nmax=32768
+4     4.698: strread: n=32768
+4     4.698: strread: n=32768
+4     4.698: decoderaw: index=0
+4     4.698: decoderaw: index=1
+4     4.698: decodefile: index=2
+4     4.709: strread: n=32768
+4     4.709: readfile: fp=939526976 nmax=32768
+4     4.709: strread: n=32768
+4     4.709: strread: n=32768
+4     4.709: decoderaw: index=0
+4     4.709: decoderaw: index=1
+4     4.709: decodefile: index=2
+4     4.720: strread: n=32768
+4     4.720: readfile: fp=939526976 nmax=32768
+4     4.720: strread: n=32768
+4     4.720: strread: n=32768
+4     4.720: decoderaw: index=0
+4     4.720: decoderaw: index=1
+4     4.720: decodefile: index=2
+4     4.731: strread: n=32768
+4     4.731: readfile: fp=939526976 nmax=32768
+4     4.731: strread: n=32768
+4     4.731: strread: n=32768
+4     4.731: decoderaw: index=0
+4     4.731: decoderaw: index=1
+4     4.731: decodefile: index=2
+4     4.741: strread: n=32768
+4     4.742: readfile: fp=939526976 nmax=32768
+4     4.742: strread: n=32768
+4     4.742: strread: n=32768
+4     4.742: decoderaw: index=0
+4     4.742: decoderaw: index=1
+4     4.742: decodefile: index=2
+4     4.751: strread: n=32768
+4     4.751: readfile: fp=939526976 nmax=32768
+4     4.751: strread: n=32768
+4     4.751: strread: n=32768
+4     4.751: decoderaw: index=0
+4     4.751: decoderaw: index=1
+4     4.752: decodefile: index=2
+4     4.761: strread: n=32768
+4     4.761: readfile: fp=939526976 nmax=32768
+4     4.761: strread: n=32768
+4     4.761: strread: n=32768
+4     4.761: decoderaw: index=0
+4     4.761: decoderaw: index=1
+4     4.762: decodefile: index=2
+4     4.771: strread: n=32768
+4     4.771: readfile: fp=939526976 nmax=32768
+4     4.771: strread: n=32768
+4     4.771: strread: n=32768
+4     4.771: decoderaw: index=0
+4     4.771: decoderaw: index=1
+4     4.771: decodefile: index=2
+4     4.781: strread: n=32768
+4     4.781: readfile: fp=939526976 nmax=32768
+4     4.781: strread: n=32768
+4     4.781: strread: n=32768
+4     4.781: decoderaw: index=0
+4     4.781: decoderaw: index=1
+4     4.781: decodefile: index=2
+4     4.792: strread: n=32768
+4     4.792: readfile: fp=939526976 nmax=32768
+4     4.792: strread: n=32768
+4     4.792: strread: n=32768
+4     4.792: decoderaw: index=0
+4     4.792: decoderaw: index=1
+4     4.792: decodefile: index=2
+4     4.803: strread: n=32768
+4     4.803: readfile: fp=939526976 nmax=32768
+4     4.803: strread: n=32768
+4     4.803: strread: n=32768
+4     4.803: decoderaw: index=0
+4     4.803: decoderaw: index=1
+4     4.803: decodefile: index=2
+4     4.814: strread: n=32768
+4     4.814: readfile: fp=939526976 nmax=32768
+4     4.814: strread: n=32768
+4     4.814: strread: n=32768
+4     4.814: decoderaw: index=0
+4     4.814: decoderaw: index=1
+4     4.814: decodefile: index=2
+3 sigshut: sig=2
+3 stopsvr:
+3     4.816: rtksvrstop:
+3     4.825: strclose: type=2 mode=1
+3     4.825: closefile: fp=939526976
+3     4.825: closefile_: path=test/data/android/rover_20190222120025.log
+3     4.825: strclose: type=0 mode=3
+2 no port to close stream: type=0
+3     4.825: strclose: type=0 mode=3
+2 no port to close stream: type=0
+3     4.825: strclose: type=2 mode=2
+3     4.825: closefile: fp=940250160
+3     4.825: closefile_: path=/tmp/gnss/sol1_%Y%m%d%h%M.pos
+3     4.825: strclose: type=0 mode=2
+2 no port to close stream: type=0
+3     4.825: strclose: type=2 mode=2
+3     4.825: closefile: fp=940250720
+3     4.825: closefile_: path=/tmp/gnss/rov_%Y%m%d%h%M.log
+3     4.825: strclose: type=0 mode=2
+2 no port to close stream: type=0
+3     4.825: strclose: type=0 mode=2
+2 no port to close stream: type=0
+3 free_raw:
+3 free_rtcm:
+3 free_raw:
+3 free_rtcm:
+3 free_raw:
+3 free_rtcm:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 con_close:
+3 savenav: file=rtkrcv.nav
