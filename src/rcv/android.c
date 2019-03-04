@@ -146,7 +146,7 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
 
     /* Calculate GPST for satellite */
     /* We only receive satellite TOW from Android, so we use week from rcv_time instead */
-    rcv_week = (long)rcv_time.time / WEEK2SEC; /* Calculate week number */
+    time2gpst(rcv_time, &rcv_week);  /* Calculate week number */
     trace(4, "week = %d\n", rcv_week);
 
     sat_tow = nano2sec(android_obs->receivedSvTimeNanos); /* Calculate time-of-week */
@@ -176,11 +176,13 @@ double nano2sec(long t){
 }
 
 gtime_t nano2gtime(long nanoSec){
-  gtime_t gtime;
-  gtime.time = nanoSec / SEC2NSEC;
-  gtime.sec = (nanoSec - gtime.time*SEC2NSEC) / (double)SEC2NSEC; /* TODO generic types */
+  int week;
+  double sec;
 
-  return gtime;
+  week = nanoSec / (double)SEC2NSEC / (double)WEEK2SEC;
+  sec = nanoSec / (double)SEC2NSEC - week * WEEK2SEC;
+
+  return gpst2time(week, sec);
 }
 
 double calcPseudoRange(gtime_t rx, gtime_t tx){
