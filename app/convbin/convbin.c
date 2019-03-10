@@ -511,6 +511,7 @@ static int cmdopts(int argc, char **argv, rnxopt_t *opt, char **ifile,
         else if (!strcmp(fmt,"cmr"  )) format=STRFMT_CMR;
         else if (!strcmp(fmt,"tersus")) format=STRFMT_TERSUS;
         else if (!strcmp(fmt,"rinex")) format=STRFMT_RINEX;
+        else if (!strcmp(fmt,"android")) format=STRFMT_ANDROID;
     }
     else {
         paths[0]=path;

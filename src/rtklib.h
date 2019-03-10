@@ -458,7 +458,7 @@ extern "C" {
 #define STRFMT_NMEA  21                 /* stream format: NMEA 0183 */
 #define STRFMT_ANDROID 22               /* stream format: Android API 24+ */
 #ifndef EXTLEX
-#define MAXRCVFMT    16                 /* max number of receiver format */
+#define MAXRCVFMT    22                /* max number of receiver format */
 #else
 #define MAXRCVFMT    17                 // Incremented
 #endif
