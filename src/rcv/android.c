@@ -2,13 +2,22 @@
 #include "android.h"
 
 extern int input_androidf (raw_t *raw, FILE *fp){
-  unsigned char data;
+  int c;
+  int result = noMsg;
 
-  data = fgetc(fp);
+  trace(3, "input_androidf:\n", c);
 
-  if (data == EOF) return (int) endOfFile;
+  while (1) {
+    c = fgetc(fp);
 
-  return input_android(raw, data);
+    if (c == EOF) return endOfFile;
+
+    result = input_android(raw, c);
+
+    if (result != noMsg) return result;
+
+  }
+
 }  
 
 extern int input_android (raw_t *raw,  unsigned char data){
@@ -129,19 +138,19 @@ int convertObservationData(obs_t *obs, android_clockd_t *cl, android_measurement
     trace(4, "obsd_t.SNR[0] = %d\n", obsd->SNR[0]);
 
     /* === loss of lock indicator === */
-    /* obsd->LLI[0]   = lli;                      */
+    obsd->LLI[0]   = 0;
 
     /* === code indicator (CODE_???) === */
-    /* obsd->code[0]  = null;                     */
+    obsd->code[0]  = CODE_L1C;
 
     /* === quality of carrier phase measurement === */
-    /* obsd->qualL[0] = null;                     */
+    obsd->qualL[0] = 0;
 
     /* === quality of pseudorange measurement === */
-    /* obsd->qualP[0] = null;                     */
+    obsd->qualP[0] = 0;
 
     /* === observation data carrier-phase (cycle) === */
-    /* obsd->L[0]     = carrierPhase;             */
+    obsd->L[0]     = 0;
 
     /*  === observation data pseudorange (m) === */
 
