@@ -61,7 +61,7 @@ extern int encode_rtcm3(rtcm_t *rtcm, int type, int sync);
 * ephemeris buffer in rtcm control struct
 * args   : rtcm_t *raw   IO     rtcm control struct
 * return : status (1:ok,0:memory allocation error)
-*-----------------------------------------------------------------------------*/
+*---------------------------------------------------------gt--------------------*/
 extern int init_rtcm(rtcm_t *rtcm)
 {
     gtime_t time0={0};
@@ -69,6 +69,7 @@ extern int init_rtcm(rtcm_t *rtcm)
     eph_t  eph0 ={0,-1,-1};
     geph_t geph0={0,-1};
     ssr_t ssr0={{{0}}};
+    dgps_t dgps0={{0}};
     int i,j;
     
     trace(3,"init_rtcm:\n");
@@ -107,7 +108,8 @@ extern int init_rtcm(rtcm_t *rtcm)
     /* reallocate memory for observation and ephemris buffer */
     if (!(rtcm->obs.data=(obsd_t *)malloc(sizeof(obsd_t)*MAXOBS))||
         !(rtcm->nav.eph =(eph_t  *)malloc(sizeof(eph_t )*MAXSAT))||
-        !(rtcm->nav.geph=(geph_t *)malloc(sizeof(geph_t)*MAXPRNGLO))) {
+        !(rtcm->nav.geph=(geph_t *)malloc(sizeof(geph_t)*MAXPRNGLO))||
+        !(rtcm->dgps    =(dgps_t *)malloc(sizeof(dgps_t)*MAXSAT))) {
         free_rtcm(rtcm);
         return 0;
     }
@@ -117,6 +119,8 @@ extern int init_rtcm(rtcm_t *rtcm)
     for (i=0;i<MAXOBS   ;i++) rtcm->obs.data[i]=data0;
     for (i=0;i<MAXSAT   ;i++) rtcm->nav.eph [i]=eph0;
     for (i=0;i<MAXPRNGLO;i++) rtcm->nav.geph[i]=geph0;
+    for (i=0;i<MAXSAT   ;i++) rtcm->dgps    [i]=dgps0;
+
     return 1;
 }
 /* free rtcm control ----------------------------------------------------------
