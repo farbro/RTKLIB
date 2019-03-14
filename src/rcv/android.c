@@ -190,7 +190,7 @@ gtime_t nano2gtime(long nanoSec){
   double sec;
 
   week = nanoSec / (double)SEC2NSEC / (double)WEEK2SEC;
-  sec = nanoSec / (double)SEC2NSEC - week * WEEK2SEC;
+  sec = (nanoSec - week * WEEK2SEC * SEC2NSEC) /  (double)SEC2NSEC;
 
   return gpst2time(week, sec);
 }
